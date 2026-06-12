@@ -4,21 +4,25 @@ class bird_env;
 
   bird_driver        drv;
   input_monitor      in_mon;
-  remote_monitor     rem_mon;
-  bird_scoreboard    sb;
+local_monitor      loc_mon;
+remote_monitor     rem_mon;
+bird_scoreboard    sb;
 
-  mailbox #(bird_packet) in_mb;
-  mailbox #(bird_packet) rem_mb;
+ mailbox #(bird_packet) in_mb;
+mailbox #(bird_packet) loc_mb;
+mailbox #(bird_packet) rem_mb;
 
   function new(virtual bird_if vif);
     this.vif = vif;
 
-    in_mb  = new();
-    rem_mb = new();
+   in_mb  = new();
+loc_mb = new();
+rem_mb = new();
 
-    drv     = new(vif);
-    in_mon  = new(vif, in_mb);
-    rem_mon = new(vif, rem_mb);
+  drv     = new(vif);
+in_mon  = new(vif, in_mb);
+loc_mon = new(vif, loc_mb);
+rem_mon = new(vif, rem_mb);
 
     sb = new(in_mb, rem_mb);
 
