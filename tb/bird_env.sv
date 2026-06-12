@@ -30,12 +30,13 @@ rem_mon = new(vif, rem_mb);
 
   task run();
 
-    fork
-      drv.run();      // if you later wrap driver loop
-      in_mon.run();
-      rem_mon.run();
-      sb.run();
-    join_none
+   fork
+  drv.run();
+  in_mon.run();
+  loc_mon.run();
+  rem_mon.run();
+  sb.run();
+join_none
 
   endtask
 
