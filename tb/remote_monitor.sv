@@ -11,7 +11,6 @@ class remote_monitor;
   task run();
 
     bird_packet pkt;
-    int current_seq;
     int frag_count;
 
     pkt = new();
@@ -35,7 +34,6 @@ class remote_monitor;
 
         pkt.payload = new[pkt.payload_len];
 
-        current_seq = pkt.seq_num;
       end
 
       // ----------------------------
