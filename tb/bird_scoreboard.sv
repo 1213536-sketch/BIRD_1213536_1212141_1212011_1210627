@@ -85,14 +85,20 @@ class bird_scoreboard;
   // -----------------------------
   // REPORT
   // -----------------------------
-  function void report();
+function void report();
 
-    $display("================================");
-    $display("SCOREBOARD SUMMARY");
-    $display("PASS = %0d", pass_count);
-    $display("FAIL = %0d", fail_count);
-    $display("================================");
+  $display("================================");
+  $display("SCOREBOARD SUMMARY");
+  $display("PASS = %0d", pass_count);
+  $display("FAIL = %0d", fail_count);
 
-  endfunction
+  if (fail_count == 0)
+    $display("TEST STATUS = PASS");
+  else
+    $display("TEST STATUS = FAIL");
+
+  $display("================================");
+
+endfunction
 
 endclass
