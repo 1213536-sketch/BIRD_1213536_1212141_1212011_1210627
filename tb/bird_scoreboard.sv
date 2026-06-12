@@ -96,7 +96,7 @@ function void report();
     $display("TEST STATUS = PASS");
   else
     $display("TEST STATUS = FAIL");
-
+  
   $display("================================");
 
 endfunction
