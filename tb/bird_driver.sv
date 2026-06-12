@@ -53,4 +53,10 @@ class bird_driver;
 
   endtask
 
+  task run();
+  forever begin
+    @(posedge vif.clk);
+  end
+endtask
+
 endclass
