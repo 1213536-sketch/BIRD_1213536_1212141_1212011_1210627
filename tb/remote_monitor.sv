@@ -50,8 +50,8 @@ class remote_monitor;
       // ----------------------------
       if (frag_count == pkt.payload_len) begin
 
-        pkt.crc[0] = 8'hAA; // placeholder (DUT may provide differently)
-        pkt.crc[1] = 8'hBB;
+        pkt.crc[0] = 8'h00; // placeholder (DUT may provide differently)
+        pkt.crc[1] = 8'h00;
 
         mon2sb.put(pkt);
 
