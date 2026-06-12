@@ -32,11 +32,8 @@ class input_monitor;
         pkt.payload[i] = vif.data_in;
       end
 
-      @(posedge vif.clk);
-      pkt.crc[0] = vif.data_in;
-
-      @(posedge vif.clk);
-      pkt.crc[1] = vif.data_in;
+      pkt.crc[0] = 8'h00;
+      pkt.crc[1] = 8'h00;
 
       mon2sb.put(pkt);
 
