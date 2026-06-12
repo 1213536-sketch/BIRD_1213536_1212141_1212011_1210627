@@ -34,7 +34,9 @@
       bird_packet pkt;
 
       pkt = new();
-
+// =====================================
+// TP1: Local Traffic Routing
+// =====================================
       pkt.traffic_type = 0;   // local
       pkt.payload_len  = 3;
       pkt.frag_num     = 1;
