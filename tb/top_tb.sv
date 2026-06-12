@@ -43,8 +43,8 @@ module top_tb;
       pkt.payload = new[3];
       pkt.payload = '{8'hAA, 8'hBB, 8'hCC};
 
-      pkt.crc[0] = 8'h11;
-      pkt.crc[1] = 8'h22;
+      pkt.crc[0] = 8'h00;
+      pkt.crc[1] = 8'h00;
 
       #10; // small delay
 
