@@ -17,24 +17,27 @@ class local_monitor;
 
     forever begin
 
-      wait(vif.local_vld && vif.local_rdy);
+  @(posedge vif.clk);
 
-      pkt = new();
+  if (vif.local_vld && vif.local_rdy) begin
 
-      pkt.payload_len = 1;
+    pkt = new();
 
-      pkt.payload = new[1];
+    pkt.payload_len = 1;
+    pkt.payload = new[1];
 
-      pkt.payload[0] = vif.data_local;
+    pkt.payload[0] = vif.data_local;
 
-      pkt.crc[0] = 8'h00;
-      pkt.crc[1] = 8'h00;
+    pkt.crc[0] = 8'h00;
+    pkt.crc[1] = 8'h00;
 
-      mon2sb.put(pkt);
+    mon2sb.put(pkt);
 
-      $display("[LOCAL MONITOR] Data Captured");
+    $display("[LOCAL MONITOR] Data Captured");
 
-    end
+  end
+
+end
 
   endtask
 
