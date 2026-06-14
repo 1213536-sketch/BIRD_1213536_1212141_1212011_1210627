@@ -1,0 +1,7 @@
+verdiSetActWin -dock widgetDock_<Decl._Tree>
+wvCreateWindow
+wvOpenFile -win $_nWave2 {/home/st46/ENCS5337_DV_Project/waves.fsdb}
+verdiWindowResize -win $_Verdi_1 "318" "82" "900" "700"
+verdiSetActWin -dock widgetDock_MTB_SOURCE_TAB_1
+verdiSetActWin -dock widgetDock_<Inst._Tree>
+debExit

@@ -1,45 +1,54 @@
- module top_tb;
+module top_tb;
 
   logic clk;
 
+  // clock generation
   always #5 clk = ~clk;
 
+  // interface
   bird_if vif(clk);
 
-bird dut (
+  // DUT
+  bird dut (
+    .clk(clk),
+    .rst_n(vif.rst_n),
 
-  .clk(clk),
-  .rst_n(vif.rst_n),
+    .in_vld(vif.in_vld),
+    .in_rdy(vif.in_rdy),
+    .data_in(vif.data_in),
+    .cfg(vif.cfg),
 
-  .in_vld(vif.in_vld),
-  .in_rdy(vif.in_rdy),
-  .data_in(vif.data_in),
-  .cfg(vif.cfg),
+    .drop_cnt(),
 
-  .drop_cnt(),
+    .local_vld(vif.local_vld),
+    .local_rdy(vif.local_rdy),
+    .data_local(vif.data_local),
 
-  .local_vld(vif.local_vld),
-  .local_rdy(vif.local_rdy),
-  .data_local(vif.data_local),
+    .remote_vld(vif.remote_vld),
+    .remote_rdy(vif.remote_rdy),
+    .data_remote(vif.data_remote)
+  );
 
-  .remote_vld(vif.remote_vld),
-  .remote_rdy(vif.remote_rdy),
-  .data_remote(vif.data_remote)
-
-);
-
+  // environment
   bird_env env;
 
   initial begin
 
-    clk = 0;
+    // =========================
+    // FSDB WAVES (IMPORTANT)
+    // =========================
+    $dumpfile("waves.vcd");
+    $dumpvars(0, top_tb);
 
-    // reset
+    // init clock + reset
+    clk = 0;
     vif.rst_n = 0;
 
-  vif.local_rdy  = 1;
-  vif.remote_rdy = 1;    
+    // ready signals
+    vif.local_rdy  = 1;
+    vif.remote_rdy = 1;
 
+    // reset time
     #20;
     vif.rst_n = 1;
 
@@ -50,17 +59,18 @@ bird dut (
       env.run();
     join_none
 
-    // -------------------------
-    // TEST CASE (هون مكان كودك)
-    // -------------------------
+    // =========================
+    // TEST CASES
+    // =========================
+
     begin
 
       bird_packet pkt;
-
       pkt = new();
-// =====================================
-// TP1: Local Traffic Routing
-// =====================================
+
+      // =========================
+      // TP1: Local Traffic Routing
+      // =========================
       pkt.traffic_type = 0;   // local
       pkt.payload_len  = 3;
       pkt.frag_num     = 1;
@@ -72,19 +82,18 @@ bird dut (
       pkt.crc[0] = 8'h00;
       pkt.crc[1] = 8'h00;
 
-      #10; // small delay
+      #10;
 
       env.drv.drive_packet(pkt);
 
     end
 
-    // wait for simulation
+    // wait for simulation to finish
     #200;
 
     $display("TEST FINISHED");
     $finish;
 
   end
-
 
 endmodule

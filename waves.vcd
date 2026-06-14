@@ -1,0 +1,337 @@
+$date
+	Sun Jun 14 21:19:11 2026
+$end
+
+$version
+	Synopsys VCS version T-2022.06-SP2_Full64
+$end
+
+$timescale
+	1s
+$end
+
+$comment Csum: 1 cda51fdb49ceea57 $end
+
+
+$scope module top_tb $end
+$var reg 1 ! clk $end
+
+$scope begin unnamed$$_vcs_3 $end
+
+$scope fork unnamed$$_vcs_0 $end
+
+$scope begin unnamed$$_vcs_1 $end
+$upscope $end
+
+$upscope $end
+
+
+$scope begin unnamed$$_0 $end
+$upscope $end
+
+$upscope $end
+
+
+$scope begin unnamed$$_vcs_2 $end
+$upscope $end
+
+
+$scope module vif $end
+$var reg 1 " clk $end
+$var reg 1 # rst_n $end
+$var reg 1 $ in_vld $end
+$var reg 1 % in_rdy $end
+$var reg 8 & data_in [7:0] $end
+$var reg 32 ' cfg [31:0] $end
+$var reg 1 ( local_vld $end
+$var reg 1 ) local_rdy $end
+$var reg 8 * data_local [7:0] $end
+$var reg 1 + remote_vld $end
+$var reg 1 , remote_rdy $end
+$var reg 32 - data_remote [31:0] $end
+$upscope $end
+
+
+$scope module dut $end
+$var reg 1 " clk $end
+$var reg 1 # rst_n $end
+$var reg 1 . in_vld $end
+$var reg 1 % in_rdy $end
+$var reg 8 / data_in [7:0] $end
+$var reg 32 0 cfg [31:0] $end
+$var reg 16 1 drop_cnt [15:0] $end
+$var reg 1 2 local_vld $end
+$var reg 1 ) local_rdy $end
+$var reg 8 3 data_local [7:0] $end
+$var reg 1 4 remote_vld $end
+$var reg 1 , remote_rdy $end
+$var reg 32 5 data_remote [31:0] $end
+$var reg 1 6 remote_active $end
+$var reg 32 7 active_seq [31:0] $end
+$var reg 32 8 active_max_frag [31:0] $end
+$var reg 2 9 rx_st [1:0] $end
+$var reg 1 : rx_is_remote $end
+$var reg 1 ; rx_drop $end
+$var reg 32 < rx_seq [31:0] $end
+$var reg 32 = rx_len [31:0] $end
+$var reg 32 > rx_frag [31:0] $end
+$var reg 32 ? payload_left [31:0] $end
+$var reg 32 @ crc_left [31:0] $end
+
+$scope begin unnamed$$_vcs_0 $end
+$upscope $end
+
+
+$scope begin unnamed$$_vcs_1 $end
+$upscope $end
+
+
+$scope begin unnamed$$_vcs_2 $end
+
+$scope begin unnamed$$_0 $end
+$upscope $end
+
+
+$scope begin unnamed$$_1 $end
+$upscope $end
+
+
+$scope begin unnamed$$_2 $end
+$upscope $end
+
+$upscope $end
+
+$upscope $end
+
+$upscope $end
+
+$enddefinitions $end
+
+#0
+$dumpvars
+0!
+b00000000000000000000000000000000 -
+b00000000 *
+bxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx '
+bxxxxxxxx &
+02
+04
+06
+0;
+0:
+bxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx 0
+bxxxxxxxx /
+b00000000 3
+b00000000000000000000000000000000 5
+b0000000000000000 1
+b00 9
+b00000000000000000000000000000000 8
+b00000000000000000000000000000000 7
+b00000000000000000000000000000000 @
+b00000000000000000000000000000000 ?
+b00000000000000000000000000000000 >
+b00000000000000000000000000000000 =
+b00000000000000000000000000000000 <
+x.
+0"
+x$
+1)
+0(
+1,
+0+
+0#
+1%
+$end
+#5
+1!
+1"
+#10
+0!
+0"
+#15
+1!
+1"
+#20
+1#
+0!
+0"
+#25
+1!
+1"
+#30
+0!
+0"
+#35
+1!
+1"
+1$
+1.
+b00000001000000010000001100000000 '
+b00000001000000010000001100000000 0
+b10101010 &
+b10101010 /
+#40
+0!
+0"
+#45
+1!
+1"
+b00000000000000000000000000000011 =
+b00000000000000000000000000000001 >
+b00000000000000000000000000000001 <
+b00000000000000000000000000000010 ?
+b00000000000000000000000000000010 @
+b10111011 &
+b10111011 /
+b01 9
+#50
+0!
+0"
+#55
+1!
+1"
+12
+1(
+b10101010 3
+b10101010 *
+b11001100 &
+b11001100 /
+b00000000000000000000000000000001 ?
+#60
+0!
+0"
+#65
+1!
+1"
+b10111011 3
+b10111011 *
+0$
+0.
+b00000000 &
+b00000000 /
+b00000000000000000000000000000000 '
+b00000000000000000000000000000000 0
+b00000000000000000000000000000000 ?
+#70
+0!
+0"
+#75
+1!
+1"
+b11001100 3
+b11001100 *
+#80
+0!
+0"
+#85
+1!
+1"
+02
+0(
+b00000000 3
+b00000000 *
+#90
+0!
+0"
+#95
+1!
+1"
+#100
+0!
+0"
+#105
+1!
+1"
+#110
+0!
+0"
+#115
+1!
+1"
+#120
+0!
+0"
+#125
+1!
+1"
+#130
+0!
+0"
+#135
+1!
+1"
+#140
+0!
+0"
+#145
+1!
+1"
+#150
+0!
+0"
+#155
+1!
+1"
+#160
+0!
+0"
+#165
+1!
+1"
+#170
+0!
+0"
+#175
+1!
+1"
+#180
+0!
+0"
+#185
+1!
+1"
+#190
+0!
+0"
+#195
+1!
+1"
+#200
+0!
+0"
+#205
+1!
+1"
+#210
+0!
+0"
+#215
+1!
+1"
+#220
+0!
+0"
+#225
+1!
+1"
+#230
+0!
+0"
+#235
+1!
+1"
+#240
+0!
+0"
+#245
+1!
+1"
+#250
+0!
+0"
+#255
+1!
+1"
+#260
+0!
+0"

@@ -1,0 +1,8 @@
+Command Line: /usr/synopsys/verdi/T-2022.06-SP2/platform/LINUXAMD64/bin/Novas -ssf simv.daidir
+uname(Linux synopsys.stbzu.edu 3.10.0-1160.83.1.el7.x86_64 #1 SMP Mon Dec 19 10:44:06 UTC 2022 x86_64)
+file I/O: JoinedFile.cpp:1547, read(), errno: 21, msg: Is a directory
+file I/O: ffrDisk.cpp:1899, read(), errno: 21, msg: Is a directory
+file I/O: epicFile.cpp:50, read(), errno: 21, msg: Is a directory
+file I/O: ff_raw_global.cpp:37, fgets(), errno: 21, msg: Is a directory
+file I/O: epicFile.cpp:50, read(), errno: 21, msg: Is a directory
+au time 3228.286410 21.937768 34.682150 delta 179707904 179707904 total 728375296 728375296

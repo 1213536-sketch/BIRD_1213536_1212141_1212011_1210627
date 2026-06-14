@@ -1,0 +1,104 @@
+0
+36
++itf+/usr/synopsys/vcs/T-2022.06-SP2/linux64/lib/vcsdp_lite.tab
++vcsd1
++vpi
+-Mamsrun=
+-Masflags=
+-Mcc=gcc
+-Mcfl= -pipe -fPIC -O -I/usr/synopsys/vcs/T-2022.06-SP2/include
+-Mcplusplus=g++
+-Mcrt0=
+-Mcrtn=
+-Mcsrc=
+-Mexternalobj=
+-Mldflags= -rdynamic
+-Mobjects= /usr/synopsys/vcs/T-2022.06-SP2/linux64/lib/libvirsim.so /usr/synopsys/vcs/T-2022.06-SP2/linux64/lib/liberrorinf.so /usr/synopsys/vcs/T-2022.06-SP2/linux64/lib/libsnpsmalloc.so /usr/synopsys/vcs/T-2022.06-SP2/linux64/lib/libvfs.so
+-Mout=simv
+-Msaverestoreobj=/usr/synopsys/vcs/T-2022.06-SP2/linux64/lib/vcs_save_restore_new.o
+-Msyslibs=/usr/synopsys/verdi/T-2022.06-SP2/share/PLI/VCS/LINUX64/pli.a -ldl
+-Mvcsaceobjs=
+-Mxcflags= -pipe -fPIC -I/usr/synopsys/vcs/T-2022.06-SP2/include
+-Mxllcflags=
+-P
+-Xufe=2steps
+-debug_access+all
+-f flist.f
+-fsdb
+-full64
+-gen_obj
+-kdb
+-lca
+-o simv
+-picarchive
+-sverilog
+/usr/synopsys/vcs/T-2022.06-SP2/linux64/bin/vcs1
+simv
+/usr/synopsys/verdi/T-2022.06-SP2/share/PLI/VCS/LINUX64/verdi.tab
+flist.f
+42
+XDG_SESSION_ID=10408
+XDG_RUNTIME_DIR=/run/user/1347
+XDG_DATA_DIRS=/home/st46/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share:/usr/share:/var/lib/snapd/desktop
+VMR_MODE_FLAG=64
+VERDI_HOME=/usr/synopsys/verdi/T-2022.06-SP2
+VCS_TARGET_ARCH=linux64
+VCS_PATHMAP_PRELOAD_DONE=1
+VCS_MX_HOME_INTERNAL=1
+VCS_MODE_FLAG=64
+VCS_LCAMSG_PRINT_OFF=1
+VCS_HOME=/usr/synopsys/vcs/T-2022.06-SP2
+VCS_EXEC_DONE=1
+VCS_DEPTH=0
+VCS_ARG_ADDED_FOR_TMP=1
+VCS_ARCH=linux64
+UNAME=/bin/uname
+TOOL_HOME=/usr/synopsys/vcs/T-2022.06-SP2/linux64
+SYN_INSTALLER=/usr/synopsys/Installer5_5
+SYNOPSYS_LC_ROOT=/usr/synopsys/prime/U-2022.12-SP5/libraries/syn
+SYNOPSYS=/usr/synopsys/syn/R-2020.09-SP5-5
+SYNOPSYS1=/usr/synopsys
+SSH_TTY=/dev/pts/104
+SSH_CONNECTION=103.27.144.108 57439 172.16.2.21 22
+SSH_CLIENT=103.27.144.108 57439 22
+SSH_AUTH_SOCK=/tmp/ssh-lsF0lSGrQajQ/agent.7861
+SSH_AGENT_PID=7862
+SNPS_VERDI_INTERNAL_LP_XML_NEW_FLOW=1
+SNPS_VCS_CLANG_PATH=/usr/synopsys/vcs/T-2022.06-SP2/linux64/clang
+SNPS_INTERNAL_VCS_LINUX_OS=linux
+SCRNAME=vcs
+SCRIPT_NAME=vcs
+SCL_ROOT=/usr/synopsys/scl/2021.03
+SAED14_PDK=/usr/synopsys/saed/SAED14nm_PDK_12142021/SAED14_PDK
+OVA_UUM=0
+OS_LDFLAGS=
+LESSOPEN=||/usr/bin/lesspipe.sh %s
+LC_ALL=C
+ICC_ROOT=/usr/synopsys/icc2/U-2022.12-SP5
+HISTCONTROL=ignoredups
+CVS_RSH=ssh
+CORETOOLS=/usr/synopsys/coretools/N-2017.12
+CDESIGNER=/usr/synopsys/syn/R-2020.09-SP5-5
+0
+0
+13
+1781458966 bird.sv
+1781461136 tb/top_tb.sv
+1781458966 tb/bird_env.sv
+1781458966 tb/bird_scoreboard.sv
+1781458966 tb/remote_monitor.sv
+1781458966 tb/local_monitor.sv
+1781458966 tb/input_monitor.sv
+1781458966 tb/bird_driver.sv
+1781458966 tb/bird_packet.sv
+1781458966 tb/bird_if.sv
+1781460306 flist.f
+1669114307 /usr/synopsys/verdi/T-2022.06-SP2/share/PLI/VCS/LINUX64/verdi.tab
+1669781155 /usr/synopsys/vcs/T-2022.06-SP2/linux64/lib/vcsdp_lite.tab
+4
+1669783182 /usr/synopsys/vcs/T-2022.06-SP2/linux64/lib/libvirsim.so
+1669782209 /usr/synopsys/vcs/T-2022.06-SP2/linux64/lib/liberrorinf.so
+1669782120 /usr/synopsys/vcs/T-2022.06-SP2/linux64/lib/libsnpsmalloc.so
+1669782200 /usr/synopsys/vcs/T-2022.06-SP2/linux64/lib/libvfs.so
+1781461257 simv.daidir
+-1 partitionlib
