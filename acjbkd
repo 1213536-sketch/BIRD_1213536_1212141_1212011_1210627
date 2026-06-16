@@ -1,0 +1,2142 @@
+diff --git a/csrc/.2681.2681.0.compview.txt b/csrc/.2681.2681.0.compview.txt
+deleted file mode 100644
+index fde88ec..0000000
+--- a/csrc/.2681.2681.0.compview.txt
++++ /dev/null
+@@ -1,9 +0,0 @@
+-{"vcs1":{"timestamp_begin":1781460317.233442672, "rt":0.46, "ut":0.28, "st":0.15}}
+-{"vcselab":{"timestamp_begin":1781460317.772437919, "rt":0.41, "ut":0.30, "st":0.12}}
+-{"link":{"timestamp_begin":1781460318.245791667, "rt":0.17, "ut":0.11, "st":0.06}}
+-{"SNPS_VCS_INTERNAL_ROOT_START_TIME": 1781460316.807988439}
+-{"VCS_COMP_START_TIME": 1781460316.807988439}
+-{"VCS_COMP_END_TIME": 1781460318.479423923}
+-{"VCS_USER_OPTIONS": "-full64 -sverilog -f flist.f -o simv"}
+-{"vcs1": {"peak_mem": 332896}}
+-{"stitch_vcselab": {"peak_mem": 226548}}
+diff --git a/csrc/.31657.31657.0.compview.txt b/csrc/.31657.31657.0.compview.txt
+deleted file mode 100644
+index 1e7e571..0000000
+--- a/csrc/.31657.31657.0.compview.txt
++++ /dev/null
+@@ -1,6 +0,0 @@
+-{"vcs1":{"timestamp_begin":1781460903.207139028, "rt":0.19, "ut":0.10, "st":0.05}}
+-{"SNPS_VCS_INTERNAL_ROOT_START_TIME": 1781460902.858747196}
+-{"VCS_COMP_START_TIME": 1781460902.858747196}
+-{"VCS_COMP_END_TIME": 1781460903.471763030}
+-{"VCS_USER_OPTIONS": "-full64 -sverilog -f flist.f -o simv"}
+-{"vcs1": {"peak_mem": 315488}}
+diff --git a/csrc/.42764.42764.0.compview.txt b/csrc/.42764.42764.0.compview.txt
+deleted file mode 100644
+index d11c02d..0000000
+--- a/csrc/.42764.42764.0.compview.txt
++++ /dev/null
+@@ -1,9 +0,0 @@
+-{"vcs1":{"timestamp_begin":1781461150.365812858, "rt":0.44, "ut":0.31, "st":0.13}}
+-{"vcselab":{"timestamp_begin":1781461150.888477467, "rt":0.41, "ut":0.31, "st":0.11}}
+-{"link":{"timestamp_begin":1781461151.351366721, "rt":0.19, "ut":0.12, "st":0.07}}
+-{"SNPS_VCS_INTERNAL_ROOT_START_TIME": 1781461149.983265808}
+-{"VCS_COMP_START_TIME": 1781461149.983265808}
+-{"VCS_COMP_END_TIME": 1781461151.602862923}
+-{"VCS_USER_OPTIONS": "-full64 -sverilog -f flist.f -o simv"}
+-{"vcs1": {"peak_mem": 333012}}
+-{"stitch_vcselab": {"peak_mem": 226544}}
+diff --git a/csrc/.46735.46735.0.compview.txt b/csrc/.46735.46735.0.compview.txt
+deleted file mode 100644
+index 7215c03..0000000
+--- a/csrc/.46735.46735.0.compview.txt
++++ /dev/null
+@@ -1,9 +0,0 @@
+-{"vcs1":{"timestamp_begin":1781461256.216501522, "rt":0.66, "ut":0.47, "st":0.26}}
+-{"vcselab":{"timestamp_begin":1781461256.966526880, "rt":0.43, "ut":0.33, "st":0.11}}
+-{"link":{"timestamp_begin":1781461257.455963703, "rt":0.26, "ut":0.17, "st":0.09}}
+-{"SNPS_VCS_INTERNAL_ROOT_START_TIME": 1781461255.770673360}
+-{"VCS_COMP_START_TIME": 1781461255.770673360}
+-{"VCS_COMP_END_TIME": 1781461257.836035613}
+-{"VCS_USER_OPTIONS": "-full64 -sverilog -debug_access+all -kdb -lca -f flist.f -o simv"}
+-{"vcs1": {"peak_mem": 490988}}
+-{"stitch_vcselab": {"peak_mem": 226572}}
+diff --git a/csrc/.55241.55241.0.compview.txt b/csrc/.55241.55241.0.compview.txt
+deleted file mode 100644
+index 25d847e..0000000
+--- a/csrc/.55241.55241.0.compview.txt
++++ /dev/null
+@@ -1,9 +0,0 @@
+-{"vcs1":{"timestamp_begin":1781460206.144408472, "rt":0.49, "ut":0.31, "st":0.13}}
+-{"vcselab":{"timestamp_begin":1781460206.722439096, "rt":0.42, "ut":0.33, "st":0.09}}
+-{"link":{"timestamp_begin":1781460207.202953836, "rt":0.18, "ut":0.12, "st":0.06}}
+-{"SNPS_VCS_INTERNAL_ROOT_START_TIME": 1781460205.592018183}
+-{"VCS_COMP_START_TIME": 1781460205.592018183}
+-{"VCS_COMP_END_TIME": 1781460207.462217685}
+-{"VCS_USER_OPTIONS": "-full64 -sverilog tb/bird_packet.sv tb/bird_if.sv tb/bird_driver.sv tb/bird_scoreboard.sv tb/input_monitor.sv tb/local_monitor.sv tb/remote_monitor.sv tb/bird_env.sv tb/top_tb.sv bird.sv -o simv"}
+-{"vcs1": {"peak_mem": 332876}}
+-{"stitch_vcselab": {"peak_mem": 226440}}
+diff --git a/csrc/.56889.56889.0.compview.txt b/csrc/.56889.56889.0.compview.txt
+deleted file mode 100644
+index dd2cbb8..0000000
+--- a/csrc/.56889.56889.0.compview.txt
++++ /dev/null
+@@ -1,6 +0,0 @@
+-{"vcs1":{"timestamp_begin":1781460240.686150097, "rt":0.13, "ut":0.07, "st":0.05}}
+-{"SNPS_VCS_INTERNAL_ROOT_START_TIME": 1781460240.366659314}
+-{"VCS_COMP_START_TIME": 1781460240.366659314}
+-{"VCS_COMP_END_TIME": 1781460240.866677413}
+-{"VCS_USER_OPTIONS": "-full64 -sverilog -f flist.f -o simv"}
+-{"vcs1": {"peak_mem": 314340}}
+diff --git a/csrc/_3000_archive_1.so b/csrc/_3000_archive_1.so
+deleted file mode 120000
+index f1e4516..0000000
+--- a/csrc/_3000_archive_1.so
++++ /dev/null
+@@ -1 +0,0 @@
+-.//../simv.daidir//_3000_archive_1.so
+\ No newline at end of file
+diff --git a/csrc/_43006_archive_1.so b/csrc/_43006_archive_1.so
+deleted file mode 120000
+index d41e15d..0000000
+--- a/csrc/_43006_archive_1.so
++++ /dev/null
+@@ -1 +0,0 @@
+-.//../simv.daidir//_43006_archive_1.so
+\ No newline at end of file
+diff --git a/csrc/_47074_archive_1.so b/csrc/_47074_archive_1.so
+deleted file mode 120000
+index fc75653..0000000
+--- a/csrc/_47074_archive_1.so
++++ /dev/null
+@@ -1 +0,0 @@
+-.//../simv.daidir//_47074_archive_1.so
+\ No newline at end of file
+diff --git a/csrc/_55650_archive_1.so b/csrc/_55650_archive_1.so
+deleted file mode 120000
+index 61fba66..0000000
+--- a/csrc/_55650_archive_1.so
++++ /dev/null
+@@ -1 +0,0 @@
+-.//../simv.daidir//_55650_archive_1.so
+\ No newline at end of file
+diff --git a/csrc/_prev_cginfo.json b/csrc/_prev_cginfo.json
+index 2994328..42d564d 100644
+Binary files a/csrc/_prev_cginfo.json and b/csrc/_prev_cginfo.json differ
+diff --git a/csrc/archive.3/_47074_archive_1.a b/csrc/archive.3/_47074_archive_1.a
+deleted file mode 100644
+index 537a1ae..0000000
+Binary files a/csrc/archive.3/_47074_archive_1.a and /dev/null differ
+diff --git a/csrc/archive.3/_47074_archive_1.a.info b/csrc/archive.3/_47074_archive_1.a.info
+deleted file mode 100644
+index 029c4d2..0000000
+--- a/csrc/archive.3/_47074_archive_1.a.info
++++ /dev/null
+@@ -1,7 +0,0 @@
+-hEeZs_d.o
+-xEVEs_d.o
+-reYIK_d.o
+-wiI9B_d.o
+-W0eJz_d.o
+-UD6bB_d.o
+-amcQwB.o
+diff --git a/csrc/cgincr.sdb b/csrc/cgincr.sdb
+index 049617e..605b342 100644
+Binary files a/csrc/cgincr.sdb and b/csrc/cgincr.sdb differ
+diff --git a/csrc/cginfo.json b/csrc/cginfo.json
+index 41d4bc1..43c9090 100644
+Binary files a/csrc/cginfo.json and b/csrc/cginfo.json differ
+diff --git a/csrc/cgproc.47074.json b/csrc/cgproc.47074.json
+deleted file mode 100644
+index 925f877..0000000
+Binary files a/csrc/cgproc.47074.json and /dev/null differ
+diff --git a/csrc/filelist.cu b/csrc/filelist.cu
+index c0dac37..56a2fa4 100644
+--- a/csrc/filelist.cu
++++ b/csrc/filelist.cu
+@@ -4,12 +4,20 @@ ifeq ($(LDVERSION), 0)
+ endif
+ 
+ ARCHIVE_OBJS=
+-ARCHIVE_OBJS += _47074_archive_1.so
+-_47074_archive_1.so : archive.3/_47074_archive_1.a
++ARCHIVE_OBJS += _2044_archive_1.so
++_2044_archive_1.so : archive.15/_2044_archive_1.a
+ 	@$(AR) -s $<
+-	@$(PIC_LD) -shared  -Bsymbolic $(LD_NORELAX_FLAG)  -o .//../simv.daidir//_47074_archive_1.so --whole-archive $< --no-whole-archive
++	@$(PIC_LD) -shared  -Bsymbolic $(LD_NORELAX_FLAG)  -o .//../simv.daidir//_2044_archive_1.so --whole-archive $< --no-whole-archive
+ 	@rm -f $@
+-	@ln -sf .//../simv.daidir//_47074_archive_1.so $@
++	@ln -sf .//../simv.daidir//_2044_archive_1.so $@
++
++
++ARCHIVE_OBJS += _prev_archive_1.so
++_prev_archive_1.so : archive.15/_prev_archive_1.a
++	@$(AR) -s $<
++	@$(PIC_LD) -shared  -Bsymbolic $(LD_NORELAX_FLAG)  -o .//../simv.daidir//_prev_archive_1.so --whole-archive $< --no-whole-archive
++	@rm -f $@
++	@ln -sf .//../simv.daidir//_prev_archive_1.so $@
+ 
+ 
+ 
+diff --git a/csrc/objs/amcQw_d.o b/csrc/objs/amcQw_d.o
+index 4ff1727..4bdf83e 100644
+Binary files a/csrc/objs/amcQw_d.o and b/csrc/objs/amcQw_d.o differ
+diff --git a/csrc/pre.cgincr.sdb b/csrc/pre.cgincr.sdb
+index 2c9f81e..2063a0d 100644
+Binary files a/csrc/pre.cgincr.sdb and b/csrc/pre.cgincr.sdb differ
+diff --git a/csrc/rmapats_mop.o b/csrc/rmapats_mop.o
+index 3a1ae69..1a9043c 100644
+Binary files a/csrc/rmapats_mop.o and b/csrc/rmapats_mop.o differ
+diff --git a/flist.f b/flist.f
+index 1407ab5..cb04f29 100644
+--- a/flist.f
++++ b/flist.f
+@@ -1,15 +1,16 @@
++tb/bird_pkg.sv
+ tb/bird_if.sv
++tb/bird_ref_model.sv
+ 
+-tb/bird_packet.sv
+ tb/bird_driver.sv
++tb/bird_generator.sv 
+ 
+ tb/input_monitor.sv
+ tb/local_monitor.sv
+ tb/remote_monitor.sv
+ 
+ tb/bird_scoreboard.sv
+-
+ tb/bird_env.sv
+ tb/top_tb.sv
+ 
+-bird.sv
++bird.sv
+\ No newline at end of file
+diff --git a/simv b/simv
+index 5e11dcb..1a24dc9 100755
+Binary files a/simv and b/simv differ
+diff --git a/simv.daidir/.elabcomCmd b/simv.daidir/.elabcomCmd
+index 4d3e0e6..cacfdfa 100755
+--- a/simv.daidir/.elabcomCmd
++++ b/simv.daidir/.elabcomCmd
+@@ -1,31 +1,31 @@
+ #!/bin/sh -f
+ 
+-cd /home/st46/ENCS5337_DV_Project
++cd /home/st44/ENCS5337_DV_Project
+ export CDESIGNER="/usr/synopsys/syn/R-2020.09-SP5-5"
+ export CORETOOLS="/usr/synopsys/coretools/N-2017.12"
+ export CVS_RSH="ssh"
+ export DISABLE_LIBRARY_MAP_CHECK="1"
+-export DISPLAY="127.0.0.1:27.0"
+-export FLEXLM_BORROWFILE="/home/st46/.synopsys.stbzu.edu-borrow.txt"
++export DISPLAY="127.0.0.1:47.0"
++export FLEXLM_BORROWFILE="/home/st44/.synopsys.stbzu.edu-borrow.txt"
+ export HISTCONTROL="ignoredups"
+ export HISTSIZE="1000"
+-export HOME="/home/st46"
++export HOME="/home/st44"
+ export HOSTNAME="synopsys.stbzu.edu"
+ export ICC_ROOT="/usr/synopsys/icc2/U-2022.12-SP5"
+ export LANG="en_US.UTF-8"
+ export LD_LIBRARY_PATH="/usr/synopsys/vcs/T-2022.06-SP2/lib:/usr/synopsys/vcs/T-2022.06-SP2/linux64/lib:/usr/synopsys/verdi/T-2022.06-SP2/share/PLI/VCS/linux64"
+ export LESSOPEN="||/usr/bin/lesspipe.sh %s"
+-export LOGNAME="st46"
++export LOGNAME="st44"
+ export LS_COLORS="rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=01;05;37;41:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.jpg=01;35:*.jpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.axv=01;35:*.anx=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=01;36:*.au=01;36:*.flac=01;36:*.mid=01;36:*.midi=01;36:*.mka=01;36:*.mp3=01;36:*.mpc=01;36:*.ogg=01;36:*.ra=01;36:*.wav=01;36:*.axa=01;36:*.oga=01;36:*.spx=01;36:*.xspf=01;36:"
+-export MAIL="/var/spool/mail/st46"
++export MAIL="/var/spool/mail/st44"
+ export NOVAS_ENABLE_NOBINDDOC_CHECK=""
+ export NOVAS_LC_ALL="C"
+ export NOVAS_NO_DUMP_LOGDIR="1"
+ export OLDPWD
+ export OS_LDFLAGS=""
+ export OVA_UUM="0"
+-export PATH=".:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/var/lib/snapd/snap/bin:/usr/synopsys/scl/2021.03/linux64/bin:/usr/synopsys/vcs/T-2022.06-SP2/bin:/usr/synopsys/verdi/T-2022.06-SP2/bin:/usr/synopsys/icc/M-2016.12/bin:/usr/synopsys/syn/R-2020.09-SP5-5/bin:/usr/synopsys/coretools/N-2017.12/bin:/usr/synopsys/icc2/U-2022.12-SP5/bin:/usr/synopsys/starrc/U-2022.12-SP5/bin:/usr/synopsys/idq/R-2020.09-SP5-5/bin:/usr/synopsys/ufe_optional_spyglass-vcs/R-2020.12-SP2-12/SPYGLASS_HOME/bin:/usr/synopsys/syn/R-2020.09-SP5-5/bin:/usr/synopsys/txs/R-2020.09-SP5-5/bin:/usr/synopsys/fm/U-2022.12-SP1/bin:/usr/synopsys/prime/U-2022.12-SP5/bin:/bin:/usr/synopsys/fusioncompiler/U-2022.12-SP5/bin:/usr/synopsys/icvalidator/U-2022.12-SP3/bin:/usr/synopsys/lc/R-2020.09-SP5/bin:/usr/synopsys/hspice/W-2024.09-SP2/hspice/bin:/usr/synopsys/primewave/T-2022.06-SP2/bin:/usr/synopsys/customcompiler/T-2022.06-SP2/bin:/usr/synopsys/xa/W-2024.09-SP2/bin:/home/st46/.local/bin:/home/st46/bin"
+-export PWD="/home/st46/ENCS5337_DV_Project"
++export PATH=".:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/var/lib/snapd/snap/bin:/usr/synopsys/scl/2021.03/linux64/bin:/usr/synopsys/vcs/T-2022.06-SP2/bin:/usr/synopsys/verdi/T-2022.06-SP2/bin:/usr/synopsys/icc/M-2016.12/bin:/usr/synopsys/syn/R-2020.09-SP5-5/bin:/usr/synopsys/coretools/N-2017.12/bin:/usr/synopsys/icc2/U-2022.12-SP5/bin:/usr/synopsys/starrc/U-2022.12-SP5/bin:/usr/synopsys/idq/R-2020.09-SP5-5/bin:/usr/synopsys/ufe_optional_spyglass-vcs/R-2020.12-SP2-12/SPYGLASS_HOME/bin:/usr/synopsys/syn/R-2020.09-SP5-5/bin:/usr/synopsys/txs/R-2020.09-SP5-5/bin:/usr/synopsys/fm/U-2022.12-SP1/bin:/usr/synopsys/prime/U-2022.12-SP5/bin:/bin:/usr/synopsys/fusioncompiler/U-2022.12-SP5/bin:/usr/synopsys/icvalidator/U-2022.12-SP3/bin:/usr/synopsys/lc/R-2020.09-SP5/bin:/usr/synopsys/hspice/W-2024.09-SP2/hspice/bin:/usr/synopsys/primewave/T-2022.06-SP2/bin:/usr/synopsys/customcompiler/T-2022.06-SP2/bin:/usr/synopsys/xa/W-2024.09-SP2/bin:/home/st44/.local/bin:/home/st44/bin"
++export PWD="/home/st44/ENCS5337_DV_Project"
+ export SAED14_PDK="/usr/synopsys/saed/SAED14nm_PDK_12142021/SAED14_PDK"
+ export SCL_ROOT="/usr/synopsys/scl/2021.03"
+ export SCRIPT_NAME="vcs"
+@@ -35,18 +35,16 @@ export SHLVL="3"
+ export SNPSLMD_LICENSE_FILE="27020@synopsys.stbzu.edu"
+ export SNPS_INTERNAL_VCS_LINUX_OS="linux"
+ export SNPS_VCS_CLANG_PATH="/usr/synopsys/vcs/T-2022.06-SP2/linux64/clang"
+-export SNPS_VCS_INTERNAL_CURR_PID="46735"
++export SNPS_VCS_INTERNAL_CURR_PID="1554"
+ export SNPS_VCS_INTERNAL_MAKE="make"
+ export SNPS_VCS_INTERNAL_MAKE_OPT=""
+ export SNPS_VCS_INTERNAL_MEMPRELOAD_USE_LIBC="1"
+-export SNPS_VCS_INTERNAL_ROOT_PID="46735"
+-export SNPS_VCS_INTERNAL_ROOT_START_TIME="1781461255.770673360"
++export SNPS_VCS_INTERNAL_ROOT_PID="1554"
++export SNPS_VCS_INTERNAL_ROOT_START_TIME="1781635796.983496268"
+ export SNPS_VERDI_INTERNAL_LP_XML_NEW_FLOW="1"
+-export SSH_AGENT_PID="7862"
+-export SSH_AUTH_SOCK="/tmp/ssh-lsF0lSGrQajQ/agent.7861"
+-export SSH_CLIENT="103.27.144.108 57439 22"
+-export SSH_CONNECTION="103.27.144.108 57439 172.16.2.21 22"
+-export SSH_TTY="/dev/pts/104"
++export SSH_CLIENT="84.242.49.90 65444 22"
++export SSH_CONNECTION="84.242.49.90 65444 172.16.2.21 22"
++export SSH_TTY="/dev/pts/109"
+ export SYNOPSYS="/usr/synopsys/syn/R-2020.09-SP5-5"
+ export SYNOPSYS1="/usr/synopsys"
+ export SYNOPSYS_LC_ROOT="/usr/synopsys/prime/U-2022.12-SP5/libraries/syn"
+@@ -54,27 +52,27 @@ export SYNOPSYS_SIM="/usr/synopsys/vcs/T-2022.06-SP2"
+ export SYN_INSTALLER="/usr/synopsys/Installer5_5"
+ export TERM="xterm"
+ export TOOL_HOME="/usr/synopsys/vcs/T-2022.06-SP2/linux64"
+-export TURBO_LOG_DIR="/tmp/vcs_20260614182055_46735"
++export TURBO_LOG_DIR="/tmp/vcs_20260616184956_1554"
+ export UNAME="/bin/uname"
+-export USER="st46"
++export USER="st44"
+ export VCS_ARCH="linux64"
+ export VCS_ARG_ADDED_FOR_TMP="1"
+ export VCS_COM="/usr/synopsys/vcs/T-2022.06-SP2/linux64/bin/vcs1"
+ export VCS_DEPTH="0"
+ export VCS_EXEC_DONE="1"
+ export VCS_HOME="/usr/synopsys/vcs/T-2022.06-SP2"
+-export VCS_LCAMSG_PRINT_OFF="1"
++export VCS_LOG_FILE="compile.log"
+ export VCS_MODE_FLAG="64"
+ export VCS_MX_HOME_INTERNAL="1"
+ export VCS_PATHMAP_PRELOAD_DONE="1"
+ export VCS_TARGET_ARCH="linux64"
+-export VCS_USER_OPTIONS="-full64 -sverilog -debug_access+all -kdb -lca -f flist.f -o simv"
++export VCS_USER_OPTIONS="-full64 -sverilog -f flist.f -debug_acc+all -kdb -l compile.log"
+ export VERDI_HOME="/usr/synopsys/verdi/T-2022.06-SP2"
+ export VMR_MODE_FLAG="64"
+-export XDG_DATA_DIRS="/home/st46/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share:/usr/share:/var/lib/snapd/desktop"
+-export XDG_RUNTIME_DIR="/run/user/1347"
+-export XDG_SESSION_ID="10408"
++export XDG_DATA_DIRS="/home/st44/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share:/usr/share:/var/lib/snapd/desktop"
++export XDG_RUNTIME_DIR="/run/user/1345"
++export XDG_SESSION_ID="11238"
+ export _="/usr/bin/time"
+-export sysc_uni_pwd="/home/st46/ENCS5337_DV_Project"
+-unset TURBO_LOG_DIR ;\rm -rf /home/st46/ENCS5337_DV_Project/simv.daidir/elabcomLog ;/usr/synopsys/vcs/T-2022.06-SP2/linux64/bin/elabcom -logdir /home/st46/ENCS5337_DV_Project/simv.daidir/elabcomLog  -simvdaidir /home/st46/ENCS5337_DV_Project/simv.daidir  -lib /home/st46/ENCS5337_DV_Project/simv.daidir/work  -saveLevel  -elab /home/st46/ENCS5337_DV_Project/simv.daidir/kdb -simflow -simdir /home/st46/ENCS5337_DV_Project/simv.daidir/kdb_libs -topfile /home/st46/ENCS5337_DV_Project/simv.daidir/.elabcomTopFile -ssv -ssy  -Lf work +disable_message+C00380+C00381 +disable_message+C00388+C00389  >& /dev/null  && echo Success >& /home/st46/ENCS5337_DV_Project/simv.daidir/.elabcomReport || echo Fail >& /home/st46/ENCS5337_DV_Project/simv.daidir/.elabcomReport; \rm -rf /home/st46/ENCS5337_DV_Project/simv.daidir/work.lib++ /home/st46/ENCS5337_DV_Project/simv.daidir/kdb_libs/ 
+-sed -i -e 's/^ELAB=FALSE$/ELAB=TRUE/' /home/st46/ENCS5337_DV_Project/simv.daidir/simv.kdb 
++export sysc_uni_pwd="/home/st44/ENCS5337_DV_Project"
++unset TURBO_LOG_DIR ;\rm -rf simv.daidir/elabcomLog ;/usr/synopsys/vcs/T-2022.06-SP2/linux64/bin/elabcom -logdir simv.daidir/elabcomLog  -simvdaidir simv.daidir  -lib simv.daidir/work  -saveLevel  -elab simv.daidir/kdb -simflow -simdir simv.daidir/kdb_libs -topfile simv.daidir/.elabcomTopFile -pkgfile simv.daidir/.elabcomPkgFile -ssv -ssy  -Lf work +disable_message+C00380+C00381 +disable_message+C00388+C00389  >& /dev/null  && echo Success >& simv.daidir/.elabcomReport || echo Fail >& simv.daidir/.elabcomReport; \rm -rf simv.daidir/work.lib++ simv.daidir/kdb_libs/ 
++sed -i -e 's/^ELAB=FALSE$/ELAB=TRUE/' simv.daidir/simv.kdb 
+diff --git a/simv.daidir/.vcs.timestamp b/simv.daidir/.vcs.timestamp
+index 4487730..102ceb5 100644
+--- a/simv.daidir/.vcs.timestamp
++++ b/simv.daidir/.vcs.timestamp
+@@ -1,5 +1,5 @@
+ 0
+-36
++35
+ +itf+/usr/synopsys/vcs/T-2022.06-SP2/linux64/lib/vcsdp_lite.tab
+ +vcsd1
+ +vpi
+@@ -22,31 +22,30 @@
+ -Mxllcflags=
+ -P
+ -Xufe=2steps
+--debug_access+all
++-debug_acc+all
+ -f flist.f
+ -fsdb
+ -full64
+ -gen_obj
+ -kdb
+--lca
+--o simv
++-l
+ -picarchive
+ -sverilog
+ /usr/synopsys/vcs/T-2022.06-SP2/linux64/bin/vcs1
+-simv
++compile.log
+ /usr/synopsys/verdi/T-2022.06-SP2/share/PLI/VCS/LINUX64/verdi.tab
+ flist.f
+-42
+-XDG_SESSION_ID=10408
+-XDG_RUNTIME_DIR=/run/user/1347
+-XDG_DATA_DIRS=/home/st46/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share:/usr/share:/var/lib/snapd/desktop
++40
++XDG_SESSION_ID=11238
++XDG_RUNTIME_DIR=/run/user/1345
++XDG_DATA_DIRS=/home/st44/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share:/usr/share:/var/lib/snapd/desktop
+ VMR_MODE_FLAG=64
+ VERDI_HOME=/usr/synopsys/verdi/T-2022.06-SP2
+ VCS_TARGET_ARCH=linux64
+ VCS_PATHMAP_PRELOAD_DONE=1
+ VCS_MX_HOME_INTERNAL=1
+ VCS_MODE_FLAG=64
+-VCS_LCAMSG_PRINT_OFF=1
++VCS_LOG_FILE=compile.log
+ VCS_HOME=/usr/synopsys/vcs/T-2022.06-SP2
+ VCS_EXEC_DONE=1
+ VCS_DEPTH=0
+@@ -58,11 +57,9 @@ SYN_INSTALLER=/usr/synopsys/Installer5_5
+ SYNOPSYS_LC_ROOT=/usr/synopsys/prime/U-2022.12-SP5/libraries/syn
+ SYNOPSYS=/usr/synopsys/syn/R-2020.09-SP5-5
+ SYNOPSYS1=/usr/synopsys
+-SSH_TTY=/dev/pts/104
+-SSH_CONNECTION=103.27.144.108 57439 172.16.2.21 22
+-SSH_CLIENT=103.27.144.108 57439 22
+-SSH_AUTH_SOCK=/tmp/ssh-lsF0lSGrQajQ/agent.7861
+-SSH_AGENT_PID=7862
++SSH_TTY=/dev/pts/109
++SSH_CONNECTION=84.242.49.90 65444 172.16.2.21 22
++SSH_CLIENT=84.242.49.90 65444 22
+ SNPS_VERDI_INTERNAL_LP_XML_NEW_FLOW=1
+ SNPS_VCS_CLANG_PATH=/usr/synopsys/vcs/T-2022.06-SP2/linux64/clang
+ SNPS_INTERNAL_VCS_LINUX_OS=linux
+@@ -81,18 +78,20 @@ CORETOOLS=/usr/synopsys/coretools/N-2017.12
+ CDESIGNER=/usr/synopsys/syn/R-2020.09-SP5-5
+ 0
+ 0
+-13
+-1781458966 bird.sv
+-1781461136 tb/top_tb.sv
+-1781458966 tb/bird_env.sv
+-1781458966 tb/bird_scoreboard.sv
+-1781458966 tb/remote_monitor.sv
+-1781458966 tb/local_monitor.sv
+-1781458966 tb/input_monitor.sv
+-1781458966 tb/bird_driver.sv
+-1781458966 tb/bird_packet.sv
+-1781458966 tb/bird_if.sv
+-1781460306 flist.f
++15
++1781547992 bird.sv
++1781634462 tb/top_tb.sv
++1781634810 tb/bird_env.sv
++1781634428 tb/bird_scoreboard.sv
++1781623637 tb/remote_monitor.sv
++1781554789 tb/local_monitor.sv
++1781635408 tb/input_monitor.sv
++1781635795 tb/bird_generator.sv
++1781635585 tb/bird_driver.sv
++1781634333 tb/bird_ref_model.sv
++1781634246 tb/bird_if.sv
++1781634316 tb/bird_pkg.sv
++1781633847 flist.f
+ 1669114307 /usr/synopsys/verdi/T-2022.06-SP2/share/PLI/VCS/LINUX64/verdi.tab
+ 1669781155 /usr/synopsys/vcs/T-2022.06-SP2/linux64/lib/vcsdp_lite.tab
+ 4
+@@ -100,5 +99,5 @@ CDESIGNER=/usr/synopsys/syn/R-2020.09-SP5-5
+ 1669782209 /usr/synopsys/vcs/T-2022.06-SP2/linux64/lib/liberrorinf.so
+ 1669782120 /usr/synopsys/vcs/T-2022.06-SP2/linux64/lib/libsnpsmalloc.so
+ 1669782200 /usr/synopsys/vcs/T-2022.06-SP2/linux64/lib/libvfs.so
+-1781461257 simv.daidir
++1781635799 simv.daidir
+ -1 partitionlib
+diff --git a/simv.daidir/_47074_archive_1.so b/simv.daidir/_47074_archive_1.so
+deleted file mode 100755
+index f70f761..0000000
+Binary files a/simv.daidir/_47074_archive_1.so and /dev/null differ
+diff --git a/simv.daidir/_prev_archive_1.so b/simv.daidir/_prev_archive_1.so
+index f152c0e..8df8a86 100755
+Binary files a/simv.daidir/_prev_archive_1.so and b/simv.daidir/_prev_archive_1.so differ
+diff --git a/simv.daidir/binmap.sdb b/simv.daidir/binmap.sdb
+index ce663f1..c638a79 100644
+Binary files a/simv.daidir/binmap.sdb and b/simv.daidir/binmap.sdb differ
+diff --git a/simv.daidir/build_db b/simv.daidir/build_db
+index 6ca77d8..239732e 100755
+--- a/simv.daidir/build_db
++++ b/simv.daidir/build_db
+@@ -1,4 +1,4 @@
+ #!/bin/sh -e
+ # This file is automatically generated by VCS.  Any changes you make
+ # to it will be overwritten the next time VCS is run.
+-vcs '-full64' '-sverilog' '-debug_access+all' '-kdb' '-lca' '-f' 'flist.f' '-o' 'simv'  -static_dbgen_only -daidir=$1 2>&1
++vcs '-full64' '-sverilog' '-f' 'flist.f' '-debug_acc+all' '-kdb' '-l' 'compile.log'  -static_dbgen_only -daidir=$1 2>&1
+diff --git a/simv.daidir/cgname.json b/simv.daidir/cgname.json
+index bd9e75f..a819122 100644
+--- a/simv.daidir/cgname.json
++++ b/simv.daidir/cgname.json
+@@ -9,36 +9,42 @@
+         "_vcs_unit__368780407",
+         "xEVEs",
+         "module",
+-        2
++        5
+     ],
+     "std": [
+         "std",
+         "reYIK",
+         "module",
+-        3
++        2
++    ],
++    "bird_pkg": [
++        "bird_pkg",
++        "fuy3t",
++        "module",
++        4
+     ],
+     "bird_if": [
+         "bird_if",
+         "wiI9B",
+         "module",
+-        4
++        6
+     ],
+     "top_tb": [
+         "top_tb",
+         "W0eJz",
+         "module",
+-        5
++        7
+     ],
+     "bird": [
+         "bird",
+         "UD6bB",
+         "module",
+-        6
++        8
+     ],
+     "...MASTER...": [
+         "SIM",
+         "amcQw",
+         "module",
+-        7
++        3
+     ]
+ }
+\ No newline at end of file
+diff --git a/simv.daidir/constraint.sdb b/simv.daidir/constraint.sdb
+deleted file mode 100644
+index f84d283..0000000
+Binary files a/simv.daidir/constraint.sdb and /dev/null differ
+diff --git a/simv.daidir/debug_dump/.version b/simv.daidir/debug_dump/.version
+index 47b3c50..21f43d4 100644
+--- a/simv.daidir/debug_dump/.version
++++ b/simv.daidir/debug_dump/.version
+@@ -1,4 +1,4 @@
+ T-2022.06-SP2_Full64
+ Build Date = Nov 29 2022 20:22:09
+ RedHat
+-Compile Location: /home/st46/ENCS5337_DV_Project
++Compile Location: /home/st44/ENCS5337_DV_Project
+diff --git a/simv.daidir/debug_dump/AllModulesSkeletons.sdb b/simv.daidir/debug_dump/AllModulesSkeletons.sdb
+index 9a4298d..21620b5 100644
+Binary files a/simv.daidir/debug_dump/AllModulesSkeletons.sdb and b/simv.daidir/debug_dump/AllModulesSkeletons.sdb differ
+diff --git a/simv.daidir/debug_dump/HsimSigOptDb.sdb b/simv.daidir/debug_dump/HsimSigOptDb.sdb
+index 3583b05..8ea2845 100644
+Binary files a/simv.daidir/debug_dump/HsimSigOptDb.sdb and b/simv.daidir/debug_dump/HsimSigOptDb.sdb differ
+diff --git a/simv.daidir/debug_dump/dve_debug.db.gz b/simv.daidir/debug_dump/dve_debug.db.gz
+index aed19bd..3815f00 100644
+Binary files a/simv.daidir/debug_dump/dve_debug.db.gz and b/simv.daidir/debug_dump/dve_debug.db.gz differ
+diff --git a/simv.daidir/debug_dump/fsearch/.create_fsearch_db b/simv.daidir/debug_dump/fsearch/.create_fsearch_db
+index 3ea8234..2f3779b 100755
+--- a/simv.daidir/debug_dump/fsearch/.create_fsearch_db
++++ b/simv.daidir/debug_dump/fsearch/.create_fsearch_db
+@@ -5,5 +5,5 @@ PYTHONPATH=/usr/synopsys/vcs/T-2022.06-SP2/linux64/lib/pylib27
+ export PYTHONPATH
+ LD_LIBRARY_PATH=/usr/synopsys/vcs/T-2022.06-SP2/linux64/lib:/usr/synopsys/vcs/T-2022.06-SP2/linux64/lib/pylib27
+ export LD_LIBRARY_PATH
+-/usr/synopsys/vcs/T-2022.06-SP2/linux64/bin/vcsfind_create_index.exe  -z  "/home/st46/ENCS5337_DV_Project/simv.daidir/debug_dump/fsearch/./idents_tapi.xml.gz" "/home/st46/ENCS5337_DV_Project/simv.daidir/debug_dump/fsearch/./idents_MG2K6Y.xml.gz" -o "/home/st46/ENCS5337_DV_Project/simv.daidir/debug_dump/fsearch/fsearch.db_tmp"
+-\mv "/home/st46/ENCS5337_DV_Project/simv.daidir/debug_dump/fsearch/fsearch.db_tmp" "/home/st46/ENCS5337_DV_Project/simv.daidir/debug_dump/fsearch/fsearch.db"
++/usr/synopsys/vcs/T-2022.06-SP2/linux64/bin/vcsfind_create_index.exe  -z  "/home/st44/ENCS5337_DV_Project/simv.daidir/debug_dump/fsearch/./idents_Vr5XN9.xml.gz" "/home/st44/ENCS5337_DV_Project/simv.daidir/debug_dump/fsearch/./idents_tapi.xml.gz" -o "/home/st44/ENCS5337_DV_Project/simv.daidir/debug_dump/fsearch/fsearch.db_tmp"
++\mv "/home/st44/ENCS5337_DV_Project/simv.daidir/debug_dump/fsearch/fsearch.db_tmp" "/home/st44/ENCS5337_DV_Project/simv.daidir/debug_dump/fsearch/fsearch.db"
+diff --git a/simv.daidir/debug_dump/fsearch/check_fsearch_db b/simv.daidir/debug_dump/fsearch/check_fsearch_db
+index 3102e57..9e54dc3 100755
+--- a/simv.daidir/debug_dump/fsearch/check_fsearch_db
++++ b/simv.daidir/debug_dump/fsearch/check_fsearch_db
+@@ -1,6 +1,6 @@
+ #!/bin/sh -h 
+ 
+-FILE_PATH="/home/st46/ENCS5337_DV_Project/simv.daidir/debug_dump/fsearch"
++FILE_PATH="/home/st44/ENCS5337_DV_Project/simv.daidir/debug_dump/fsearch"
+ lockfile="${FILE_PATH}"/lock
+ 
+ FSearch_lock_release() {
+@@ -32,13 +32,13 @@ if [ -d "$dir_name"/../../../../../.. ]; then
+     cd "$dir_name"/../../../../../..
+ fi
+ 
+-if [ -f "/home/st46/ENCS5337_DV_Project/simv.daidir/debug_dump/fsearch/.create_fsearch_db" ]; then
+-    if [ ! -f "/home/st46/ENCS5337_DV_Project/simv.daidir/debug_dump/fsearch/fsearch.db" ]; then
++if [ -f "/home/st44/ENCS5337_DV_Project/simv.daidir/debug_dump/fsearch/.create_fsearch_db" ]; then
++    if [ ! -f "/home/st44/ENCS5337_DV_Project/simv.daidir/debug_dump/fsearch/fsearch.db" ]; then
+         if [ "$#" -eq 1 ] && [ "x$1" == "x-background" ]; then
+             trap FSearch_lock_release EXIT
+             (
+                 flock 193
+-                create_fsearch_db_ctrl "/home/st46/ENCS5337_DV_Project/simv.daidir/debug_dump/fsearch/.create_fsearch_db"
++                create_fsearch_db_ctrl "/home/st44/ENCS5337_DV_Project/simv.daidir/debug_dump/fsearch/.create_fsearch_db"
+                 exit 193
+             ) 193> "$lockfile"
+             rstat=$?
+@@ -46,12 +46,12 @@ if [ -f "/home/st46/ENCS5337_DV_Project/simv.daidir/debug_dump/fsearch/.create_f
+                 exit $rstat
+             fi
+         else
+-            "/home/st46/ENCS5337_DV_Project/simv.daidir/debug_dump/fsearch/.create_fsearch_db"
+-            if [ -f "/home/st46/ENCS5337_DV_Project/simv.daidir/debug_dump/fsearch/fsearch.stat" ]; then
+-               rm -f "/home/st46/ENCS5337_DV_Project/simv.daidir/debug_dump/fsearch/fsearch.stat"
++            "/home/st44/ENCS5337_DV_Project/simv.daidir/debug_dump/fsearch/.create_fsearch_db"
++            if [ -f "/home/st44/ENCS5337_DV_Project/simv.daidir/debug_dump/fsearch/fsearch.stat" ]; then
++               rm -f "/home/st44/ENCS5337_DV_Project/simv.daidir/debug_dump/fsearch/fsearch.stat"
+             fi
+         fi
+-    elif [ -f "/home/st46/ENCS5337_DV_Project/simv.daidir/debug_dump/fsearch/fsearch.stat" ]; then
+-       rm -f "/home/st46/ENCS5337_DV_Project/simv.daidir/debug_dump/fsearch/fsearch.stat"
++    elif [ -f "/home/st44/ENCS5337_DV_Project/simv.daidir/debug_dump/fsearch/fsearch.stat" ]; then
++       rm -f "/home/st44/ENCS5337_DV_Project/simv.daidir/debug_dump/fsearch/fsearch.stat"
+     fi
+ fi
+diff --git a/simv.daidir/debug_dump/fsearch/idents_MG2K6Y.xml.gz b/simv.daidir/debug_dump/fsearch/idents_MG2K6Y.xml.gz
+deleted file mode 100644
+index c6033eb..0000000
+Binary files a/simv.daidir/debug_dump/fsearch/idents_MG2K6Y.xml.gz and /dev/null differ
+diff --git a/simv.daidir/debug_dump/fsearch/idents_tapi.xml.gz b/simv.daidir/debug_dump/fsearch/idents_tapi.xml.gz
+index ad40b64..8c05bf9 100644
+Binary files a/simv.daidir/debug_dump/fsearch/idents_tapi.xml.gz and b/simv.daidir/debug_dump/fsearch/idents_tapi.xml.gz differ
+diff --git a/simv.daidir/debug_dump/src_files_verilog b/simv.daidir/debug_dump/src_files_verilog
+index a76a7f7..d113062 100644
+--- a/simv.daidir/debug_dump/src_files_verilog
++++ b/simv.daidir/debug_dump/src_files_verilog
+@@ -1,10 +1,12 @@
+-/home/st46/ENCS5337_DV_Project/bird.sv
+-/home/st46/ENCS5337_DV_Project/tb/bird_driver.sv
+-/home/st46/ENCS5337_DV_Project/tb/bird_env.sv
+-/home/st46/ENCS5337_DV_Project/tb/bird_if.sv
+-/home/st46/ENCS5337_DV_Project/tb/bird_packet.sv
+-/home/st46/ENCS5337_DV_Project/tb/bird_scoreboard.sv
+-/home/st46/ENCS5337_DV_Project/tb/input_monitor.sv
+-/home/st46/ENCS5337_DV_Project/tb/local_monitor.sv
+-/home/st46/ENCS5337_DV_Project/tb/remote_monitor.sv
+-/home/st46/ENCS5337_DV_Project/tb/top_tb.sv
++/home/st44/ENCS5337_DV_Project/bird.sv
++/home/st44/ENCS5337_DV_Project/tb/bird_driver.sv
++/home/st44/ENCS5337_DV_Project/tb/bird_env.sv
++/home/st44/ENCS5337_DV_Project/tb/bird_generator.sv
++/home/st44/ENCS5337_DV_Project/tb/bird_if.sv
++/home/st44/ENCS5337_DV_Project/tb/bird_pkg.sv
++/home/st44/ENCS5337_DV_Project/tb/bird_ref_model.sv
++/home/st44/ENCS5337_DV_Project/tb/bird_scoreboard.sv
++/home/st44/ENCS5337_DV_Project/tb/input_monitor.sv
++/home/st44/ENCS5337_DV_Project/tb/local_monitor.sv
++/home/st44/ENCS5337_DV_Project/tb/remote_monitor.sv
++/home/st44/ENCS5337_DV_Project/tb/top_tb.sv
+diff --git a/simv.daidir/debug_dump/topmodules b/simv.daidir/debug_dump/topmodules
+index 9e21e06..5e2a3f1 100644
+--- a/simv.daidir/debug_dump/topmodules
++++ b/simv.daidir/debug_dump/topmodules
+@@ -1 +1 @@
+-
+\ No newline at end of file
++
+\ No newline at end of file
+diff --git a/simv.daidir/debug_dump/vir.sdb b/simv.daidir/debug_dump/vir.sdb
+index 428abb6..c73b970 100644
+Binary files a/simv.daidir/debug_dump/vir.sdb and b/simv.daidir/debug_dump/vir.sdb differ
+diff --git a/simv.daidir/elabcomLog/compiler.log b/simv.daidir/elabcomLog/compiler.log
+index 165ff48..1240869 100644
+--- a/simv.daidir/elabcomLog/compiler.log
++++ b/simv.daidir/elabcomLog/compiler.log
+@@ -1,3 +1,3 @@
+ *design* DebussyLib (btIdent Verdi_T-2022.06-SP2)
+-Command arguments:  -lib  /home/st46/ENCS5337_DV_Project/simv.daidir/work  -saveLevel  -elab  /home/st46/ENCS5337_DV_Project/simv.daidir/kdb  -simflow  -simdir  /home/st46/ENCS5337_DV_Project/simv.daidir/kdb_libs  -topfile  /home/st46/ENCS5337_DV_Project/simv.daidir/.elabcomTopFile  -ssv  -ssy  -Lf  work  +disable_message+C00380+C00381  +disable_message+C00388+C00389  -SNPS_ELABCOM  -saveElab 
++Command arguments:  -lib  simv.daidir/work  -saveLevel  -elab  simv.daidir/kdb  -simflow  -simdir  simv.daidir/kdb_libs  -topfile  simv.daidir/.elabcomTopFile  -pkgfile  simv.daidir/.elabcomPkgFile  -ssv  -ssy  -Lf  work  +disable_message+C00380+C00381  +disable_message+C00388+C00389  -SNPS_ELABCOM  -saveElab 
+ Total	0 error(s),   0 warning(s)
+diff --git a/simv.daidir/elabcomLog/novas.rc b/simv.daidir/elabcomLog/novas.rc
+index 7e1ea37..035af7b 100644
+--- a/simv.daidir/elabcomLog/novas.rc
++++ b/simv.daidir/elabcomLog/novas.rc
+@@ -329,6 +329,8 @@ Wave_comment_string_font = -f COURIER12 -c ID_RED5
+ HB_designTreeFont = *-adobe-courier-medium-r-*-*-12-*-*-*-*-*-iso8859-*
+ Text_font = COURIER12
+ nMemory_font = Fixed 14
++Wave_getsignal_form_font = -f COURIER12
++Text_annotFont = Helvetica_M_R_10
+ [OtherEditor]
+ cmd1 = "xterm -font 9x15 -fg black -bg gray -e"
+ name = "vi"
+@@ -373,6 +375,7 @@ saveWaveformStat = TRUE
+ savePropStat = FALSE
+ savePropDtl = TRUE
+ [QtDialog]
++QwWarnMsgDlg = 458,267,600,250
+ QwUserAskDlg = 596,318,324,130
+ [Relationship]
+ hideRecursiceNode = FALSE
+@@ -660,35 +663,35 @@ isOneSearchVisible = TRUE
+ [VIA.oneSearch.preference.vgifColumnSettingRC.setting0]
+ parRuleSets = ""
+ [VIA.oneSearch.preference.vgifColumnSettingRC.setting0.column0]
+-name = Type
++name = Severity
+ width = 60
+-visualIndex = 3
++visualIndex = 1
+ isHidden = TRUE
+ isUserChangeColumnVisible = FALSE
+ [VIA.oneSearch.preference.vgifColumnSettingRC.setting0.column1]
+-name = Message
+-width = 2000
+-visualIndex = 4
+-isHidden = FALSE
+-isUserChangeColumnVisible = FALSE
+-[VIA.oneSearch.preference.vgifColumnSettingRC.setting0.column2]
+ name = Time
+ width = 60
+ visualIndex = 0
+ isHidden = TRUE
+ isUserChangeColumnVisible = FALSE
+-[VIA.oneSearch.preference.vgifColumnSettingRC.setting0.column3]
++[VIA.oneSearch.preference.vgifColumnSettingRC.setting0.column2]
+ name = Code
+ width = 60
+ visualIndex = 2
+ isHidden = TRUE
+ isUserChangeColumnVisible = FALSE
+-[VIA.oneSearch.preference.vgifColumnSettingRC.setting0.column4]
+-name = Severity
++[VIA.oneSearch.preference.vgifColumnSettingRC.setting0.column3]
++name = Type
+ width = 60
+-visualIndex = 1
++visualIndex = 3
+ isHidden = TRUE
+ isUserChangeColumnVisible = FALSE
++[VIA.oneSearch.preference.vgifColumnSettingRC.setting0.column4]
++name = Message
++width = 2000
++visualIndex = 4
++isHidden = FALSE
++isUserChangeColumnVisible = FALSE
+ [Vi]
+ ViFont = "Clean 14"
+ ViBG = white
+@@ -767,8 +770,11 @@ ShowDeltaTime = TRUE
+ WaveExtendLastTick = TRUE
+ displayMessageLabelOnly = TRUE
+ AutoApplySeverityColor = TRUE
++scope_to_save_with_macro
++open_file_dir
++open_rc_file_dir
+ getSignalForm = 0 0 800 479 100 30 100 30
+-viewPort = 0 25 900 256 100 65
++viewPort = 0 25 900 230 100 65
+ legendBackground = -c ID_BLACK
+ valueBackground = -c ID_BLACK
+ curveBackground = -c ID_BLACK
+@@ -908,7 +914,6 @@ displayDeltaY = FALSE
+ signal_rc_abspath = TRUE
+ signal_rc_no_natural_bus_range = FALSE
+ save_scope_with_macro = FALSE
+-scope_to_save_with_macro
+ FitAnaByBusSize = FALSE
+ DisplayVerticalZoomTools = FALSE
+ DisplayIndicateBar = FALSE
+@@ -936,8 +941,6 @@ printDest = -printer {}
+ printSignature = {%f %h %t} {}
+ curveWindow_Drag&Drop_Mode = TRUE
+ open_file_time_range = FALSE
+-open_file_dir
+-open_rc_file_dir
+ legend_window_font = -f COURIER12 -c ID_CYAN5
+ value_window_font = -f COURIER12 -c ID_CYAN5
+ curve_window_font = -f COURIER12 -c ID_CYAN5
+@@ -1030,6 +1033,7 @@ HvpMergeTool =
+ ShowMergeMenuItem = FALSE
+ fsmScoreMode = transition
+ [eco]
++NameRule = 
+ IsFreezeSilicon = FALSE
+ cellQuantityManagement = FALSE
+ ManageMode = INSTANCE_NAME
+@@ -1037,7 +1041,6 @@ SpareCellsPinsManagement = TRUE
+ LogCommitReport = FALSE
+ InputPinStatus = 1
+ OutputPinStatus = 2
+-NameRule = 
+ RevisedComponentColor = ID_BLUE5
+ SpareCellColor = ID_RED5
+ UserName = st46
+@@ -1299,7 +1302,7 @@ AddImportArgument = FALSE
+ LineBreakWithScope = TRUE
+ StopAfterCompileOption = -s
+ [wave.0]
+-viewPort = 0 25 900 256 100 65
++viewPort = 0 25 900 230 100 65
+ [wave.1]
+ viewPort = 127 219 960 332 100 65
+ [wave.2]
+diff --git a/simv.daidir/elabcomLog/turbo.log b/simv.daidir/elabcomLog/turbo.log
+index f6e1f59..42b3307 100644
+--- a/simv.daidir/elabcomLog/turbo.log
++++ b/simv.daidir/elabcomLog/turbo.log
+@@ -1,3 +1,3 @@
+-Command Line: /usr/synopsys/vcs/T-2022.06-SP2/linux64/bin/elabcom -logdir /home/st46/ENCS5337_DV_Project/simv.daidir/elabcomLog -simvdaidir /home/st46/ENCS5337_DV_Project/simv.daidir -lib /home/st46/ENCS5337_DV_Project/simv.daidir/work -saveLevel -elab /home/st46/ENCS5337_DV_Project/simv.daidir/kdb -simflow -simdir /home/st46/ENCS5337_DV_Project/simv.daidir/kdb_libs -topfile /home/st46/ENCS5337_DV_Project/simv.daidir/.elabcomTopFile -ssv -ssy -Lf work +disable_message+C00380+C00381 +disable_message+C00388+C00389
++Command Line: /usr/synopsys/vcs/T-2022.06-SP2/linux64/bin/elabcom -logdir simv.daidir/elabcomLog -simvdaidir simv.daidir -lib simv.daidir/work -saveLevel -elab simv.daidir/kdb -simflow -simdir simv.daidir/kdb_libs -topfile simv.daidir/.elabcomTopFile -pkgfile simv.daidir/.elabcomPkgFile -ssv -ssy -Lf work +disable_message+C00380+C00381 +disable_message+C00388+C00389
+ uname(Linux synopsys.stbzu.edu 3.10.0-1160.83.1.el7.x86_64 #1 SMP Mon Dec 19 10:44:06 UTC 2022 x86_64)
+-au time 0.039040 0.014838 0.016609 delta 90800128 90800128 total 272003072 272003072
++au time 0.051141 0.024264 0.018426 delta 90800128 90800128 total 272003072 272003072
+diff --git a/simv.daidir/elabmoddb.sdb b/simv.daidir/elabmoddb.sdb
+index d6fe7f2..8bb1e3b 100644
+Binary files a/simv.daidir/elabmoddb.sdb and b/simv.daidir/elabmoddb.sdb differ
+diff --git a/simv.daidir/hslevel_callgraph.sdb b/simv.daidir/hslevel_callgraph.sdb
+index f1e0ba8..c14ec0c 100644
+Binary files a/simv.daidir/hslevel_callgraph.sdb and b/simv.daidir/hslevel_callgraph.sdb differ
+diff --git a/simv.daidir/hslevel_level.sdb b/simv.daidir/hslevel_level.sdb
+index 04e0c67..18029ff 100644
+Binary files a/simv.daidir/hslevel_level.sdb and b/simv.daidir/hslevel_level.sdb differ
+diff --git a/simv.daidir/hslevel_rtime_level.sdb b/simv.daidir/hslevel_rtime_level.sdb
+index 1c9d859..31c8777 100644
+Binary files a/simv.daidir/hslevel_rtime_level.sdb and b/simv.daidir/hslevel_rtime_level.sdb differ
+diff --git a/simv.daidir/kdb.elab++/HDB/tdc.list b/simv.daidir/kdb.elab++/HDB/tdc.list
+index c15b527..401b6f0 100644
+--- a/simv.daidir/kdb.elab++/HDB/tdc.list
++++ b/simv.daidir/kdb.elab++/HDB/tdc.list
+@@ -1,8 +1,10 @@
+ bird.sv
+ tb/bird_driver.sv
+ tb/bird_env.sv
++tb/bird_generator.sv
+ tb/bird_if.sv
+-tb/bird_packet.sv
++tb/bird_pkg.sv
++tb/bird_ref_model.sv
+ tb/bird_scoreboard.sv
+ tb/input_monitor.sv
+ tb/local_monitor.sv
+diff --git a/simv.daidir/kdb.elab++/_libFileMap b/simv.daidir/kdb.elab++/_libFileMap
+index 6f08e52..8416e16 100644
+Binary files a/simv.daidir/kdb.elab++/_libFileMap and b/simv.daidir/kdb.elab++/_libFileMap differ
+diff --git a/simv.daidir/kdb.elab++/_smElabDBMap b/simv.daidir/kdb.elab++/_smElabDBMap
+index be6ea52..72d1848 100644
+Binary files a/simv.daidir/kdb.elab++/_smElabDBMap and b/simv.daidir/kdb.elab++/_smElabDBMap differ
+diff --git a/simv.daidir/kdb.elab++/_stnElabDB b/simv.daidir/kdb.elab++/_stnElabDB
+index a5cc059..a1d8e73 100644
+Binary files a/simv.daidir/kdb.elab++/_stnElabDB and b/simv.daidir/kdb.elab++/_stnElabDB differ
+diff --git a/simv.daidir/kdb.elab++/sdb/inst.db b/simv.daidir/kdb.elab++/sdb/inst.db
+index 6e6bc49..6f62748 100644
+Binary files a/simv.daidir/kdb.elab++/sdb/inst.db and b/simv.daidir/kdb.elab++/sdb/inst.db differ
+diff --git a/simv.daidir/kdb.elab++/sdb/master.db b/simv.daidir/kdb.elab++/sdb/master.db
+index 7d21012..9c4f662 100644
+Binary files a/simv.daidir/kdb.elab++/sdb/master.db and b/simv.daidir/kdb.elab++/sdb/master.db differ
+diff --git a/simv.daidir/kdb.elab++/sdb/sdb.db b/simv.daidir/kdb.elab++/sdb/sdb.db
+index eb01d01..6fdccdb 100644
+Binary files a/simv.daidir/kdb.elab++/sdb/sdb.db and b/simv.daidir/kdb.elab++/sdb/sdb.db differ
+diff --git a/simv.daidir/kdb.elab++/sdb/sdbId.db b/simv.daidir/kdb.elab++/sdb/sdbId.db
+index 59c5413..0330e67 100644
+Binary files a/simv.daidir/kdb.elab++/sdb/sdbId.db and b/simv.daidir/kdb.elab++/sdb/sdbId.db differ
+diff --git a/simv.daidir/kdb.elab++/sdb/str.db b/simv.daidir/kdb.elab++/sdb/str.db
+index 72d52f3..316f19e 100644
+Binary files a/simv.daidir/kdb.elab++/sdb/str.db and b/simv.daidir/kdb.elab++/sdb/str.db differ
+diff --git a/simv.daidir/kdb.elab++/sdb/varMaster.db b/simv.daidir/kdb.elab++/sdb/varMaster.db
+index 4a358dc..1e194f4 100644
+Binary files a/simv.daidir/kdb.elab++/sdb/varMaster.db and b/simv.daidir/kdb.elab++/sdb/varMaster.db differ
+diff --git a/simv.daidir/kdb.elab++/work.lib++/AbsDocNameTbl b/simv.daidir/kdb.elab++/work.lib++/AbsDocNameTbl
+index bb56bd1..aa0e931 100644
+Binary files a/simv.daidir/kdb.elab++/work.lib++/AbsDocNameTbl and b/simv.daidir/kdb.elab++/work.lib++/AbsDocNameTbl differ
+diff --git a/simv.daidir/kdb.elab++/work.lib++/MapTbl b/simv.daidir/kdb.elab++/work.lib++/MapTbl
+index 6079477..a6d4dfd 100644
+Binary files a/simv.daidir/kdb.elab++/work.lib++/MapTbl and b/simv.daidir/kdb.elab++/work.lib++/MapTbl differ
+diff --git a/simv.daidir/kdb.elab++/work.lib++/SM_LONG_STR_FILE_NAME b/simv.daidir/kdb.elab++/work.lib++/SM_LONG_STR_FILE_NAME
+index ca265f6..8fbd148 100644
+Binary files a/simv.daidir/kdb.elab++/work.lib++/SM_LONG_STR_FILE_NAME and b/simv.daidir/kdb.elab++/work.lib++/SM_LONG_STR_FILE_NAME differ
+diff --git a/simv.daidir/kdb.elab++/work.lib++/lib.dep b/simv.daidir/kdb.elab++/work.lib++/lib.dep
+index e2d3880..41ebcfd 100644
+Binary files a/simv.daidir/kdb.elab++/work.lib++/lib.dep and b/simv.daidir/kdb.elab++/work.lib++/lib.dep differ
+diff --git a/simv.daidir/kdb.elab++/work.lib++/libfile b/simv.daidir/kdb.elab++/work.lib++/libfile
+index f022b8d..d1ae2fa 100644
+Binary files a/simv.daidir/kdb.elab++/work.lib++/libfile and b/simv.daidir/kdb.elab++/work.lib++/libfile differ
+diff --git a/simv.daidir/kdb.elab++/work.lib++/oh.etc/_oharch b/simv.daidir/kdb.elab++/work.lib++/oh.etc/_oharch
+index 6814e65..acba813 100644
+Binary files a/simv.daidir/kdb.elab++/work.lib++/oh.etc/_oharch and b/simv.daidir/kdb.elab++/work.lib++/oh.etc/_oharch differ
+diff --git a/simv.daidir/kdb.elab++/work.lib++/tdc.sdb b/simv.daidir/kdb.elab++/work.lib++/tdc.sdb
+index f49d0f7..9180c71 100644
+Binary files a/simv.daidir/kdb.elab++/work.lib++/tdc.sdb and b/simv.daidir/kdb.elab++/work.lib++/tdc.sdb differ
+diff --git a/simv.daidir/pcc.sdb b/simv.daidir/pcc.sdb
+index ed82f6d..570e566 100644
+Binary files a/simv.daidir/pcc.sdb and b/simv.daidir/pcc.sdb differ
+diff --git a/simv.daidir/prof.sdb b/simv.daidir/prof.sdb
+index 0c33de9..0138d20 100644
+Binary files a/simv.daidir/prof.sdb and b/simv.daidir/prof.sdb differ
+diff --git a/simv.daidir/rmapats.dat b/simv.daidir/rmapats.dat
+index c56ee66..5867092 100644
+Binary files a/simv.daidir/rmapats.dat and b/simv.daidir/rmapats.dat differ
+diff --git a/simv.daidir/rmapats.so b/simv.daidir/rmapats.so
+index 76d650d..bcd415d 100755
+Binary files a/simv.daidir/rmapats.so and b/simv.daidir/rmapats.so differ
+diff --git a/simv.daidir/simv.kdb b/simv.daidir/simv.kdb
+index 083a445..e48de4d 100644
+--- a/simv.daidir/simv.kdb
++++ b/simv.daidir/simv.kdb
+@@ -1,7 +1,7 @@
+ rc file Version 1.0
+ 
+ [Design]
+-COMPILE_PATH=/home/st46/ENCS5337_DV_Project
++COMPILE_PATH=/home/st44/ENCS5337_DV_Project
+ VCS_HOME=/usr/synopsys/vcs/T-2022.06-SP2
+ VERDI_HOME=/usr/synopsys/verdi/T-2022.06-SP2
+ SystemC=FALSE
+@@ -15,7 +15,7 @@ ELAB_OPTION=-ssv -ssy
+ ELAB=TRUE
+ SIMV_WRAPPER=FALSE
+ [vcs]
+-RUN_ELABCOM=unset TURBO_LOG_DIR ;\rm -rf /home/st46/ENCS5337_DV_Project/simv.daidir/elabcomLog ;/usr/synopsys/vcs/T-2022.06-SP2/linux64/bin/elabcom -logdir /home/st46/ENCS5337_DV_Project/simv.daidir/elabcomLog  -simvdaidir /home/st46/ENCS5337_DV_Project/simv.daidir  -lib /home/st46/ENCS5337_DV_Project/simv.daidir/work  -saveLevel  -elab /home/st46/ENCS5337_DV_Project/simv.daidir/kdb -simflow -simdir /home/st46/ENCS5337_DV_Project/simv.daidir/kdb_libs -topfile /home/st46/ENCS5337_DV_Project/simv.daidir/.elabcomTopFile -ssv -ssy  -Lf work +disable_message+C00380+C00381 +disable_message+C00388+C00389  >& /dev/null  && echo Success >& /home/st46/ENCS5337_DV_Project/simv.daidir/.elabcomReport || echo Fail >& /home/st46/ENCS5337_DV_Project/simv.daidir/.elabcomReport; \rm -rf /home/st46/ENCS5337_DV_Project/simv.daidir/work.lib++ /home/st46/ENCS5337_DV_Project/simv.daidir/kdb_libs/ 
++RUN_ELABCOM=unset TURBO_LOG_DIR ;\rm -rf simv.daidir/elabcomLog ;/usr/synopsys/vcs/T-2022.06-SP2/linux64/bin/elabcom -logdir simv.daidir/elabcomLog  -simvdaidir simv.daidir  -lib simv.daidir/work  -saveLevel  -elab simv.daidir/kdb -simflow -simdir simv.daidir/kdb_libs -topfile simv.daidir/.elabcomTopFile -pkgfile simv.daidir/.elabcomPkgFile -ssv -ssy  -Lf work +disable_message+C00380+C00381 +disable_message+C00388+C00389  >& /dev/null  && echo Success >& simv.daidir/.elabcomReport || echo Fail >& simv.daidir/.elabcomReport; \rm -rf simv.daidir/work.lib++ simv.daidir/kdb_libs/ 
+ 
+ [Value]
+ WREALX=ffff534e50535f58
+diff --git a/simv.daidir/tt.sdb b/simv.daidir/tt.sdb
+index cd08fed..0a778f2 100644
+Binary files a/simv.daidir/tt.sdb and b/simv.daidir/tt.sdb differ
+diff --git a/simv.daidir/vcs_rebuild b/simv.daidir/vcs_rebuild
+index f0b7ac0..be4a1ba 100755
+--- a/simv.daidir/vcs_rebuild
++++ b/simv.daidir/vcs_rebuild
+@@ -1,4 +1,4 @@
+ #!/bin/sh -e
+ # This file is automatically generated by VCS.  Any changes you make
+ # to it will be overwritten the next time VCS is run.
+-vcs '-full64' '-sverilog' '-debug_access+all' '-kdb' '-lca' '-f' 'flist.f' '-o' 'simv' 2>&1
++vcs '-full64' '-sverilog' '-f' 'flist.f' '-debug_acc+all' '-kdb' '-l' 'compile.log' 2>&1
+diff --git a/simv.daidir/vcselab_master_hsim_elabout.db b/simv.daidir/vcselab_master_hsim_elabout.db
+index 47aab66..a2367b8 100644
+--- a/simv.daidir/vcselab_master_hsim_elabout.db
++++ b/simv.daidir/vcselab_master_hsim_elabout.db
+@@ -816,7 +816,7 @@ fHsimPreInlineInstNum64            	0
+ fHsimAutoInstNum64Limit            	-7
+ fHsimAutoEnableInstNum64PC         	0
+ fHsCgOptFixLeaf                    	1
+-fHsimDumpVars                      	1
++fHsimDumpVars                      	0
+ fFgpTbReactiveLite                 	1
+ fHsCgOptCongLite                   	1
+ fHsimGateDiag                      	0
+diff --git a/simv.daidir/vcselab_master_hsim_virtintf_info.dat b/simv.daidir/vcselab_master_hsim_virtintf_info.dat
+index 35dd680..365ddd3 100644
+Binary files a/simv.daidir/vcselab_master_hsim_virtintf_info.dat and b/simv.daidir/vcselab_master_hsim_virtintf_info.dat differ
+diff --git a/simv.daidir/vcselab_misc_hil_stmts.db b/simv.daidir/vcselab_misc_hil_stmts.db
+index 5b47dea..acea1df 100644
+Binary files a/simv.daidir/vcselab_misc_hil_stmts.db and b/simv.daidir/vcselab_misc_hil_stmts.db differ
+diff --git a/simv.daidir/vcselab_misc_hsdef.db b/simv.daidir/vcselab_misc_hsdef.db
+index 4ac5fc6..cc66934 100644
+Binary files a/simv.daidir/vcselab_misc_hsdef.db and b/simv.daidir/vcselab_misc_hsdef.db differ
+diff --git a/simv.daidir/vcselab_misc_hsim_elab.db b/simv.daidir/vcselab_misc_hsim_elab.db
+index c4b16a6..386c025 100644
+--- a/simv.daidir/vcselab_misc_hsim_elab.db
++++ b/simv.daidir/vcselab_misc_hsim_elab.db
+@@ -1,6 +1,6 @@
+ psSimBaseName                      	simv
+-psLogFileName                      	NULL
+-pDaiDir                            	/home/st46/ENCS5337_DV_Project/simv.daidir
++psLogFileName                      	compile.log
++pDaiDir                            	/home/st44/ENCS5337_DV_Project/simv.daidir
+ destPath                           	csrc/
+ fSharedMaster                      	0
+ fHsimPCSharedLibSpecified          	0
+@@ -1385,7 +1385,7 @@ fHsimPreInlineInstNum64            	0
+ fHsimAutoInstNum64Limit            	-7
+ fHsimAutoEnableInstNum64PC         	0
+ fHsCgOptFixLeaf                    	1
+-fHsimDumpVars                      	1
++fHsimDumpVars                      	0
+ fFgpTbReactiveLite                 	1
+ fHsimCcnUnion                      	0
+ fHsimOnlyElabMod                   	0
+diff --git a/simv.daidir/vcselab_misc_hsim_fegate.db b/simv.daidir/vcselab_misc_hsim_fegate.db
+index 9e7c90f..50019c2 100644
+Binary files a/simv.daidir/vcselab_misc_hsim_fegate.db and b/simv.daidir/vcselab_misc_hsim_fegate.db differ
+diff --git a/simv.daidir/vcselab_misc_hsim_lvl.db b/simv.daidir/vcselab_misc_hsim_lvl.db
+index a79ca75..1e739fa 100644
+Binary files a/simv.daidir/vcselab_misc_hsim_lvl.db and b/simv.daidir/vcselab_misc_hsim_lvl.db differ
+diff --git a/simv.daidir/vcselab_misc_hsim_merge.sdb b/simv.daidir/vcselab_misc_hsim_merge.sdb
+index b9d66a6..e480a29 100644
+Binary files a/simv.daidir/vcselab_misc_hsim_merge.sdb and b/simv.daidir/vcselab_misc_hsim_merge.sdb differ
+diff --git a/simv.daidir/vcselab_misc_hsim_name.db b/simv.daidir/vcselab_misc_hsim_name.db
+index 25313ba..752c779 100644
+Binary files a/simv.daidir/vcselab_misc_hsim_name.db and b/simv.daidir/vcselab_misc_hsim_name.db differ
+diff --git a/simv.daidir/vcselab_misc_hsim_uds.db b/simv.daidir/vcselab_misc_hsim_uds.db
+index 987033e..6027fc6 100644
+--- a/simv.daidir/vcselab_misc_hsim_uds.db
++++ b/simv.daidir/vcselab_misc_hsim_uds.db
+@@ -1,16 +1,60 @@
+-vcselab_misc_midd.db 469
+-vcselab_misc_mnmn.db 94
+-vcselab_misc_hsim_name.db 645
++vcselab_misc_midd.db 117
++vcselab_misc_mnmn.db 25
++vcselab_misc_hsim_name.db 145
++vcselab_misc_midd.db 117
++vcselab_misc_mnmn.db 25
++vcselab_misc_hsim_name.db 145
++vcselab_misc_midd.db 113
++vcselab_misc_mnmn.db 21
++vcselab_misc_hsim_name.db 141
++vcselab_misc_midd.db 113
++vcselab_misc_mnmn.db 21
++vcselab_misc_hsim_name.db 141
++vcselab_misc_midd.db 521
++vcselab_misc_mnmn.db 107
++vcselab_misc_hsim_name.db 713
+ vcselab_master_hsim_virtintf_info.dat 160
+-vcselab_misc_midd.db 469
+-vcselab_misc_mnmn.db 94
+-vcselab_misc_hsim_name.db 645
++vcselab_misc_midd.db 545
++vcselab_misc_mnmn.db 107
++vcselab_misc_hsim_name.db 725
+ vcselab_master_hsim_virtintf_info.dat 160
+-vcselab_misc_midd.db 469
+-vcselab_misc_mnmn.db 94
+-vcselab_misc_hsim_name.db 645
++vcselab_misc_midd.db 545
++vcselab_misc_mnmn.db 107
++vcselab_misc_hsim_name.db 725
+ vcselab_master_hsim_virtintf_info.dat 160
+-vcselab_misc_midd.db 493
+-vcselab_misc_mnmn.db 94
+-vcselab_misc_hsim_name.db 657
++vcselab_misc_midd.db 545
++vcselab_misc_mnmn.db 107
++vcselab_misc_hsim_name.db 725
++vcselab_master_hsim_virtintf_info.dat 160
++vcselab_misc_midd.db 545
++vcselab_misc_mnmn.db 107
++vcselab_misc_hsim_name.db 725
++vcselab_master_hsim_virtintf_info.dat 160
++vcselab_misc_midd.db 545
++vcselab_misc_mnmn.db 107
++vcselab_misc_hsim_name.db 725
++vcselab_master_hsim_virtintf_info.dat 160
++vcselab_misc_midd.db 545
++vcselab_misc_mnmn.db 107
++vcselab_misc_hsim_name.db 725
++vcselab_master_hsim_virtintf_info.dat 160
++vcselab_misc_midd.db 545
++vcselab_misc_mnmn.db 107
++vcselab_misc_hsim_name.db 725
++vcselab_master_hsim_virtintf_info.dat 160
++vcselab_misc_midd.db 545
++vcselab_misc_mnmn.db 107
++vcselab_misc_hsim_name.db 725
++vcselab_master_hsim_virtintf_info.dat 160
++vcselab_misc_midd.db 545
++vcselab_misc_mnmn.db 107
++vcselab_misc_hsim_name.db 725
++vcselab_master_hsim_virtintf_info.dat 160
++vcselab_misc_midd.db 545
++vcselab_misc_mnmn.db 107
++vcselab_misc_hsim_name.db 725
++vcselab_master_hsim_virtintf_info.dat 160
++vcselab_misc_midd.db 545
++vcselab_misc_mnmn.db 107
++vcselab_misc_hsim_name.db 725
+ vcselab_master_hsim_virtintf_info.dat 160
+diff --git a/simv.daidir/vcselab_misc_midd.db b/simv.daidir/vcselab_misc_midd.db
+index fd78d49..e312601 100644
+Binary files a/simv.daidir/vcselab_misc_midd.db and b/simv.daidir/vcselab_misc_midd.db differ
+diff --git a/simv.daidir/vcselab_misc_mnmn.db b/simv.daidir/vcselab_misc_mnmn.db
+index fa96144..b30d98c 100644
+Binary files a/simv.daidir/vcselab_misc_mnmn.db and b/simv.daidir/vcselab_misc_mnmn.db differ
+diff --git a/simv.daidir/vcselab_misc_partition.db b/simv.daidir/vcselab_misc_partition.db
+index 8cc99e1..918c941 100644
+Binary files a/simv.daidir/vcselab_misc_partition.db and b/simv.daidir/vcselab_misc_partition.db differ
+diff --git a/simv.daidir/vcselab_misc_partitionDbg.db b/simv.daidir/vcselab_misc_partitionDbg.db
+index 9c285e9..093a8e2 100644
+Binary files a/simv.daidir/vcselab_misc_partitionDbg.db and b/simv.daidir/vcselab_misc_partitionDbg.db differ
+diff --git a/simv.daidir/vcselab_misc_tCEYNb b/simv.daidir/vcselab_misc_tCEYNb
+index 878fc99..5a65133 100644
+Binary files a/simv.daidir/vcselab_misc_tCEYNb and b/simv.daidir/vcselab_misc_tCEYNb differ
+diff --git a/simv.daidir/vcselab_misc_vpdnodenums b/simv.daidir/vcselab_misc_vpdnodenums
+index fd68476..4f8d558 100644
+Binary files a/simv.daidir/vcselab_misc_vpdnodenums and b/simv.daidir/vcselab_misc_vpdnodenums differ
+diff --git a/tb/bird_driver.sv b/tb/bird_driver.sv
+index 7b3beae..2d401d7 100644
+--- a/tb/bird_driver.sv
++++ b/tb/bird_driver.sv
+@@ -1,62 +1,44 @@
++import bird_pkg::*;
++
+ class bird_driver;
+ 
+   virtual bird_if vif;
++  mailbox #(bird_packet) gen_mb;
+ 
+-  function new(virtual bird_if vif);
++  function new(virtual bird_if vif, mailbox #(bird_packet) gen_mb);
+     this.vif = vif;
++    this.gen_mb = gen_mb;
+   endfunction
+ 
+-  function logic [31:0] build_cfg(bird_packet pkt);
+-
+-    logic [31:0] cfg_word;
+-    cfg_word = 0;
+-
+-    cfg_word[0]     = pkt.traffic_type;
+-    cfg_word[15:8]  = pkt.payload_len;
+-    cfg_word[20:16] = pkt.frag_num;
+-    cfg_word[28:24] = pkt.seq_num;
+-
+-    return cfg_word;
+-
+-  endfunction
+-
+-  task drive_packet(bird_packet pkt);
+-
+-    logic [31:0] cfg_word;
+-    cfg_word = build_cfg(pkt);
+-
+-    wait(vif.rst_n);
++  task run();
+ 
+-    @(posedge vif.clk);
++    bird_packet pkt;
+ 
+-    while (!vif.in_rdy)
+-      @(posedge vif.clk);
++    forever begin
+ 
+-    vif.in_vld  <= 1;
+-    vif.cfg     <= cfg_word;
+-    vif.data_in <= pkt.payload[0];
++      gen_mb.get(pkt);
+ 
+-    for (int i = 1; i < pkt.payload.size(); i++) begin
+       @(posedge vif.clk);
+ 
+-      while (!vif.in_rdy)
++      vif.in_vld <= 1;
++vif.cfg <= {
++  3'b0,                // [31:29]
++  pkt.seq_num,        // [28:24]
++  3'b0,                // [23:21]
++  pkt.frag_num,       // [20:16]
++  pkt.payload_len,    // [15:8]
++  7'b0,               // [7:1]
++  pkt.traffic_type   // [0]
++};
++      for (int i = 0; i < pkt.payload_len; i++) begin
++        vif.data_in <= pkt.payload[i];
+         @(posedge vif.clk);
++      end
+ 
+-      vif.data_in <= pkt.payload[i];
+-    end
+-
+-    @(posedge vif.clk);
++      vif.in_vld <= 0;
+ 
+-    vif.in_vld  <= 0;
+-    vif.data_in <= 0;
+-    vif.cfg     <= 0;
++    end
+ 
+   endtask
+ 
+-  task run();
+-  forever begin
+-    @(posedge vif.clk);
+-  end
+-endtask
+-
+-endclass
++endclass
+\ No newline at end of file
+diff --git a/tb/bird_env.sv b/tb/bird_env.sv
+index 84dc37d..8637f2d 100644
+--- a/tb/bird_env.sv
++++ b/tb/bird_env.sv
+@@ -1,43 +1,87 @@
++import bird_pkg::*;
++
+ class bird_env;
+ 
+-  virtual bird_if vif;
++  mailbox #(bird_packet) gen_mb;
++  mailbox #(bird_packet) act_mb;
++  mailbox #(bird_packet) exp_mb;
+ 
+-  bird_driver        drv;
+-  input_monitor      in_mon;
+-local_monitor      loc_mon;
+-remote_monitor     rem_mon;
+-bird_scoreboard    sb;
++  bird_driver     drv;
++  bird_generator  gen;
++  bird_scoreboard sb;
++  input_monitor   mon;
+ 
+- mailbox #(bird_packet) in_mb;
+-mailbox #(bird_packet) loc_mb;
+-mailbox #(bird_packet) rem_mb;
++  bird_ref_model  rm;   // ✅ FIX: لازم تعريف ref
++
++  virtual bird_if vif;
+ 
+   function new(virtual bird_if vif);
++
+     this.vif = vif;
+ 
+-   in_mb  = new();
+-loc_mb = new();
+-rem_mb = new();
++    gen_mb = new();
++    act_mb = new();
++    exp_mb = new();
++
++    gen = new(gen_mb);
++    drv = new(vif, gen_mb);
++
++    mon = new(vif, act_mb);
+ 
+-  drv     = new(vif);
+-in_mon  = new(vif, in_mb);
+-loc_mon = new(vif, loc_mb);
+-rem_mon = new(vif, rem_mb);
++    sb  = new(act_mb, exp_mb);
+ 
+-    sb = new(in_mb, rem_mb);
++    rm = new();   // ✅ FIX: create reference model
+ 
+   endfunction
+ 
+   task run();
+ 
+-   fork
+-  drv.run();
+-  in_mon.run();
+-  loc_mon.run();
+-  rem_mon.run();
+-  sb.run();
+-join_none
++    bird_packet pkt;
++    bird_packet exp_pkt;
++
++    fork
++
++      // -------------------------
++      // Generator
++      // -------------------------
++      begin
++        gen.run();
++      end
++
++      // -------------------------
++      // Driver
++      // -------------------------
++      begin
++        drv.run();
++      end
++
++      // -------------------------
++      // Monitor (ACTUAL from DUT)
++      // -------------------------
++      begin
++        mon.run();
++      end
++
++      // -------------------------
++      // EXPECTED path (REF MODEL)
++      // -------------------------
++      begin
++        forever begin
++          gen_mb.get(pkt);
++          exp_pkt = rm.process(pkt);
++          exp_mb.put(exp_pkt);
++        end
++      end
++
++      // -------------------------
++      // SCOREBOARD
++      // -------------------------
++      begin
++        sb.run();
++      end
++
++    join_none
+ 
+   endtask
+ 
+-endclass
++endclass
+\ No newline at end of file
+diff --git a/tb/bird_if.sv b/tb/bird_if.sv
+index 3ef2b2e..94a5454 100644
+--- a/tb/bird_if.sv
++++ b/tb/bird_if.sv
+@@ -1,5 +1,6 @@
+-interface bird_if(input logic clk);
++interface bird_if;
+ 
++  logic clk;
+   logic rst_n;
+ 
+   logic        in_vld;
+diff --git a/tb/bird_packet.sv b/tb/bird_packet.sv
+index 177e267..cd5fa6f 100644
+--- a/tb/bird_packet.sv
++++ b/tb/bird_packet.sv
+@@ -1,42 +1,16 @@
++import bird_pkg::*;
+ class bird_packet;
+ 
+-  // 0 = local
+-  // 1 = remote
+-  rand bit traffic_type;
++  bit [7:0] payload[];
++  bit [7:0] crc[1:0];
+ 
+-  // cfg[15:8]
+-  rand bit [7:0] payload_len;
+-
+-  // cfg[20:16]
+-  rand bit [4:0] frag_num;
+-
+-  // cfg[28:24]
+-  rand bit [4:0] seq_num;
+-
+-  // payload bytes
+-  rand byte payload[];
+-
+-  // CRC bytes
+-  byte crc[2];
+- constraint payload_size_c {
+-    payload.size() == payload_len;
+-  }
+-
+-  // display packet info
+-  function void display();
+-
+-    $display("================================");
+-
+-    $display("traffic_type = %0d", traffic_type);
+-
+-    $display("payload_len  = %0d", payload_len);
+-
+-    $display("frag_num     = %0d", frag_num);
+-
+-    $display("seq_num      = %0d", seq_num);
+-
+-    $display("================================");
++  bit [3:0] traffic_type;
++  bit [7:0] payload_len;
++  bit [4:0] frag_num;
++  bit [4:0] seq_num;
+ 
++  function new();
+   endfunction
+ 
+-endclass
+\ No newline at end of file
++endclass
++
+diff --git a/tb/bird_scoreboard.sv b/tb/bird_scoreboard.sv
+index 15b222d..7ead472 100644
+--- a/tb/bird_scoreboard.sv
++++ b/tb/bird_scoreboard.sv
+@@ -1,104 +1,62 @@
++import bird_pkg::*;
++
+ class bird_scoreboard;
+ 
+-  mailbox #(bird_packet) exp_mb;
+   mailbox #(bird_packet) act_mb;
++  mailbox #(bird_packet) exp_mb;
+ 
+-  int pass_count = 0;
+-  int fail_count = 0;
++  bird_ref_model ref_model;
+ 
+-  function new(
+-    mailbox #(bird_packet) exp_mb,
+-    mailbox #(bird_packet) act_mb
+-  );
++  int pass = 0;
++  int fail = 0;
+ 
+-    this.exp_mb = exp_mb;
+-    this.act_mb = act_mb;
++  function new(mailbox #(bird_packet) act_mb,
++               mailbox #(bird_packet) exp_mb);
+ 
+-  endfunction
+-
+-  // -----------------------------
+-  // Compare two packets
+-  // -----------------------------
+-  function bit compare_packets(bird_packet exp, bird_packet act);
++    this.act_mb = act_mb;
++    this.exp_mb = exp_mb;
+ 
+-    if (exp.payload_len != act.payload_len)
+-      return 0;
++    ref_model = new();
+ 
+-    if (exp.seq_num != act.seq_num)
+-      return 0;
++  endfunction
+ 
+-    if (exp.frag_num != act.frag_num)
+-      return 0;
++  function bit compare(bird_packet a, bird_packet b);
+ 
+-    if (exp.traffic_type != act.traffic_type)
+-      return 0;
++    if (a.seq_num != b.seq_num) return 0;
++    if (a.frag_num != b.frag_num) return 0;
++    if (a.payload_len != b.payload_len) return 0;
+ 
+-    for (int i = 0; i < exp.payload_len; i++) begin
+-      if (exp.payload[i] != act.payload[i])
++    foreach (a.payload[i])
++      if (a.payload[i] != b.payload[i])
+         return 0;
+-    end
+-
+-    if (exp.crc[0] != act.crc[0])
+-      return 0;
+-
+-    if (exp.crc[1] != act.crc[1])
+-      return 0;
+ 
+     return 1;
+ 
+   endfunction
+ 
+-  // -----------------------------
+-  // MAIN LOOP
+-  // -----------------------------
+   task run();
+ 
+-    bird_packet exp_pkt;
+-    bird_packet act_pkt;
++    bird_packet act, in, exp;
+ 
+     forever begin
+ 
+-      exp_mb.get(exp_pkt);
+-      act_mb.get(act_pkt);
+-
+-      if (compare_packets(exp_pkt, act_pkt)) begin
++      act_mb.get(act);
++      exp_mb.get(in);
+ 
+-        pass_count++;
+-        $display("[SCOREBOARD] PASS");
++      exp = ref_model.process(in);
+ 
++      if (compare(act, exp)) begin
++        pass++;
++        $display("PASS");
+       end else begin
+-
+-        fail_count++;
+-        $display("[SCOREBOARD] FAIL");
+-        $display("EXPECTED:");
+-        exp_pkt.display();
+-
+-        $display("ACTUAL:");
+-        act_pkt.display();
+-
++        fail++;
++        $display("FAIL");
+       end
+ 
++      $display("PASS=%0d FAIL=%0d", pass, fail);
++
+     end
+ 
+   endtask
+ 
+-  // -----------------------------
+-  // REPORT
+-  // -----------------------------
+-function void report();
+-
+-  $display("================================");
+-  $display("SCOREBOARD SUMMARY");
+-  $display("PASS = %0d", pass_count);
+-  $display("FAIL = %0d", fail_count);
+-
+-  if (fail_count == 0)
+-    $display("TEST STATUS = PASS");
+-  else
+-    $display("TEST STATUS = FAIL");
+-  
+-  $display("================================");
+-
+-endfunction
+-
+-endclass
++endclass
+\ No newline at end of file
+diff --git a/tb/input_monitor.sv b/tb/input_monitor.sv
+index 4e8955a..2efa71c 100644
+--- a/tb/input_monitor.sv
++++ b/tb/input_monitor.sv
+@@ -1,11 +1,11 @@
+ class input_monitor;
+ 
+   virtual bird_if vif;
+-  mailbox #(bird_packet) mon2sb;
++  mailbox #(bird_packet) act_mb;
+ 
+-  function new(virtual bird_if vif, mailbox #(bird_packet) mon2sb);
+-    this.vif    = vif;
+-    this.mon2sb = mon2sb;
++  function new(virtual bird_if vif, mailbox #(bird_packet) act_mb);
++    this.vif = vif;
++    this.act_mb = act_mb;
+   endfunction
+ 
+   task run();
+@@ -14,33 +14,50 @@ class input_monitor;
+ 
+     forever begin
+ 
+-      wait(vif.in_vld && vif.in_rdy);
+-
+-      pkt = new();
++      @(posedge vif.clk);
++
++      if (vif.in_vld && vif.in_rdy) begin
++$display("CFG=%h seq=%0d frag=%0d len=%0d type=%0d",
++         vif.cfg,
++         vif.cfg[28:24],
++         vif.cfg[20:16],
++         vif.cfg[15:8],
++         vif.cfg[0]);
++        pkt = new();
++
++        // -------------------------
++        // FIX: decode cfg correctly
++        // -------------------------
++        pkt.traffic_type = vif.cfg[0];
++        pkt.payload_len  = vif.cfg[15:8];
++        pkt.frag_num     = vif.cfg[20:16];
++        pkt.seq_num      = vif.cfg[28:24];
++
++        pkt.payload = new[pkt.payload_len];
++
++        // -------------------------
++        // FIX: collect ALL bytes
++        // -------------------------
++        for (int i = 0; i < pkt.payload_len; i++) begin
++          pkt.payload[i] = vif.data_in;
++          @(posedge vif.clk);
++        end
++
++        // skip CRC bytes (2 cycles)
++        @(posedge vif.clk);
++        @(posedge vif.clk);
+ 
+-      pkt.traffic_type = vif.cfg[0];
+-      pkt.payload_len  = vif.cfg[15:8];
+-      pkt.frag_num     = vif.cfg[20:16];
+-      pkt.seq_num      = vif.cfg[28:24];
++        pkt.crc[0] = 0;
++        pkt.crc[1] = 0;
+ 
+-      pkt.payload = new[pkt.payload_len];
++        act_mb.put(pkt);
+ 
+-      pkt.payload[0] = vif.data_in;
++        $display("[MON] Packet captured correctly");
+ 
+-      for (int i = 1; i < pkt.payload_len; i++) begin
+-        @(posedge vif.clk);
+-        pkt.payload[i] = vif.data_in;
+       end
+ 
+-      pkt.crc[0] = 8'h00;
+-      pkt.crc[1] = 8'h00;
+-
+-      mon2sb.put(pkt);
+-
+-      $display("[INPUT MONITOR] Packet Captured");
+-
+     end
+ 
+   endtask
+ 
+-endclass
++endclass
+\ No newline at end of file
+diff --git a/tb/local_monitor.sv b/tb/local_monitor.sv
+index da3222f..033c0bc 100644
+--- a/tb/local_monitor.sv
++++ b/tb/local_monitor.sv
+@@ -3,11 +3,8 @@ class local_monitor;
+   virtual bird_if vif;
+   mailbox #(bird_packet) mon2sb;
+ 
+-  function new(
+-    virtual bird_if vif,
+-    mailbox #(bird_packet) mon2sb
+-  );
+-    this.vif    = vif;
++  function new(virtual bird_if vif, mailbox #(bird_packet) mon2sb);
++    this.vif = vif;
+     this.mon2sb = mon2sb;
+   endfunction
+ 
+@@ -17,28 +14,28 @@ class local_monitor;
+ 
+     forever begin
+ 
+-  @(posedge vif.clk);
++      @(posedge vif.clk);
+ 
+-  if (vif.local_vld && vif.local_rdy) begin
++      if (vif.local_vld && vif.local_rdy) begin
+ 
+-    pkt = new();
++        pkt = new();
+ 
+-    pkt.payload_len = 1;
+-    pkt.payload = new[1];
++        pkt.payload_len = 1;
++        pkt.payload = new[1];
+ 
+-    pkt.payload[0] = vif.data_local;
++        pkt.payload[0] = vif.data_local;
+ 
+-    pkt.crc[0] = 8'h00;
+-    pkt.crc[1] = 8'h00;
++        pkt.crc[0] = 0;
++        pkt.crc[1] = 0;
+ 
+-    mon2sb.put(pkt);
++        mon2sb.put(pkt);
+ 
+-    $display("[LOCAL MONITOR] Data Captured");
++        $display("[LOCAL MON] Data captured");
+ 
+-  end
++      end
+ 
+-end
++    end
+ 
+   endtask
+ 
+-endclass
++endclass
+\ No newline at end of file
+diff --git a/tb/remote_monitor.sv b/tb/remote_monitor.sv
+index 6f5f148..48b909d 100644
+--- a/tb/remote_monitor.sv
++++ b/tb/remote_monitor.sv
+@@ -4,60 +4,50 @@ class remote_monitor;
+   mailbox #(bird_packet) mon2sb;
+ 
+   function new(virtual bird_if vif, mailbox #(bird_packet) mon2sb);
+-    this.vif    = vif;
++    this.vif = vif;
+     this.mon2sb = mon2sb;
+   endfunction
+ 
+   task run();
+ 
+     bird_packet pkt;
+-    int frag_count;
++    int idx;
+ 
+-    pkt = new();
+-    frag_count = 0;
++    idx = 0;
++    pkt = null;
+ 
+     forever begin
+ 
+-      wait(vif.remote_vld && vif.remote_rdy);
++      @(posedge vif.clk);
+ 
+-      // ----------------------------
+-      // First fragment → initialize packet
+-      // ----------------------------
+-      if (frag_count == 0) begin
++      if (vif.remote_vld && vif.remote_rdy) begin
+ 
+-        pkt = new();
++$display("[REMOTE] data_remote=%h", vif.data_remote);
++        if (idx == 0) begin
++          pkt = new();
+ 
+-        pkt.seq_num      = vif.data_remote[28:24];
+-        pkt.frag_num     = vif.data_remote[20:16];
+-        pkt.payload_len  = vif.data_remote[15:8];
+-        pkt.traffic_type = vif.data_remote[0];
++          pkt.seq_num      = vif.data_remote[28:24];
++          pkt.frag_num     = vif.data_remote[20:16];
++          pkt.payload_len  = vif.data_remote[15:8];
++          pkt.traffic_type = vif.data_remote[0];
+ 
+-        pkt.payload = new[pkt.payload_len];
++          pkt.payload = new[pkt.payload_len];
++        end
+ 
+-      end
+-
+-      // ----------------------------
+-      // store data (simplified model)
+-      // ----------------------------
+-      pkt.payload[frag_count] = vif.data_remote[7:0];
+-
+-      frag_count++;
+-
+-      // ----------------------------
+-      // end of packet (when all fragments received)
+-      // ----------------------------
+-      if (frag_count == pkt.payload_len) begin
+-
+-        pkt.crc[0] = 8'h00; // placeholder (DUT may provide differently)
+-        pkt.crc[1] = 8'h00;
++        pkt.payload[idx] = vif.data_remote[7:0];
++        idx++;
+ 
+-        mon2sb.put(pkt);
++        if (idx == pkt.payload_len) begin
++          pkt.crc[0] = 0;
++          pkt.crc[1] = 0;
+ 
+-        $display("[REMOTE MONITOR] Packet Reassembled");
++          mon2sb.put(pkt);
+ 
+-        pkt.display();
++          $display("[REMOTE MON] Packet Done");
+ 
+-        frag_count = 0;
++          idx = 0;
++          pkt = null;
++        end
+ 
+       end
+ 
+@@ -65,4 +55,4 @@ class remote_monitor;
+ 
+   endtask
+ 
+-endclass
++endclass
+\ No newline at end of file
+diff --git a/tb/top_tb.sv b/tb/top_tb.sv
+index d4ebdee..c653b81 100644
+--- a/tb/top_tb.sv
++++ b/tb/top_tb.sv
+@@ -2,98 +2,49 @@ module top_tb;
+ 
+   logic clk;
+ 
+-  // clock generation
++  initial clk = 0;
+   always #5 clk = ~clk;
+ 
+-  // interface
+-  bird_if vif(clk);
++  bird_if vif();
++
++  assign vif.clk = clk;
+ 
+-  // DUT
+   bird dut (
+     .clk(clk),
+     .rst_n(vif.rst_n),
+-
+     .in_vld(vif.in_vld),
+     .in_rdy(vif.in_rdy),
+     .data_in(vif.data_in),
+     .cfg(vif.cfg),
+-
+-    .drop_cnt(),
+-
+     .local_vld(vif.local_vld),
+     .local_rdy(vif.local_rdy),
+     .data_local(vif.data_local),
+-
+     .remote_vld(vif.remote_vld),
+     .remote_rdy(vif.remote_rdy),
+     .data_remote(vif.data_remote)
+   );
+ 
+-  // environment
+   bird_env env;
+ 
+   initial begin
+ 
+-    // =========================
+-    // FSDB WAVES (IMPORTANT)
+-    // =========================
+-    $dumpfile("waves.vcd");
+-    $dumpvars(0, top_tb);
+-
+-    // init clock + reset
+-    clk = 0;
+     vif.rst_n = 0;
+-
+-    // ready signals
+-    vif.local_rdy  = 1;
++    vif.local_rdy = 1;
+     vif.remote_rdy = 1;
+ 
+-    // reset time
+-    #20;
+-    vif.rst_n = 1;
++    #20 vif.rst_n = 1;
+ 
+-    // create environment
+     env = new(vif);
+ 
+     fork
+       env.run();
+     join_none
+ 
+-    // =========================
+-    // TEST CASES
+-    // =========================
+-
+-    begin
+-
+-      bird_packet pkt;
+-      pkt = new();
+-
+-      // =========================
+-      // TP1: Local Traffic Routing
+-      // =========================
+-      pkt.traffic_type = 0;   // local
+-      pkt.payload_len  = 3;
+-      pkt.frag_num     = 1;
+-      pkt.seq_num      = 1;
+-
+-      pkt.payload = new[3];
+-      pkt.payload = '{8'hAA, 8'hBB, 8'hCC};
+-
+-      pkt.crc[0] = 8'h00;
+-      pkt.crc[1] = 8'h00;
+-
+-      #10;
+-
+-      env.drv.drive_packet(pkt);
+-
+-    end
+-
+-    // wait for simulation to finish
+-    #200;
++    #2000;
+ 
+     $display("TEST FINISHED");
+     $finish;
+ 
+   end
+ 
+-endmodule
++endmodule
+\ No newline at end of file
+diff --git a/waves.vcd b/waves.vcd
+index 8d3c1cd..a3ad736 100644
+--- a/waves.vcd
++++ b/waves.vcd
+@@ -1,5 +1,5 @@
+ $date
+-	Sun Jun 14 21:19:11 2026
++	Tue Jun 16 21:26:15 2026
+ $end
+ 
+ $version
+@@ -10,13 +10,13 @@ $timescale
+ 	1s
+ $end
+ 
+-$comment Csum: 1 cda51fdb49ceea57 $end
++$comment Csum: 1 9696cd8a191b54d5 $end
+ 
+ 
+ $scope module top_tb $end
+ $var reg 1 ! clk $end
+ 
+-$scope begin unnamed$$_vcs_3 $end
++$scope begin unnamed$$_vcs_4 $end
+ 
+ $scope fork unnamed$$_vcs_0 $end
+ 
+@@ -25,14 +25,14 @@ $upscope $end
+ 
+ $upscope $end
+ 
+-
+-$scope begin unnamed$$_0 $end
+ $upscope $end
+ 
++
++$scope begin unnamed$$_vcs_2 $end
+ $upscope $end
+ 
+ 
+-$scope begin unnamed$$_vcs_2 $end
++$scope begin unnamed$$_vcs_3 $end
+ $upscope $end
+ 
+ 
+@@ -53,30 +53,30 @@ $upscope $end
+ 
+ 
+ $scope module dut $end
+-$var reg 1 " clk $end
+-$var reg 1 # rst_n $end
+-$var reg 1 . in_vld $end
+-$var reg 1 % in_rdy $end
+-$var reg 8 / data_in [7:0] $end
+-$var reg 32 0 cfg [31:0] $end
+-$var reg 16 1 drop_cnt [15:0] $end
+-$var reg 1 2 local_vld $end
+-$var reg 1 ) local_rdy $end
+-$var reg 8 3 data_local [7:0] $end
+-$var reg 1 4 remote_vld $end
+-$var reg 1 , remote_rdy $end
+-$var reg 32 5 data_remote [31:0] $end
+-$var reg 1 6 remote_active $end
+-$var reg 32 7 active_seq [31:0] $end
+-$var reg 32 8 active_max_frag [31:0] $end
+-$var reg 2 9 rx_st [1:0] $end
+-$var reg 1 : rx_is_remote $end
+-$var reg 1 ; rx_drop $end
+-$var reg 32 < rx_seq [31:0] $end
+-$var reg 32 = rx_len [31:0] $end
+-$var reg 32 > rx_frag [31:0] $end
+-$var reg 32 ? payload_left [31:0] $end
+-$var reg 32 @ crc_left [31:0] $end
++$var reg 1 . clk $end
++$var reg 1 / rst_n $end
++$var reg 1 0 in_vld $end
++$var reg 1 1 in_rdy $end
++$var reg 8 2 data_in [7:0] $end
++$var reg 32 3 cfg [31:0] $end
++$var reg 16 4 drop_cnt [15:0] $end
++$var reg 1 5 local_vld $end
++$var reg 1 6 local_rdy $end
++$var reg 8 7 data_local [7:0] $end
++$var reg 1 8 remote_vld $end
++$var reg 1 9 remote_rdy $end
++$var reg 32 : data_remote [31:0] $end
++$var reg 1 ; remote_active $end
++$var reg 32 < active_seq [31:0] $end
++$var reg 32 = active_max_frag [31:0] $end
++$var reg 2 > rx_st [1:0] $end
++$var reg 1 ? rx_is_remote $end
++$var reg 1 @ rx_drop $end
++$var reg 32 A rx_seq [31:0] $end
++$var reg 32 B rx_len [31:0] $end
++$var reg 32 C rx_frag [31:0] $end
++$var reg 32 D payload_left [31:0] $end
++$var reg 32 E crc_left [31:0] $end
+ 
+ $scope begin unnamed$$_vcs_0 $end
+ $upscope $end
+@@ -114,224 +114,1724 @@ b00000000000000000000000000000000 -
+ b00000000 *
+ bxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx '
+ bxxxxxxxx &
+-02
+-04
+-06
++05
++08
+ 0;
+-0:
+-bxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx 0
+-bxxxxxxxx /
+-b00000000 3
+-b00000000000000000000000000000000 5
+-b0000000000000000 1
+-b00 9
+-b00000000000000000000000000000000 8
+-b00000000000000000000000000000000 7
+-b00000000000000000000000000000000 @
+-b00000000000000000000000000000000 ?
+-b00000000000000000000000000000000 >
++0@
++0?
++bxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx 3
++bxxxxxxxx 2
++b00000000 7
++b00000000000000000000000000000000 :
++b0000000000000000 4
++b00 >
+ b00000000000000000000000000000000 =
+ b00000000000000000000000000000000 <
+-x.
+-0"
+-x$
++b00000000000000000000000000000000 E
++b00000000000000000000000000000000 D
++b00000000000000000000000000000000 C
++b00000000000000000000000000000000 B
++b00000000000000000000000000000000 A
+ 1)
+-0(
++16
+ 1,
+-0+
++19
+ 0#
++0/
++11
+ 1%
++0.
++x0
++0"
++x$
++0(
++0+
+ $end
+ #5
+ 1!
++1.
+ 1"
+ #10
+ 0!
++0.
+ 0"
+ #15
+ 1!
++1.
+ 1"
+ #20
+ 1#
++1/
+ 0!
++0.
+ 0"
+ #25
+ 1!
++1.
+ 1"
++1$
++10
++b00000000000000100001000000110000 '
++b00000000000000100001000000110000 3
++b10101010 &
++b10101010 2
+ #30
+ 0!
++0.
+ 0"
+ #35
+ 1!
+-1"
+-1$
+ 1.
+-b00000001000000010000001100000000 '
+-b00000001000000010000001100000000 0
+-b10101010 &
+-b10101010 /
++1"
++1@
++b00000000000000000000000000010000 B
++b00000000000000000000000000000010 C
++b00000000000000000000000000001111 D
++b00000000000000000000000000000010 E
++b0000000000000001 4
++b01 >
++b10111011 &
++b10111011 2
+ #40
+ 0!
++0.
+ 0"
+ #45
+ 1!
++1.
+ 1"
+-b00000000000000000000000000000011 =
+-b00000000000000000000000000000001 >
+-b00000000000000000000000000000001 <
+-b00000000000000000000000000000010 ?
+-b00000000000000000000000000000010 @
+-b10111011 &
+-b10111011 /
+-b01 9
++b00000000000000000000000000001110 D
++b11001100 &
++b11001100 2
+ #50
+ 0!
++0.
+ 0"
+ #55
+ 1!
++1.
+ 1"
+-12
+-1(
+-b10101010 3
+-b10101010 *
+-b11001100 &
+-b11001100 /
+-b00000000000000000000000000000001 ?
++b00000000000000000000000000001101 D
++0$
++00
+ #60
+ 0!
++0.
+ 0"
+ #65
+ 1!
++1.
+ 1"
+-b10111011 3
+-b10111011 *
+-0$
+-0.
+-b00000000 &
+-b00000000 /
+-b00000000000000000000000000000000 '
+-b00000000000000000000000000000000 0
+-b00000000000000000000000000000000 ?
++1$
++10
++b10101010 &
++b10101010 2
+ #70
+ 0!
++0.
+ 0"
+ #75
+ 1!
++1.
+ 1"
+-b11001100 3
+-b11001100 *
++b00000000000000000000000000001100 D
++b10111011 &
++b10111011 2
+ #80
+ 0!
++0.
+ 0"
+ #85
+ 1!
++1.
+ 1"
+-02
+-0(
+-b00000000 3
+-b00000000 *
++b00000000000000000000000000001011 D
++b11001100 &
++b11001100 2
+ #90
+ 0!
++0.
+ 0"
+ #95
+ 1!
++1.
+ 1"
++b00000000000000000000000000001010 D
++0$
++00
+ #100
+ 0!
++0.
+ 0"
+ #105
+ 1!
++1.
+ 1"
++1$
++10

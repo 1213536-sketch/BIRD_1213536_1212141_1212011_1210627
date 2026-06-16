@@ -1,0 +1,6 @@
+{"vcs1":{"timestamp_begin":1781627277.781538165, "rt":0.13, "ut":0.07, "st":0.05}}
+{"SNPS_VCS_INTERNAL_ROOT_START_TIME": 1781627277.380927363}
+{"VCS_COMP_START_TIME": 1781627277.380927363}
+{"VCS_COMP_END_TIME": 1781627277.982117859}
+{"VCS_USER_OPTIONS": "-sverilog -full64 tb/bird_ref_model.sv tb/bird_packet.sv"}
+{"vcs1": {"peak_mem": 314252}}

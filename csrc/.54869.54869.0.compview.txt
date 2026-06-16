@@ -1,0 +1,9 @@
+{"vcs1":{"timestamp_begin":1781633253.627191774, "rt":0.29, "ut":0.16, "st":0.12}}
+{"vcselab":{"timestamp_begin":1781633253.997220718, "rt":0.27, "ut":0.22, "st":0.05}}
+{"link":{"timestamp_begin":1781633254.332788787, "rt":0.23, "ut":0.14, "st":0.10}}
+{"SNPS_VCS_INTERNAL_ROOT_START_TIME": 1781633253.275507738}
+{"VCS_COMP_START_TIME": 1781633253.275507738}
+{"VCS_COMP_END_TIME": 1781633254.625863444}
+{"VCS_USER_OPTIONS": "-sverilog -full64 tb/bird_pkg.sv"}
+{"vcs1": {"peak_mem": 328636}}
+{"stitch_vcselab": {"peak_mem": 210136}}

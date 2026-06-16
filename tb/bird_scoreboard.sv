@@ -1,104 +1,62 @@
+import bird_pkg::*;
+
 class bird_scoreboard;
 
-  mailbox #(bird_packet) exp_mb;
   mailbox #(bird_packet) act_mb;
+  mailbox #(bird_packet) exp_mb;
 
-  int pass_count = 0;
-  int fail_count = 0;
+  bird_ref_model ref_model;
 
-  function new(
-    mailbox #(bird_packet) exp_mb,
-    mailbox #(bird_packet) act_mb
-  );
+  int pass = 0;
+  int fail = 0;
 
-    this.exp_mb = exp_mb;
+  function new(mailbox #(bird_packet) act_mb,
+               mailbox #(bird_packet) exp_mb);
+
     this.act_mb = act_mb;
+    this.exp_mb = exp_mb;
+
+    ref_model = new();
 
   endfunction
 
-  // -----------------------------
-  // Compare two packets
-  // -----------------------------
-  function bit compare_packets(bird_packet exp, bird_packet act);
+  function bit compare(bird_packet a, bird_packet b);
 
-    if (exp.payload_len != act.payload_len)
-      return 0;
+    if (a.seq_num != b.seq_num) return 0;
+    if (a.frag_num != b.frag_num) return 0;
+    if (a.payload_len != b.payload_len) return 0;
 
-    if (exp.seq_num != act.seq_num)
-      return 0;
-
-    if (exp.frag_num != act.frag_num)
-      return 0;
-
-    if (exp.traffic_type != act.traffic_type)
-      return 0;
-
-    for (int i = 0; i < exp.payload_len; i++) begin
-      if (exp.payload[i] != act.payload[i])
+    foreach (a.payload[i])
+      if (a.payload[i] != b.payload[i])
         return 0;
-    end
-
-    if (exp.crc[0] != act.crc[0])
-      return 0;
-
-    if (exp.crc[1] != act.crc[1])
-      return 0;
 
     return 1;
 
   endfunction
 
-  // -----------------------------
-  // MAIN LOOP
-  // -----------------------------
   task run();
 
-    bird_packet exp_pkt;
-    bird_packet act_pkt;
+    bird_packet act, in, exp;
 
     forever begin
 
-      exp_mb.get(exp_pkt);
-      act_mb.get(act_pkt);
+      act_mb.get(act);
+      exp_mb.get(in);
 
-      if (compare_packets(exp_pkt, act_pkt)) begin
+      exp = ref_model.process(in);
 
-        pass_count++;
-        $display("[SCOREBOARD] PASS");
-
+      if (compare(act, exp)) begin
+        pass++;
+        $display("PASS");
       end else begin
-
-        fail_count++;
-        $display("[SCOREBOARD] FAIL");
-        $display("EXPECTED:");
-        exp_pkt.display();
-
-        $display("ACTUAL:");
-        act_pkt.display();
-
+        fail++;
+        $display("FAIL");
       end
+
+      $display("PASS=%0d FAIL=%0d", pass, fail);
 
     end
 
   endtask
-
-  // -----------------------------
-  // REPORT
-  // -----------------------------
-function void report();
-
-  $display("================================");
-  $display("SCOREBOARD SUMMARY");
-  $display("PASS = %0d", pass_count);
-  $display("FAIL = %0d", fail_count);
-
-  if (fail_count == 0)
-    $display("TEST STATUS = PASS");
-  else
-    $display("TEST STATUS = FAIL");
-  
-  $display("================================");
-
-endfunction
 
 endclass

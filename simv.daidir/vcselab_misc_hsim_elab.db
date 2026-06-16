@@ -1,6 +1,6 @@
 psSimBaseName                      	simv
-psLogFileName                      	NULL
-pDaiDir                            	/home/st46/ENCS5337_DV_Project/simv.daidir
+psLogFileName                      	compile.log
+pDaiDir                            	/home/st44/ENCS5337_DV_Project/simv.daidir
 destPath                           	csrc/
 fSharedMaster                      	0
 fHsimPCSharedLibSpecified          	0
@@ -1385,7 +1385,7 @@ fHsimPreInlineInstNum64            	0
 fHsimAutoInstNum64Limit            	-7
 fHsimAutoEnableInstNum64PC         	0
 fHsCgOptFixLeaf                    	1
-fHsimDumpVars                      	1
+fHsimDumpVars                      	0
 fFgpTbReactiveLite                 	1
 fHsimCcnUnion                      	0
 fHsimOnlyElabMod                   	0
