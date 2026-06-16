@@ -1,5 +1,6 @@
-interface bird_if(input logic clk);
+interface bird_if;
 
+  logic clk;
   logic rst_n;
 
   logic        in_vld;
