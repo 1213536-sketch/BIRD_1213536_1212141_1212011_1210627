@@ -1,42 +1,16 @@
+import bird_pkg::*;
 class bird_packet;
 
-  // 0 = local
-  // 1 = remote
-  rand bit traffic_type;
+  bit [7:0] payload[];
+  bit [7:0] crc[1:0];
 
-  // cfg[15:8]
-  rand bit [7:0] payload_len;
+  bit [3:0] traffic_type;
+  bit [7:0] payload_len;
+  bit [4:0] frag_num;
+  bit [4:0] seq_num;
 
-  // cfg[20:16]
-  rand bit [4:0] frag_num;
-
-  // cfg[28:24]
-  rand bit [4:0] seq_num;
-
-  // payload bytes
-  rand byte payload[];
-
-  // CRC bytes
-  byte crc[2];
- constraint payload_size_c {
-    payload.size() == payload_len;
-  }
-
-  // display packet info
-  function void display();
-
-    $display("================================");
-
-    $display("traffic_type = %0d", traffic_type);
-
-    $display("payload_len  = %0d", payload_len);
-
-    $display("frag_num     = %0d", frag_num);
-
-    $display("seq_num      = %0d", seq_num);
-
-    $display("================================");
-
+  function new();
   endfunction
 
 endclass
+
