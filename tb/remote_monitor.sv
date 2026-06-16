@@ -4,60 +4,50 @@ class remote_monitor;
   mailbox #(bird_packet) mon2sb;
 
   function new(virtual bird_if vif, mailbox #(bird_packet) mon2sb);
-    this.vif    = vif;
+    this.vif = vif;
     this.mon2sb = mon2sb;
   endfunction
 
   task run();
 
     bird_packet pkt;
-    int frag_count;
+    int idx;
 
-    pkt = new();
-    frag_count = 0;
+    idx = 0;
+    pkt = null;
 
     forever begin
 
-      wait(vif.remote_vld && vif.remote_rdy);
+      @(posedge vif.clk);
 
-      // ----------------------------
-      // First fragment → initialize packet
-      // ----------------------------
-      if (frag_count == 0) begin
+      if (vif.remote_vld && vif.remote_rdy) begin
 
-        pkt = new();
+$display("[REMOTE] data_remote=%h", vif.data_remote);
+        if (idx == 0) begin
+          pkt = new();
 
-        pkt.seq_num      = vif.data_remote[28:24];
-        pkt.frag_num     = vif.data_remote[20:16];
-        pkt.payload_len  = vif.data_remote[15:8];
-        pkt.traffic_type = vif.data_remote[0];
+          pkt.seq_num      = vif.data_remote[28:24];
+          pkt.frag_num     = vif.data_remote[20:16];
+          pkt.payload_len  = vif.data_remote[15:8];
+          pkt.traffic_type = vif.data_remote[0];
 
-        pkt.payload = new[pkt.payload_len];
+          pkt.payload = new[pkt.payload_len];
+        end
 
-      end
+        pkt.payload[idx] = vif.data_remote[7:0];
+        idx++;
 
-      // ----------------------------
-      // store data (simplified model)
-      // ----------------------------
-      pkt.payload[frag_count] = vif.data_remote[7:0];
+        if (idx == pkt.payload_len) begin
+          pkt.crc[0] = 0;
+          pkt.crc[1] = 0;
 
-      frag_count++;
+          mon2sb.put(pkt);
 
-      // ----------------------------
-      // end of packet (when all fragments received)
-      // ----------------------------
-      if (frag_count == pkt.payload_len) begin
+          $display("[REMOTE MON] Packet Done");
 
-        pkt.crc[0] = 8'h00; // placeholder (DUT may provide differently)
-        pkt.crc[1] = 8'h00;
-
-        mon2sb.put(pkt);
-
-        $display("[REMOTE MONITOR] Packet Reassembled");
-
-        pkt.display();
-
-        frag_count = 0;
+          idx = 0;
+          pkt = null;
+        end
 
       end
 
