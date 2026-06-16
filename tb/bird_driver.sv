@@ -1,62 +1,44 @@
+import bird_pkg::*;
+
 class bird_driver;
 
   virtual bird_if vif;
+  mailbox #(bird_packet) gen_mb;
 
-  function new(virtual bird_if vif);
+  function new(virtual bird_if vif, mailbox #(bird_packet) gen_mb);
     this.vif = vif;
+    this.gen_mb = gen_mb;
   endfunction
-
-  function logic [31:0] build_cfg(bird_packet pkt);
-
-    logic [31:0] cfg_word;
-    cfg_word = 0;
-
-    cfg_word[0]     = pkt.traffic_type;
-    cfg_word[15:8]  = pkt.payload_len;
-    cfg_word[20:16] = pkt.frag_num;
-    cfg_word[28:24] = pkt.seq_num;
-
-    return cfg_word;
-
-  endfunction
-
-  task drive_packet(bird_packet pkt);
-
-    logic [31:0] cfg_word;
-    cfg_word = build_cfg(pkt);
-
-    wait(vif.rst_n);
-
-    @(posedge vif.clk);
-
-    while (!vif.in_rdy)
-      @(posedge vif.clk);
-
-    vif.in_vld  <= 1;
-    vif.cfg     <= cfg_word;
-    vif.data_in <= pkt.payload[0];
-
-    for (int i = 1; i < pkt.payload.size(); i++) begin
-      @(posedge vif.clk);
-
-      while (!vif.in_rdy)
-        @(posedge vif.clk);
-
-      vif.data_in <= pkt.payload[i];
-    end
-
-    @(posedge vif.clk);
-
-    vif.in_vld  <= 0;
-    vif.data_in <= 0;
-    vif.cfg     <= 0;
-
-  endtask
 
   task run();
-  forever begin
-    @(posedge vif.clk);
-  end
-endtask
+
+    bird_packet pkt;
+
+    forever begin
+
+      gen_mb.get(pkt);
+
+      @(posedge vif.clk);
+
+      vif.in_vld <= 1;
+vif.cfg <= {
+  3'b0,                // [31:29]
+  pkt.seq_num,        // [28:24]
+  3'b0,                // [23:21]
+  pkt.frag_num,       // [20:16]
+  pkt.payload_len,    // [15:8]
+  7'b0,               // [7:1]
+  pkt.traffic_type   // [0]
+};
+      for (int i = 0; i < pkt.payload_len; i++) begin
+        vif.data_in <= pkt.payload[i];
+        @(posedge vif.clk);
+      end
+
+      vif.in_vld <= 0;
+
+    end
+
+  endtask
 
 endclass
