@@ -1,11 +1,11 @@
 class input_monitor;
 
   virtual bird_if vif;
-  mailbox #(bird_packet) mon2sb;
+  mailbox #(bird_packet) act_mb;
 
-  function new(virtual bird_if vif, mailbox #(bird_packet) mon2sb);
-    this.vif    = vif;
-    this.mon2sb = mon2sb;
+  function new(virtual bird_if vif, mailbox #(bird_packet) act_mb);
+    this.vif = vif;
+    this.act_mb = act_mb;
   endfunction
 
   task run();
@@ -14,30 +14,47 @@ class input_monitor;
 
     forever begin
 
-      wait(vif.in_vld && vif.in_rdy);
+      @(posedge vif.clk);
 
-      pkt = new();
+      if (vif.in_vld && vif.in_rdy) begin
+$display("CFG=%h seq=%0d frag=%0d len=%0d type=%0d",
+         vif.cfg,
+         vif.cfg[28:24],
+         vif.cfg[20:16],
+         vif.cfg[15:8],
+         vif.cfg[0]);
+        pkt = new();
 
-      pkt.traffic_type = vif.cfg[0];
-      pkt.payload_len  = vif.cfg[15:8];
-      pkt.frag_num     = vif.cfg[20:16];
-      pkt.seq_num      = vif.cfg[28:24];
+        // -------------------------
+        // FIX: decode cfg correctly
+        // -------------------------
+        pkt.traffic_type = vif.cfg[0];
+        pkt.payload_len  = vif.cfg[15:8];
+        pkt.frag_num     = vif.cfg[20:16];
+        pkt.seq_num      = vif.cfg[28:24];
 
-      pkt.payload = new[pkt.payload_len];
+        pkt.payload = new[pkt.payload_len];
 
-      pkt.payload[0] = vif.data_in;
+        // -------------------------
+        // FIX: collect ALL bytes
+        // -------------------------
+        for (int i = 0; i < pkt.payload_len; i++) begin
+          pkt.payload[i] = vif.data_in;
+          @(posedge vif.clk);
+        end
 
-      for (int i = 1; i < pkt.payload_len; i++) begin
+        // skip CRC bytes (2 cycles)
         @(posedge vif.clk);
-        pkt.payload[i] = vif.data_in;
+        @(posedge vif.clk);
+
+        pkt.crc[0] = 0;
+        pkt.crc[1] = 0;
+
+        act_mb.put(pkt);
+
+        $display("[MON] Packet captured correctly");
+
       end
-
-      pkt.crc[0] = 8'h00;
-      pkt.crc[1] = 8'h00;
-
-      mon2sb.put(pkt);
-
-      $display("[INPUT MONITOR] Packet Captured");
 
     end
 
