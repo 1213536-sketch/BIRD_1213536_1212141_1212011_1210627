@@ -1,3 +1,3 @@
 Command Line: /usr/synopsys/vcs/T-2022.06-SP2/linux64/bin/elabcom -logdir simv.daidir/elabcomLog -simvdaidir simv.daidir -lib simv.daidir/work -saveLevel -elab simv.daidir/kdb -simflow -simdir simv.daidir/kdb_libs -topfile simv.daidir/.elabcomTopFile -pkgfile simv.daidir/.elabcomPkgFile -ssv -ssy -Lf work +disable_message+C00380+C00381 +disable_message+C00388+C00389
 uname(Linux synopsys.stbzu.edu 3.10.0-1160.83.1.el7.x86_64 #1 SMP Mon Dec 19 10:44:06 UTC 2022 x86_64)
-au time 0.051141 0.024264 0.018426 delta 90800128 90800128 total 272003072 272003072
+au time 0.040403 0.013747 0.018476 delta 90910720 90910720 total 272113664 272113664

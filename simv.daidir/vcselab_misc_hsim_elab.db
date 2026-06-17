@@ -1,6 +1,6 @@
 psSimBaseName                      	simv
 psLogFileName                      	compile.log
-pDaiDir                            	/home/st44/ENCS5337_DV_Project/simv.daidir
+pDaiDir                            	/home/st68/ENCS5337_DV_Project/simv.daidir
 destPath                           	csrc/
 fSharedMaster                      	0
 fHsimPCSharedLibSpecified          	0
@@ -644,7 +644,7 @@ fHsimMdbPartInputLimit             	1
 fHsimSdfData                       	0
 fHsimDesignHasSdfAnnotation        	0
 fHsimDesignUsesParallelVcs         	0
-fHsimCMEnabled                     	0
+fHsimCMEnabled                     	1
 fHsimNotDelRefData                 	0
 fGblPulseDecayData                 	0
 fGblPulsePartCtrl                  	0
@@ -1476,6 +1476,6 @@ fHsMarkSlowSigConstForceDiag       	0
 hsoptDiagDirPath                   	diag_dir/
 fHsimCongruencyConfigFile          	0
 fHsimCongruencyLogFile             	0
-fHsimCoverageEnabled               	0
-fHsimCoverageOptions               	0
-fHsimCoverageDir                   	NULL
+fHsimCoverageEnabled               	1
+fHsimCoverageOptions               	3
+fHsimCoverageDir                   	simv.vdb

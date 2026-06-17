@@ -1,6 +1,0 @@
-{"vcs1":{"timestamp_begin":1781626958.148314549, "rt":0.13, "ut":0.08, "st":0.04}}
-{"SNPS_VCS_INTERNAL_ROOT_START_TIME": 1781626957.579829101}
-{"VCS_COMP_START_TIME": 1781626957.579829101}
-{"VCS_COMP_END_TIME": 1781626958.342953407}
-{"VCS_USER_OPTIONS": "-full64 -sverilog -ntb_opts sv tb/bird_pkg.sv tb/bird_if.sv tb/bird_packet.sv tb/bird_ref_model.sv tb/bird_driver.sv tb/bird_generator.sv tb/input_monitor.sv tb/local_monitor.sv tb/remote_monitor.sv tb/bird_scoreboard.sv tb/bird_env.sv tb/top_tb.sv bird.sv"}
-{"vcs1": {"peak_mem": 314272}}

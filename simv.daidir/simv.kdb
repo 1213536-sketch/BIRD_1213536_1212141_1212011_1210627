@@ -1,7 +1,7 @@
 rc file Version 1.0
 
 [Design]
-COMPILE_PATH=/home/st44/ENCS5337_DV_Project
+COMPILE_PATH=/home/st68/ENCS5337_DV_Project
 VCS_HOME=/usr/synopsys/vcs/T-2022.06-SP2
 VERDI_HOME=/usr/synopsys/verdi/T-2022.06-SP2
 SystemC=FALSE

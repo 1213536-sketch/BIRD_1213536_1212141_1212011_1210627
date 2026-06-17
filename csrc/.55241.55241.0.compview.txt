@@ -1,9 +1,0 @@
-{"vcs1":{"timestamp_begin":1781460206.144408472, "rt":0.49, "ut":0.31, "st":0.13}}
-{"vcselab":{"timestamp_begin":1781460206.722439096, "rt":0.42, "ut":0.33, "st":0.09}}
-{"link":{"timestamp_begin":1781460207.202953836, "rt":0.18, "ut":0.12, "st":0.06}}
-{"SNPS_VCS_INTERNAL_ROOT_START_TIME": 1781460205.592018183}
-{"VCS_COMP_START_TIME": 1781460205.592018183}
-{"VCS_COMP_END_TIME": 1781460207.462217685}
-{"VCS_USER_OPTIONS": "-full64 -sverilog tb/bird_packet.sv tb/bird_if.sv tb/bird_driver.sv tb/bird_scoreboard.sv tb/input_monitor.sv tb/local_monitor.sv tb/remote_monitor.sv tb/bird_env.sv tb/top_tb.sv bird.sv -o simv"}
-{"vcs1": {"peak_mem": 332876}}
-{"stitch_vcselab": {"peak_mem": 226440}}

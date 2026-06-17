@@ -19,8 +19,9 @@ PRODUCT_TIMESTAMP=product_timestamp
 # Path to runtime library
 DEPLIBS=
 VCSUCLI=-lvcsucli
+BALIBS= 
 LLVM_FLAGS=
-RUNTIME=-lvcsnew -lsimprofile -luclinative /usr/synopsys/vcs/T-2022.06-SP2/linux64/lib/vcs_tls.o $(DEPLIBS) 
+RUNTIME=-lvcsnew -lsimprofile -lreader_common /usr/synopsys/vcs/T-2022.06-SP2/linux64/lib/libBA.a -luclinative /usr/synopsys/vcs/T-2022.06-SP2/linux64/lib/vcs_tls.o $(DEPLIBS) 
 
 VCS_SAVE_RESTORE_OBJ=/usr/synopsys/vcs/T-2022.06-SP2/linux64/lib/vcs_save_restore_new.o
 
@@ -121,6 +122,6 @@ $(PRODUCT_TIMESTAMP) : product_clean_order
 	@touch $(PRODUCT_TIMESTAMP)
 	@-if [ -d ./objs ]; then find ./objs -type d -empty -delete; fi
 
-$(PRODUCT) :  $(LD_VERSION_CHECK)  $(OBJS) $(DOTLIBS) $(DPI_STUB_OBJS) $(PLI_STUB_OBJS) $(CMODLIB) $(SYSC_STUB_LIB) $(DPI_ALLOW_MAIN_SO)  /usr/synopsys/vcs/T-2022.06-SP2/linux64/lib/libvcsnew.so /usr/synopsys/vcs/T-2022.06-SP2/linux64/lib/libsimprofile.so /usr/synopsys/vcs/T-2022.06-SP2/linux64/lib/libuclinative.so /usr/synopsys/vcs/T-2022.06-SP2/linux64/lib/vcs_tls.o /usr/synopsys/vcs/T-2022.06-SP2/linux64/lib/libvcsucli.so  $(VCS_SAVE_RESTORE_OBJ) 
+$(PRODUCT) :  $(LD_VERSION_CHECK)  $(OBJS) $(DOTLIBS) $(DPI_STUB_OBJS) $(PLI_STUB_OBJS) $(CMODLIB) $(SYSC_STUB_LIB) $(DPI_ALLOW_MAIN_SO)  /usr/synopsys/vcs/T-2022.06-SP2/linux64/lib/libvcsnew.so /usr/synopsys/vcs/T-2022.06-SP2/linux64/lib/libsimprofile.so /usr/synopsys/vcs/T-2022.06-SP2/linux64/lib/libreader_common.so /usr/synopsys/vcs/T-2022.06-SP2/linux64/lib/libBA.a /usr/synopsys/vcs/T-2022.06-SP2/linux64/lib/libuclinative.so /usr/synopsys/vcs/T-2022.06-SP2/linux64/lib/vcs_tls.o /usr/synopsys/vcs/T-2022.06-SP2/linux64/lib/libvcsucli.so  $(VCS_SAVE_RESTORE_OBJ) 
 	@touch $(PRODUCT)
 

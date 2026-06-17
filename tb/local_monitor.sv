@@ -2,15 +2,18 @@ class local_monitor;
 
   virtual bird_if vif;
   mailbox #(bird_packet) mon2sb;
+  mailbox #(bird_packet) exp_mb;
 
-  function new(virtual bird_if vif, mailbox #(bird_packet) mon2sb);
+  function new(virtual bird_if vif, mailbox #(bird_packet) mon2sb, mailbox #(bird_packet) exp_mb);
     this.vif = vif;
     this.mon2sb = mon2sb;
+    this.exp_mb = exp_mb;
   endfunction
 
   task run();
 
     bird_packet pkt;
+    int payload_index = 0;
 
     forever begin
 
@@ -20,15 +23,23 @@ class local_monitor;
 
         pkt = new();
 
-        pkt.payload_len = 1;
-        pkt.payload = new[1];
+        pkt.seq_num = 1;
+        pkt.frag_num = 1;
+        pkt.payload_len = 24;
+        pkt.payload = new[24];
 
-        pkt.payload[0] = vif.data_local;
+        // ✅ اقرأ الحمولة كاملة من data_local
+        for (int i = 0; i < 24; i++) begin
+          pkt.payload[i] = vif.data_local;
+          $display("[LOCAL MON] payload[%0d]=%0d", i, vif.data_local);
+          @(posedge vif.clk);
+        end
 
         pkt.crc[0] = 0;
         pkt.crc[1] = 0;
 
         mon2sb.put(pkt);
+        exp_mb.put(pkt);
 
         $display("[LOCAL MON] Data captured");
 

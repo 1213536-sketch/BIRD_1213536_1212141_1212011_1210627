@@ -1,0 +1,593 @@
+Command: /home/st68/ENCS5337_DV_Project/./simv -cm line+cond -l run.log
+Chronologic VCS simulator copyright 1991-2022
+Contains Synopsys proprietary information.
+Compiler version T-2022.06-SP2_Full64; Runtime version T-2022.06-SP2_Full64;  Jun 17 23:27 2026
+ssssssssssssssssss state moved to idle
+ssssssssssssssssss state moved to idle
+ssssssssssssssssss state moved to idle
+[DRIVER] Waiting for packet from generator...
+[GEN] Sent LOCAL packet seq=1 frag=1 len=24
+[GEN] Sent LOCAL packet seq=1 frag=1 len=24
+[GEN] Sent LOCAL packet seq=1 frag=1 len=24
+[GEN] Sent LOCAL packet seq=1 frag=1 len=24
+[GEN] Sent LOCAL packet seq=1 frag=1 len=24
+
+[GEN] Sending REMOTE packet (3 fragments) ...
+[GEN] Sent REMOTE frag[1]: seq=2 len=8
+[GEN] Sent REMOTE frag[2]: seq=2 len=8
+[GEN] Sent REMOTE frag[3]: seq=2 len=8
+
+[GEN] Sending REMOTE packet (out-of-order fragments) ...
+[GEN] Sent REMOTE frag[3]: seq=3 len=8 (out-of-order)
+[GEN] Sent REMOTE frag[1]: seq=3 len=8
+[GEN] Sent REMOTE frag[2]: seq=3 len=8
+[GEN] All packets sent.
+
+[SCOREBOARD] Waiting for packets...
+[DRIVER] Received packet seq=1 frag=1 len=24
+[DRIVER] Sending cfg=xxxxxxxx seq=1 frag=1 len=24 type=0
+==================== Delete cur_frag_payload =========== idle state now
+push new local pkt first byte 0
+ssssssssssssssssss state moved to payload
+CFG=01011800 seq=1 frag=1 len=24 type=0
+push payload byte 1
+[LOCAL MON] payload[0]=0
+push payload byte 2
+[LOCAL MON] payload[1]=1
+push payload byte 3
+[LOCAL MON] payload[2]=2
+push payload byte 4
+[LOCAL MON] payload[3]=3
+push payload byte 5
+[LOCAL MON] payload[4]=4
+push payload byte 6
+[LOCAL MON] payload[5]=5
+push payload byte 7
+[LOCAL MON] payload[6]=6
+push payload byte 8
+[LOCAL MON] payload[7]=7
+push payload byte 9
+[LOCAL MON] payload[8]=8
+push payload byte a
+[LOCAL MON] payload[9]=9
+push payload byte b
+[LOCAL MON] payload[10]=10
+push payload byte c
+[LOCAL MON] payload[11]=11
+push payload byte d
+[LOCAL MON] payload[12]=12
+push payload byte e
+[LOCAL MON] payload[13]=13
+push payload byte f
+[LOCAL MON] payload[14]=14
+push payload byte 10
+[LOCAL MON] payload[15]=15
+push payload byte 11
+[LOCAL MON] payload[16]=16
+push payload byte 12
+[LOCAL MON] payload[17]=17
+push payload byte 13
+[LOCAL MON] payload[18]=18
+push payload byte 14
+[LOCAL MON] payload[19]=19
+push payload byte 15
+[LOCAL MON] payload[20]=20
+                 255 .........................crc_left 2  entered state moved to crc 16
+push crc byte 16
+[LOCAL MON] payload[21]=21
+                 265 .........................crc_left 1  entered state moved to crc 17
+push crc byte 17
+ssssssssssssssssss state moved to idle
+[LOCAL MON] payload[22]=22
+[DRIVER] Waiting for packet from generator...
+[DRIVER] Received packet seq=1 frag=1 len=24
+[LOCAL MON] payload[23]=23
+[DRIVER] Sending cfg=00000000 seq=1 frag=1 len=24 type=0
+==================== Delete cur_frag_payload =========== idle state now
+push new local pkt first byte 0
+ssssssssssssssssss state moved to payload
+[LOCAL MON] Data captured
+push payload byte 1
+[MON] Packet captured correctly
+[LOCAL MON] payload[0]=0
+[SCOREBOARD] Received act packet
+[SCOREBOARD] Waiting for exp packet...
+[SCOREBOARD] Received exp packet
+[SCOREBOARD] Waiting for drop...
+[SCOREBOARD] Received drop = 0
+[SCOREBOARD] act.seq_num=1 exp.seq_num=1
+[SCOREBOARD] act.frag_num=1 exp.frag_num=1
+[SCOREBOARD] act.payload_len=24 exp.payload_len=24
+[SCOREBOARD] act.payload[0]=0 exp.payload[0]=0
+[SCOREBOARD] act.payload[1]=1 exp.payload[1]=1
+[SCOREBOARD] Comparing act and exp...
+PASS
+PASS=1 FAIL=0
+[SCOREBOARD] Waiting for packets...
+push payload byte 2
+CFG=01011800 seq=1 frag=1 len=24 type=0
+[LOCAL MON] payload[1]=1
+push payload byte 3
+[LOCAL MON] payload[2]=2
+push payload byte 4
+[LOCAL MON] payload[3]=3
+push payload byte 5
+[LOCAL MON] payload[4]=4
+push payload byte 6
+[LOCAL MON] payload[5]=5
+push payload byte 7
+[LOCAL MON] payload[6]=6
+push payload byte 8
+[LOCAL MON] payload[7]=7
+push payload byte 9
+[LOCAL MON] payload[8]=8
+push payload byte a
+[LOCAL MON] payload[9]=9
+push payload byte b
+[LOCAL MON] payload[10]=10
+push payload byte c
+[LOCAL MON] payload[11]=11
+push payload byte d
+[LOCAL MON] payload[12]=12
+push payload byte e
+[LOCAL MON] payload[13]=13
+push payload byte f
+[LOCAL MON] payload[14]=14
+push payload byte 10
+[LOCAL MON] payload[15]=15
+push payload byte 11
+[LOCAL MON] payload[16]=16
+push payload byte 12
+[LOCAL MON] payload[17]=17
+push payload byte 13
+[LOCAL MON] payload[18]=18
+push payload byte 14
+[LOCAL MON] payload[19]=19
+push payload byte 15
+[LOCAL MON] payload[20]=20
+                 505 .........................crc_left 2  entered state moved to crc 16
+push crc byte 16
+[LOCAL MON] payload[21]=21
+                 515 .........................crc_left 1  entered state moved to crc 17
+push crc byte 17
+ssssssssssssssssss state moved to idle
+[LOCAL MON] payload[22]=22
+[DRIVER] Waiting for packet from generator...
+[DRIVER] Received packet seq=1 frag=1 len=24
+[LOCAL MON] payload[23]=23
+[DRIVER] Sending cfg=00000000 seq=1 frag=1 len=24 type=0
+==================== Delete cur_frag_payload =========== idle state now
+push new local pkt first byte 0
+ssssssssssssssssss state moved to payload
+[LOCAL MON] Data captured
+push payload byte 1
+[LOCAL MON] payload[0]=0
+push payload byte 2
+[LOCAL MON] payload[1]=1
+push payload byte 3
+[MON] Packet captured correctly
+[LOCAL MON] payload[2]=2
+[SCOREBOARD] Received act packet
+[SCOREBOARD] Waiting for exp packet...
+[SCOREBOARD] Received exp packet
+[SCOREBOARD] Waiting for drop...
+[SCOREBOARD] Received drop = 0
+[SCOREBOARD] act.seq_num=1 exp.seq_num=1
+[SCOREBOARD] act.frag_num=1 exp.frag_num=1
+[SCOREBOARD] act.payload_len=24 exp.payload_len=24
+[SCOREBOARD] act.payload[0]=2 exp.payload[0]=2
+[SCOREBOARD] act.payload[1]=3 exp.payload[1]=3
+[SCOREBOARD] Comparing act and exp...
+PASS
+PASS=2 FAIL=0
+[SCOREBOARD] Waiting for packets...
+push payload byte 4
+CFG=01011800 seq=1 frag=1 len=24 type=0
+[LOCAL MON] payload[3]=3
+push payload byte 5
+[LOCAL MON] payload[4]=4
+push payload byte 6
+[LOCAL MON] payload[5]=5
+push payload byte 7
+[LOCAL MON] payload[6]=6
+push payload byte 8
+[LOCAL MON] payload[7]=7
+push payload byte 9
+[LOCAL MON] payload[8]=8
+push payload byte a
+[LOCAL MON] payload[9]=9
+push payload byte b
+[LOCAL MON] payload[10]=10
+push payload byte c
+[LOCAL MON] payload[11]=11
+push payload byte d
+[LOCAL MON] payload[12]=12
+push payload byte e
+[LOCAL MON] payload[13]=13
+push payload byte f
+[LOCAL MON] payload[14]=14
+push payload byte 10
+[LOCAL MON] payload[15]=15
+push payload byte 11
+[LOCAL MON] payload[16]=16
+push payload byte 12
+[LOCAL MON] payload[17]=17
+push payload byte 13
+[LOCAL MON] payload[18]=18
+push payload byte 14
+[LOCAL MON] payload[19]=19
+push payload byte 15
+[LOCAL MON] payload[20]=20
+                 755 .........................crc_left 2  entered state moved to crc 16
+push crc byte 16
+[LOCAL MON] payload[21]=21
+                 765 .........................crc_left 1  entered state moved to crc 17
+push crc byte 17
+ssssssssssssssssss state moved to idle
+[LOCAL MON] payload[22]=22
+[DRIVER] Waiting for packet from generator...
+[DRIVER] Received packet seq=1 frag=1 len=24
+[LOCAL MON] payload[23]=23
+[DRIVER] Sending cfg=00000000 seq=1 frag=1 len=24 type=0
+==================== Delete cur_frag_payload =========== idle state now
+push new local pkt first byte 0
+ssssssssssssssssss state moved to payload
+[LOCAL MON] Data captured
+push payload byte 1
+[LOCAL MON] payload[0]=0
+push payload byte 2
+[LOCAL MON] payload[1]=1
+push payload byte 3
+[LOCAL MON] payload[2]=2
+push payload byte 4
+[LOCAL MON] payload[3]=3
+push payload byte 5
+[MON] Packet captured correctly
+[LOCAL MON] payload[4]=4
+[SCOREBOARD] Received act packet
+[SCOREBOARD] Waiting for exp packet...
+[SCOREBOARD] Received exp packet
+[SCOREBOARD] Waiting for drop...
+[SCOREBOARD] Received drop = 0
+[SCOREBOARD] act.seq_num=1 exp.seq_num=1
+[SCOREBOARD] act.frag_num=1 exp.frag_num=1
+[SCOREBOARD] act.payload_len=24 exp.payload_len=24
+[SCOREBOARD] act.payload[0]=4 exp.payload[0]=4
+[SCOREBOARD] act.payload[1]=5 exp.payload[1]=5
+[SCOREBOARD] Comparing act and exp...
+PASS
+PASS=3 FAIL=0
+[SCOREBOARD] Waiting for packets...
+push payload byte 6
+CFG=01011800 seq=1 frag=1 len=24 type=0
+[LOCAL MON] payload[5]=5
+push payload byte 7
+[LOCAL MON] payload[6]=6
+push payload byte 8
+[LOCAL MON] payload[7]=7
+push payload byte 9
+[LOCAL MON] payload[8]=8
+push payload byte a
+[LOCAL MON] payload[9]=9
+push payload byte b
+[LOCAL MON] payload[10]=10
+push payload byte c
+[LOCAL MON] payload[11]=11
+push payload byte d
+[LOCAL MON] payload[12]=12
+push payload byte e
+[LOCAL MON] payload[13]=13
+push payload byte f
+[LOCAL MON] payload[14]=14
+push payload byte 10
+[LOCAL MON] payload[15]=15
+push payload byte 11
+[LOCAL MON] payload[16]=16
+push payload byte 12
+[LOCAL MON] payload[17]=17
+push payload byte 13
+[LOCAL MON] payload[18]=18
+push payload byte 14
+[LOCAL MON] payload[19]=19
+push payload byte 15
+[LOCAL MON] payload[20]=20
+                1005 .........................crc_left 2  entered state moved to crc 16
+push crc byte 16
+[LOCAL MON] payload[21]=21
+                1015 .........................crc_left 1  entered state moved to crc 17
+push crc byte 17
+ssssssssssssssssss state moved to idle
+[LOCAL MON] payload[22]=22
+[DRIVER] Waiting for packet from generator...
+[DRIVER] Received packet seq=1 frag=1 len=24
+[LOCAL MON] payload[23]=23
+[DRIVER] Sending cfg=00000000 seq=1 frag=1 len=24 type=0
+==================== Delete cur_frag_payload =========== idle state now
+push new local pkt first byte 0
+ssssssssssssssssss state moved to payload
+[LOCAL MON] Data captured
+push payload byte 1
+[LOCAL MON] payload[0]=0
+push payload byte 2
+[LOCAL MON] payload[1]=1
+push payload byte 3
+[LOCAL MON] payload[2]=2
+push payload byte 4
+[LOCAL MON] payload[3]=3
+push payload byte 5
+[LOCAL MON] payload[4]=4
+push payload byte 6
+[LOCAL MON] payload[5]=5
+push payload byte 7
+[MON] Packet captured correctly
+[LOCAL MON] payload[6]=6
+[SCOREBOARD] Received act packet
+[SCOREBOARD] Waiting for exp packet...
+[SCOREBOARD] Received exp packet
+[SCOREBOARD] Waiting for drop...
+[SCOREBOARD] Received drop = 0
+[SCOREBOARD] act.seq_num=1 exp.seq_num=1
+[SCOREBOARD] act.frag_num=1 exp.frag_num=1
+[SCOREBOARD] act.payload_len=24 exp.payload_len=24
+[SCOREBOARD] act.payload[0]=6 exp.payload[0]=6
+[SCOREBOARD] act.payload[1]=7 exp.payload[1]=7
+[SCOREBOARD] Comparing act and exp...
+PASS
+PASS=4 FAIL=0
+[SCOREBOARD] Waiting for packets...
+push payload byte 8
+CFG=01011800 seq=1 frag=1 len=24 type=0
+[LOCAL MON] payload[7]=7
+push payload byte 9
+[LOCAL MON] payload[8]=8
+push payload byte a
+[LOCAL MON] payload[9]=9
+push payload byte b
+[LOCAL MON] payload[10]=10
+push payload byte c
+[LOCAL MON] payload[11]=11
+push payload byte d
+[LOCAL MON] payload[12]=12
+push payload byte e
+[LOCAL MON] payload[13]=13
+push payload byte f
+[LOCAL MON] payload[14]=14
+push payload byte 10
+[LOCAL MON] payload[15]=15
+push payload byte 11
+[LOCAL MON] payload[16]=16
+push payload byte 12
+[LOCAL MON] payload[17]=17
+push payload byte 13
+[LOCAL MON] payload[18]=18
+push payload byte 14
+[LOCAL MON] payload[19]=19
+push payload byte 15
+[LOCAL MON] payload[20]=20
+                1255 .........................crc_left 2  entered state moved to crc 16
+push crc byte 16
+[LOCAL MON] payload[21]=21
+                1265 .........................crc_left 1  entered state moved to crc 17
+push crc byte 17
+ssssssssssssssssss state moved to idle
+[LOCAL MON] payload[22]=22
+[DRIVER] Waiting for packet from generator...
+[DRIVER] Received packet seq=2 frag=1 len=8
+[LOCAL MON] payload[23]=23
+[DRIVER] Sending cfg=00000000 seq=2 frag=1 len=8 type=1
+==================== Delete cur_frag_payload =========== idle state now
+push new local pkt first byte 64
+ssssssssssssssssss state moved to payload
+[LOCAL MON] Data captured
+push payload byte 65
+[LOCAL MON] payload[0]=100
+push payload byte 66
+[LOCAL MON] payload[1]=101
+push payload byte 67
+[LOCAL MON] payload[2]=102
+push payload byte 68
+[LOCAL MON] payload[3]=103
+push payload byte 69
+[LOCAL MON] payload[4]=104
+push payload byte 6a
+[LOCAL MON] payload[5]=105
+push payload byte 6b
+[LOCAL MON] payload[6]=106
+[DRIVER] Waiting for packet from generator...
+[DRIVER] Received packet seq=2 frag=2 len=8
+[LOCAL MON] payload[7]=107
+[DRIVER] Sending cfg=00000000 seq=2 frag=2 len=8 type=1
+push payload byte c8
+[MON] Packet captured correctly
+[LOCAL MON] payload[8]=0
+[SCOREBOARD] Received act packet
+[SCOREBOARD] Waiting for exp packet...
+[SCOREBOARD] Received exp packet
+[SCOREBOARD] Waiting for drop...
+[SCOREBOARD] Received drop = 0
+[SCOREBOARD] act.seq_num=1 exp.seq_num=1
+[SCOREBOARD] act.frag_num=1 exp.frag_num=1
+[SCOREBOARD] act.payload_len=24 exp.payload_len=24
+[SCOREBOARD] act.payload[0]=8 exp.payload[0]=8
+[SCOREBOARD] act.payload[1]=9 exp.payload[1]=9
+[SCOREBOARD] Comparing act and exp...
+PASS
+PASS=5 FAIL=0
+[SCOREBOARD] Waiting for packets...
+push payload byte c9
+CFG=01011800 seq=1 frag=1 len=24 type=0
+[LOCAL MON] payload[9]=200
+push payload byte ca
+[LOCAL MON] payload[10]=201
+push payload byte cb
+[LOCAL MON] payload[11]=202
+push payload byte cc
+[LOCAL MON] payload[12]=203
+push payload byte cd
+[LOCAL MON] payload[13]=204
+push payload byte ce
+[LOCAL MON] payload[14]=205
+push payload byte cf
+[LOCAL MON] payload[15]=206
+[DRIVER] Waiting for packet from generator...
+[DRIVER] Received packet seq=2 frag=3 len=8
+[LOCAL MON] payload[16]=207
+[DRIVER] Sending cfg=00000000 seq=2 frag=3 len=8 type=1
+push payload byte 2c
+[LOCAL MON] payload[17]=0
+push payload byte 2d
+[LOCAL MON] payload[18]=44
+push payload byte 2e
+[LOCAL MON] payload[19]=45
+push payload byte 2f
+[LOCAL MON] payload[20]=46
+push payload byte 30
+[LOCAL MON] payload[21]=47
+push payload byte 31
+[LOCAL MON] payload[22]=48
+                1525 .........................crc_left 2  entered state moved to crc 32
+push crc byte 32
+[LOCAL MON] payload[23]=49
+                1535 .........................crc_left 1  entered state moved to crc 33
+push crc byte 33
+ssssssssssssssssss state moved to idle
+[LOCAL MON] Data captured
+[DRIVER] Waiting for packet from generator...
+[DRIVER] Received packet seq=3 frag=3 len=8
+[LOCAL MON] payload[0]=51
+[DRIVER] Sending cfg=00000000 seq=3 frag=3 len=8 type=1
+==================== Delete cur_frag_payload =========== idle state now
+push new local pkt first byte 90
+ssssssssssssssssss state moved to payload
+[LOCAL MON] payload[1]=0
+push payload byte 91
+[LOCAL MON] payload[2]=144
+push payload byte 92
+[LOCAL MON] payload[3]=145
+push payload byte 93
+[LOCAL MON] payload[4]=146
+push payload byte 94
+[LOCAL MON] payload[5]=147
+push payload byte 95
+[LOCAL MON] payload[6]=148
+push payload byte 96
+[LOCAL MON] payload[7]=149
+push payload byte 97
+[LOCAL MON] payload[8]=150
+[DRIVER] Waiting for packet from generator...
+[DRIVER] Received packet seq=3 frag=1 len=8
+[LOCAL MON] payload[9]=151
+[DRIVER] Sending cfg=00000000 seq=3 frag=1 len=8 type=1
+push payload byte f4
+[MON] Packet captured correctly
+[LOCAL MON] payload[10]=0
+[SCOREBOARD] Received act packet
+[SCOREBOARD] Waiting for exp packet...
+[SCOREBOARD] Received exp packet
+[SCOREBOARD] Waiting for drop...
+[SCOREBOARD] Received drop = 0
+[SCOREBOARD] act.seq_num=1 exp.seq_num=1
+[SCOREBOARD] act.frag_num=1 exp.frag_num=1
+[SCOREBOARD] act.payload_len=24 exp.payload_len=24
+[SCOREBOARD] act.payload[0]=201 exp.payload[0]=201
+[SCOREBOARD] act.payload[1]=202 exp.payload[1]=202
+[SCOREBOARD] Comparing act and exp...
+PASS
+PASS=6 FAIL=0
+[SCOREBOARD] Waiting for packets...
+push payload byte f5
+CFG=01011800 seq=1 frag=1 len=24 type=0
+[LOCAL MON] payload[11]=244
+push payload byte f6
+[LOCAL MON] payload[12]=245
+push payload byte f7
+[LOCAL MON] payload[13]=246
+push payload byte f8
+[LOCAL MON] payload[14]=247
+push payload byte f9
+[LOCAL MON] payload[15]=248
+push payload byte fa
+[LOCAL MON] payload[16]=249
+push payload byte fb
+[LOCAL MON] payload[17]=250
+[DRIVER] Waiting for packet from generator...
+[DRIVER] Received packet seq=3 frag=2 len=8
+[LOCAL MON] payload[18]=251
+[DRIVER] Sending cfg=00000000 seq=3 frag=2 len=8 type=1
+push payload byte 58
+[LOCAL MON] payload[19]=0
+push payload byte 59
+[LOCAL MON] payload[20]=88
+push payload byte 5a
+[LOCAL MON] payload[21]=89
+push payload byte 5b
+[LOCAL MON] payload[22]=90
+push payload byte 5c
+[LOCAL MON] payload[23]=91
+push payload byte 5d
+[LOCAL MON] Data captured
+                1795 .........................crc_left 2  entered state moved to crc 5e
+push crc byte 5e
+[LOCAL MON] payload[0]=93
+                1805 .........................crc_left 1  entered state moved to crc 5f
+push crc byte 5f
+ssssssssssssssssss state moved to idle
+[LOCAL MON] payload[1]=94
+[DRIVER] Waiting for packet from generator...
+[LOCAL MON] payload[2]=95
+[LOCAL MON] payload[3]=0
+[LOCAL MON] payload[4]=0
+[LOCAL MON] payload[5]=0
+[LOCAL MON] payload[6]=0
+[LOCAL MON] payload[7]=0
+[LOCAL MON] payload[8]=0
+[LOCAL MON] payload[9]=0
+[LOCAL MON] payload[10]=0
+[LOCAL MON] payload[11]=0
+[MON] Packet captured correctly
+[LOCAL MON] payload[12]=0
+[SCOREBOARD] Received act packet
+[SCOREBOARD] Waiting for exp packet...
+[SCOREBOARD] Received exp packet
+[SCOREBOARD] Waiting for drop...
+[SCOREBOARD] Received drop = 0
+[SCOREBOARD] act.seq_num=1 exp.seq_num=1
+[SCOREBOARD] act.frag_num=1 exp.frag_num=1
+[SCOREBOARD] act.payload_len=24 exp.payload_len=24
+[SCOREBOARD] act.payload[0]=245 exp.payload[0]=245
+[SCOREBOARD] act.payload[1]=246 exp.payload[1]=246
+[SCOREBOARD] Comparing act and exp...
+PASS
+PASS=7 FAIL=0
+[SCOREBOARD] Waiting for packets...
+[LOCAL MON] payload[13]=0
+[LOCAL MON] payload[14]=0
+[LOCAL MON] payload[15]=0
+[LOCAL MON] payload[16]=0
+[LOCAL MON] payload[17]=0
+[LOCAL MON] payload[18]=0
+[LOCAL MON] payload[19]=0
+[LOCAL MON] payload[20]=0
+[LOCAL MON] payload[21]=0
+[LOCAL MON] payload[22]=0
+
+==========================================
+SCOREBOARD FINAL RESULTS
+==========================================
+PASS = 7
+FAIL = 0
+DROPPED = 0
+✅ ALL TESTS PASSED!
+==========================================
+
+TEST FINISHED
+$finish called from file "tb/top_tb.sv", line 48.
+$finish at simulation time                 2020
+
+---------------------------------------------------------------------------
+VCS Coverage Metrics: during simulation line, cond was monitored
+---------------------------------------------------------------------------
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 2020
+CPU Time:      0.400 seconds;       Data structure size:   0.0Mb
+Wed Jun 17 23:27:48 2026

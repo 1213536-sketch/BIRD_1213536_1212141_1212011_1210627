@@ -1,6 +1,0 @@
-{"vcs1":{"timestamp_begin":1781631713.387214177, "rt":0.16, "ut":0.09, "st":0.06}}
-{"SNPS_VCS_INTERNAL_ROOT_START_TIME": 1781631713.006103275}
-{"VCS_COMP_START_TIME": 1781631713.006103275}
-{"VCS_COMP_END_TIME": 1781631713.611107736}
-{"VCS_USER_OPTIONS": "-full64 -sverilog -f flist.f -debug_acc+all -kdb -l compile.log"}
-{"vcs1": {"peak_mem": 357892}}

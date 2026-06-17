@@ -42,6 +42,8 @@ module top_tb;
 
     #2000;
 
+    env.sb.report(); 
+
     $display("TEST FINISHED");
     $finish;
 

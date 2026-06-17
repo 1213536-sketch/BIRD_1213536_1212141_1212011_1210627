@@ -2,19 +2,17 @@ class remote_monitor;
 
   virtual bird_if vif;
   mailbox #(bird_packet) mon2sb;
+  mailbox #(bird_packet) exp_mb;
 
-  function new(virtual bird_if vif, mailbox #(bird_packet) mon2sb);
+  function new(virtual bird_if vif, mailbox #(bird_packet) mon2sb, mailbox #(bird_packet) exp_mb);
     this.vif = vif;
     this.mon2sb = mon2sb;
+    this.exp_mb = exp_mb;
   endfunction
 
   task run();
 
     bird_packet pkt;
-    int idx;
-
-    idx = 0;
-    pkt = null;
 
     forever begin
 
@@ -22,32 +20,14 @@ class remote_monitor;
 
       if (vif.remote_vld && vif.remote_rdy) begin
 
-$display("[REMOTE] data_remote=%h", vif.data_remote);
-        if (idx == 0) begin
-          pkt = new();
+        pkt = new();
 
-          pkt.seq_num      = vif.data_remote[28:24];
-          pkt.frag_num     = vif.data_remote[20:16];
-          pkt.payload_len  = vif.data_remote[15:8];
-          pkt.traffic_type = vif.data_remote[0];
+        // اجمع البيانات من remote هنا
 
-          pkt.payload = new[pkt.payload_len];
-        end
+        mon2sb.put(pkt);
+        exp_mb.put(pkt);
 
-        pkt.payload[idx] = vif.data_remote[7:0];
-        idx++;
-
-        if (idx == pkt.payload_len) begin
-          pkt.crc[0] = 0;
-          pkt.crc[1] = 0;
-
-          mon2sb.put(pkt);
-
-          $display("[REMOTE MON] Packet Done");
-
-          idx = 0;
-          pkt = null;
-        end
+        $display("[REMOTE MON] Data captured");
 
       end
 

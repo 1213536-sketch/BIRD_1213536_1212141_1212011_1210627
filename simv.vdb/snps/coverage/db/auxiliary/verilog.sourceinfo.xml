@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!DOCTYPE cov SYSTEM "ucdb_srcinfo.dtd">
+  <srcinfo name="/home/st68/ENCS5337_DV_Project"  >
+    <ucapi_version  major_ver="13"  minor_ver="1"  patch_str="T-2022.06-SP2"  />
+      <fileinfo name="tb/bird_pkg.sv"  id="0"  timestamp="1781727061"  />
+      <fileinfo name="tb/bird_if.sv"  id="1"  timestamp="1781719789"  />
+      <fileinfo name="tb/bird_ref_model.sv"  id="2"  timestamp="1781719789"  />
+      <fileinfo name="tb/bird_driver.sv"  id="3"  timestamp="1781724283"  />
+      <fileinfo name="tb/bird_generator.sv"  id="4"  timestamp="1781728012"  />
+      <fileinfo name="tb/input_monitor.sv"  id="5"  timestamp="1781725098"  />
+      <fileinfo name="tb/local_monitor.sv"  id="6"  timestamp="1781725015"  />
+      <fileinfo name="tb/remote_monitor.sv"  id="7"  timestamp="1781723046"  />
+      <fileinfo name="tb/bird_scoreboard.sv"  id="8"  timestamp="1781725407"  />
+      <fileinfo name="tb/bird_env.sv"  id="9"  timestamp="1781725152"  />
+      <fileinfo name="tb/top_tb.sv"  id="10"  timestamp="1781721170"  />
+      <fileinfo name="bird.sv"  id="11"  timestamp="1781719789"  />
+      <fileinfo name=""  id="12"  />
+    </srcinfo>

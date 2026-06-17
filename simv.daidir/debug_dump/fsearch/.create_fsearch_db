@@ -5,5 +5,5 @@ PYTHONPATH=/usr/synopsys/vcs/T-2022.06-SP2/linux64/lib/pylib27
 export PYTHONPATH
 LD_LIBRARY_PATH=/usr/synopsys/vcs/T-2022.06-SP2/linux64/lib:/usr/synopsys/vcs/T-2022.06-SP2/linux64/lib/pylib27
 export LD_LIBRARY_PATH
-/usr/synopsys/vcs/T-2022.06-SP2/linux64/bin/vcsfind_create_index.exe  -z  "/home/st44/ENCS5337_DV_Project/simv.daidir/debug_dump/fsearch/./idents_Vr5XN9.xml.gz" "/home/st44/ENCS5337_DV_Project/simv.daidir/debug_dump/fsearch/./idents_tapi.xml.gz" -o "/home/st44/ENCS5337_DV_Project/simv.daidir/debug_dump/fsearch/fsearch.db_tmp"
-\mv "/home/st44/ENCS5337_DV_Project/simv.daidir/debug_dump/fsearch/fsearch.db_tmp" "/home/st44/ENCS5337_DV_Project/simv.daidir/debug_dump/fsearch/fsearch.db"
+/usr/synopsys/vcs/T-2022.06-SP2/linux64/bin/vcsfind_create_index.exe  -z  "/home/st68/ENCS5337_DV_Project/simv.daidir/debug_dump/fsearch/./idents_tapi.xml.gz" "/home/st68/ENCS5337_DV_Project/simv.daidir/debug_dump/fsearch/./idents_bIRi1W.xml.gz" -o "/home/st68/ENCS5337_DV_Project/simv.daidir/debug_dump/fsearch/fsearch.db_tmp"
+\mv "/home/st68/ENCS5337_DV_Project/simv.daidir/debug_dump/fsearch/fsearch.db_tmp" "/home/st68/ENCS5337_DV_Project/simv.daidir/debug_dump/fsearch/fsearch.db"
