@@ -33,7 +33,9 @@ class bird_env;
     mon_in = new(vif, act_mb, exp_mb, drop_mb);
     mon_local = new(vif, local_mb, exp_mb);
     mon_remote = new(vif, remote_mb, exp_mb);
-    sb = new(act_mb, exp_mb, drop_mb);
+    
+    // ✅ تمرير vif كـ argument رابع للـ scoreboard
+    sb = new(act_mb, exp_mb, drop_mb, vif);
 
   endfunction
 
