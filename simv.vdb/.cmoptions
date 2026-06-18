@@ -2,7 +2,7 @@ Instrument
 cond 3
 line 3
 fsm 0
-tgl 0
+tgl 8
 assign 0
 obc 0
 path 0
@@ -10,7 +10,7 @@ branch 0
 Count 0
 Glitch -1
 cm_tglmda 0
-cm_tglstructarr 0
+cm_tglstructarr 1
 cm_tglcount 0
 cm_tglunencryptedsignals 0
 cm_hier 0

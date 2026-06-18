@@ -1,0 +1,173 @@
+global coverage_group 0 $unit::bird_scoreboard::bird_cov __coverage_bird_scoreboard.bird_cov unused_bird_scoreboard_bird_cov_loop_label $unit 0 1 0 1 $unit::bird.sv::tb/bird_driver.sv...@368780407 0  ( 0 
+)
+ 1 1
+ 0 52 /home/st46/ENCS5337_DV_Project/tb/bird_scoreboard.sv
+ 40 0 0 0 1 0 0 0 0  1
+0
+0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0 0
+ 0
+ 0 0
+ 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+0
+0
+0
+64
+0
+ 0
+
+4
+0
+4
+0
+ 15 traffic_type_cp 43 0 0 0 0 0 65 bird_scoreboard::_vcs_unit__368780407_bird_scoreboard_bird_cov_fn 65 bird_scoreboard::_vcs_unit__368780407_bird_scoreboard_bird_cov_fn 0 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 0 -1 2 1 0 0 1 0 0 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 2 1 1 0 0 1 1 9 local_pkt 44 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 67 bird_scoreboard::_vcs_unit__368780407_bird_scoreboard_bird_cov_fn_0 0 0 0 0 0 0 0
+ 0
+ 1 1 0 0 1 1 10 remote_pkt 45 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 67 bird_scoreboard::_vcs_unit__368780407_bird_scoreboard_bird_cov_fn_1 0 0 0 0 0 0 0
+ 0
+
+ 10 seq_num_cp 49 0 0 0 0 0 67 bird_scoreboard::_vcs_unit__368780407_bird_scoreboard_bird_cov_fn_2 67 bird_scoreboard::_vcs_unit__368780407_bird_scoreboard_bird_cov_fn_2 0 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 0 -1 2 5 0 0 1 0 0 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 2 1 1 1 0 1 1 5 valid 50 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 67 bird_scoreboard::_vcs_unit__368780407_bird_scoreboard_bird_cov_fn_3 0 67 bird_scoreboard::_vcs_unit__368780407_bird_scoreboard_bird_cov_fn_4 0 0 0 0 0
+ 0
+ 1 1 0 0 1 1 7 invalid 51 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 67 bird_scoreboard::_vcs_unit__368780407_bird_scoreboard_bird_cov_fn_5 0 0 0 0 0 0 0
+ 0
+
+ 11 frag_num_cp 55 0 0 0 0 0 67 bird_scoreboard::_vcs_unit__368780407_bird_scoreboard_bird_cov_fn_6 67 bird_scoreboard::_vcs_unit__368780407_bird_scoreboard_bird_cov_fn_6 0 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 0 -1 2 5 0 0 1 0 0 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 2 1 1 1 0 1 1 5 valid 56 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 67 bird_scoreboard::_vcs_unit__368780407_bird_scoreboard_bird_cov_fn_3 0 67 bird_scoreboard::_vcs_unit__368780407_bird_scoreboard_bird_cov_fn_4 0 0 0 0 0
+ 0
+ 1 1 0 0 1 1 7 invalid 57 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 67 bird_scoreboard::_vcs_unit__368780407_bird_scoreboard_bird_cov_fn_5 0 0 0 0 0 0 0
+ 0
+
+ 14 payload_len_cp 61 0 0 0 0 0 67 bird_scoreboard::_vcs_unit__368780407_bird_scoreboard_bird_cov_fn_7 67 bird_scoreboard::_vcs_unit__368780407_bird_scoreboard_bird_cov_fn_7 0 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 0 -1 2 8 0 0 1 0 0 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 3 1 1 1 0 1 1 5 valid 62 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 67 bird_scoreboard::_vcs_unit__368780407_bird_scoreboard_bird_cov_fn_3 0 67 bird_scoreboard::_vcs_unit__368780407_bird_scoreboard_bird_cov_fn_8 0 0 0 0 0
+ 0
+ 1 1 0 0 1 1 4 zero 63 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 67 bird_scoreboard::_vcs_unit__368780407_bird_scoreboard_bird_cov_fn_5 0 0 0 0 0 0 0
+ 0
+ 1 1 0 0 1 1 8 overflow 64 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 67 bird_scoreboard::_vcs_unit__368780407_bird_scoreboard_bird_cov_fn_9 0 67 bird_scoreboard::_vcs_unit__368780407_bird_scoreboard_bird_cov_fn_9 0 0 0 0 0
+ 0
+
+ 17 traffic_seq_cross 0 68 0 0 -1 0 0 0 0 2 0 1 -1 0 0 0
+ 0
+ 0
+ 0
+ 0 0
+ 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 14 frag_seq_cross 0 69 0 0 -1 0 0 0 0 2 2 1 -1 0 0 0
+ 0
+ 0
+ 0
+ 0 0
+ 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 21 payload_traffic_cross 0 70 0 0 -1 0 0 0 0 2 3 0 -1 0 0 0
+ 0
+ 0
+ 0
+ 0 0
+ 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 18 frag_payload_cross 0 71 0 0 -1 0 0 0 0 2 2 3 -1 0 0 0
+ 0
+ 0
+ 0
+ 0 0
+ 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+end_coverage_group

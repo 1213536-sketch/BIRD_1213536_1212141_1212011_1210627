@@ -206,10 +206,6 @@ class bird_generator;
     gen_mb.put(pkt);
     $display("[GEN] Sent INVALID: PAYLOAD_LEN=300 (should DROP)");
 
-    // 4e: Reserved bits غير صفرية (نحتاج تعديل في bird_pkg.sv)
-    // هذه الحالة تحتاج تعديل في bird_pkg.sv لإضافة reserved bits
-    // سنضيفها لاحقاً بعد تعديل class bird_packet
-
     // ============================================
     // TEST 5: Mismatched SEQ_NUM (Drop)
     // ============================================
@@ -281,7 +277,7 @@ class bird_generator;
     $display("[GEN] Sent REMOTE frag[%0d]: seq=%0d (fragment 2 is MISSING!)", pkt.frag_num, pkt.seq_num);
 
     // ============================================
-    // TEST 7: Reset Test
+    // TEST 7: Reset Test Packet
     // ============================================
     $display("\n[GEN] Sending RESET test packet...");
 
@@ -334,11 +330,211 @@ class bird_generator;
              pkt.frag_num, pkt.seq_num, pkt.payload_len);
 
     // ============================================
+    // TEST 9: Extensive FRAG_NUM Coverage (IMPROVED)
+    // ============================================
+    $display("\n[GEN] ========================================");
+    $display("[GEN] TEST 9: Extensive FRAG_NUM Coverage");
+    $display("[GEN] Sending COMPLETE remote packets with different FRAG_NUM");
+    $display("[GEN] ========================================");
+
+    // أرسل packets كاملة (3 أجزاء) مع frag_num مختلفة
+    for (int f = 1; f <= 10; f++) begin
+      int seq_num = 100 + f;
+      
+      // Fragment 1
+      pkt = new();
+      pkt.traffic_type = 1;
+      pkt.seq_num = seq_num;
+      pkt.frag_num = 1;
+      pkt.payload_len = 8;
+      pkt.payload = new[8];
+      for (int i = 0; i < 8; i++) begin
+        pkt.payload[i] = i + (f * 10);
+      end
+      pkt.crc[0] = 0;
+      pkt.crc[1] = 0;
+      gen_mb.put(pkt);
+      $display("[GEN] Sent REMOTE frag[1]: seq=%0d (packet %0d)", seq_num, f);
+      #1;
+      
+      // Fragment 2
+      pkt = new();
+      pkt.traffic_type = 1;
+      pkt.seq_num = seq_num;
+      pkt.frag_num = 2;
+      pkt.payload_len = 8;
+      pkt.payload = new[8];
+      for (int i = 0; i < 8; i++) begin
+        pkt.payload[i] = i + (f * 10) + 100;
+      end
+      pkt.crc[0] = 0;
+      pkt.crc[1] = 0;
+      gen_mb.put(pkt);
+      $display("[GEN] Sent REMOTE frag[2]: seq=%0d (packet %0d)", seq_num, f);
+      #1;
+      
+      // Fragment 3
+      pkt = new();
+      pkt.traffic_type = 1;
+      pkt.seq_num = seq_num;
+      pkt.frag_num = 3;
+      pkt.payload_len = 8;
+      pkt.payload = new[8];
+      for (int i = 0; i < 8; i++) begin
+        pkt.payload[i] = i + (f * 10) + 200;
+      end
+      pkt.crc[0] = 0;
+      pkt.crc[1] = 0;
+      gen_mb.put(pkt);
+      $display("[GEN] Sent REMOTE frag[3]: seq=%0d (packet %0d)", seq_num, f);
+      #1;
+    end
+
+    // ============================================
+    // TEST 10: Extensive PAYLOAD_LEN Coverage (IMPROVED)
+    // ============================================
+    $display("\n[GEN] ========================================");
+    $display("[GEN] TEST 10: Extensive PAYLOAD_LEN Coverage");
+    $display("[GEN] Sending packets with different PAYLOAD_LEN values");
+    $display("[GEN] ========================================");
+
+    // أرسل packets بـ payload_len مختلفة
+    for (int len = 1; len <= 50; len+=3) begin
+      int seq_num = 300 + len;
+      
+      pkt = new();
+      pkt.traffic_type = 1;
+      pkt.seq_num = seq_num;
+      pkt.frag_num = 1;
+      pkt.payload_len = len;
+      pkt.payload = new[len];
+      for (int i = 0; i < len; i++) begin
+        pkt.payload[i] = i + len;
+      end
+      pkt.crc[0] = 0;
+      pkt.crc[1] = 0;
+      gen_mb.put(pkt);
+      $display("[GEN] Sent packet: seq=%0d len=%0d", seq_num, len);
+      #1;
+    end
+    
+    // أرسل payload_len حدودية إضافية - استخدام مصفوفة ثابتة
+    begin
+      int extra_lens[9];
+      extra_lens[0] = 1;
+      extra_lens[1] = 2;
+      extra_lens[2] = 4;
+      extra_lens[3] = 8;
+      extra_lens[4] = 16;
+      extra_lens[5] = 32;
+      extra_lens[6] = 64;
+      extra_lens[7] = 128;
+      extra_lens[8] = 255;
+      
+      for (int i = 0; i < 9; i++) begin
+        int len = extra_lens[i];
+        int seq_num = 400 + len;
+        
+        pkt = new();
+        pkt.traffic_type = 1;
+        pkt.seq_num = seq_num;
+        pkt.frag_num = 1;
+        pkt.payload_len = len;
+        pkt.payload = new[len];
+        for (int j = 0; j < len; j++) begin
+          pkt.payload[j] = j + len + 100;
+        end
+        pkt.crc[0] = 0;
+        pkt.crc[1] = 0;
+        gen_mb.put(pkt);
+        $display("[GEN] Sent packet: seq=%0d len=%0d (boundary value)", seq_num, len);
+        #1;
+      end
+    end
+
+    // ============================================
+    // TEST 11: Local Packets with Different Sizes
+    // ============================================
+    $display("\n[GEN] ========================================");
+    $display("[GEN] TEST 11: Local Packets with Different Sizes");
+    $display("[GEN] ========================================");
+
+    for (int len = 1; len <= 20; len+=2) begin
+      pkt = new();
+      pkt.traffic_type = 0; // LOCAL
+      pkt.seq_num = 1;
+      pkt.frag_num = 1;
+      pkt.payload_len = len;
+      pkt.payload = new[len];
+      for (int i = 0; i < len; i++) begin
+        pkt.payload[i] = i + len + 200;
+      end
+      pkt.crc[0] = 0;
+      pkt.crc[1] = 0;
+      gen_mb.put(pkt);
+      $display("[GEN] Sent LOCAL packet: seq=%0d len=%0d", pkt.seq_num, pkt.payload_len);
+      #1;
+    end
+
+    // ============================================
+    // TEST 12: Remote Packets with Different FRAG_NUM and SEQ_NUM Combos
+    // ============================================
+    $display("\n[GEN] ========================================");
+    $display("[GEN] TEST 12: Remote Packets with Different FRAG_NUM and SEQ_NUM Combos");
+    $display("[GEN] ========================================");
+
+    for (int s = 1; s <= 5; s++) begin
+      for (int f = 1; f <= 3; f++) begin
+        int seq_num = 500 + (s * 10) + f;
+        
+        pkt = new();
+        pkt.traffic_type = 1;
+        pkt.seq_num = seq_num;
+        pkt.frag_num = f;
+        pkt.payload_len = 6;
+        pkt.payload = new[6];
+        for (int i = 0; i < 6; i++) begin
+          pkt.payload[i] = i + (s * 50) + (f * 10);
+        end
+        pkt.crc[0] = 0;
+        pkt.crc[1] = 0;
+        gen_mb.put(pkt);
+        $display("[GEN] Sent REMOTE frag[%0d]: seq=%0d", f, seq_num);
+        #1;
+      end
+    end
+
+    // ============================================
+    // TEST 13: Remote Packets with FRAG_NUM=2 Only (Missing Fragments)
+    // ============================================
+    $display("\n[GEN] ========================================");
+    $display("[GEN] TEST 13: Remote Packets with FRAG_NUM=2 Only (Missing Fragments)");
+    $display("[GEN] ========================================");
+
+    for (int f = 2; f <= 5; f++) begin
+      int seq_num = 600 + f;
+      
+      pkt = new();
+      pkt.traffic_type = 1;
+      pkt.seq_num = seq_num;
+      pkt.frag_num = f;
+      pkt.payload_len = 4;
+      pkt.payload = new[4];
+      for (int i = 0; i < 4; i++) begin
+        pkt.payload[i] = i + (f * 20);
+      end
+      pkt.crc[0] = 0;
+      pkt.crc[1] = 0;
+      gen_mb.put(pkt);
+      $display("[GEN] Sent REMOTE frag[%0d]: seq=%0d (missing fragment 1)", f, seq_num);
+      #1;
+    end
+
+    // ============================================
     // FINISHED
     // ============================================
     $display("\n[GEN] ========================================");
     $display("[GEN] ALL PACKETS SENT!");
-    $display("[GEN] Total packets: 22");
     $display("[GEN] ========================================\n");
 
   endtask

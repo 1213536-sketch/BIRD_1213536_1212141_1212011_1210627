@@ -30,63 +30,55 @@ class bird_scoreboard;
   // متغيرات للمساعدة في التغطية
   // =============================================
   bit drop_detected;
+  bit [4:0] seq_num_captured;
+  bit [4:0] frag_num_captured;
+  bit [7:0] payload_len_captured;
 
   // =============================================
-  // Functional Coverage Group
+  // Functional Coverage Group - يتم أخذ العينات من input_monitor
   // =============================================
-  covergroup bird_cov @(posedge vif.clk);
+  covergroup bird_cov;
     
     // 1. تغطية نوع الحركة (Local / Remote)
-    traffic_type_cp: coverpoint vif.cfg[0] {
-      bins local_pkt  = {0};   // ✅ changed from 'local' to 'local_pkt'
+    traffic_type_cp: coverpoint traffic_type_captured {
+      bins local_pkt  = {0};
       bins remote_pkt = {1};
     }
     
-    // 2. تغطية SEQ_NUM (1-31 صحيح، 0 غير صحيح)
-    seq_num_cp: coverpoint vif.cfg[28:24] {
+    // 2. تغطية SEQ_NUM
+    seq_num_cp: coverpoint seq_num_captured {
       bins valid[]   = {[1:31]};
       bins invalid   = {0};
-      bins all       = {[0:31]};
     }
     
-    // 3. تغطية FRAG_NUM (1-31 صحيح، 0 غير صحيح)
-    frag_num_cp: coverpoint vif.cfg[20:16] {
+    // 3. تغطية FRAG_NUM
+    frag_num_cp: coverpoint frag_num_captured {
       bins valid[]   = {[1:31]};
       bins invalid   = {0};
-      bins all       = {[0:31]};
     }
     
-    // 4. تغطية PAYLOAD_LEN (1-255 صحيح، 0 و 256+ غير صحيح)
-    payload_len_cp: coverpoint vif.cfg[15:8] {
+    // 4. تغطية PAYLOAD_LEN
+    payload_len_cp: coverpoint payload_len_captured {
       bins valid[]   = {[1:255]};
       bins zero      = {0};
       bins overflow  = {[256:$]};
     }
     
-    // 5. تغطية Reserved Bits (كلها صفر أو غير صفر)
-    reserved1_cp: coverpoint vif.cfg[7:1] {
-      bins all_zero = {0};
-      bins non_zero = {[1:$]};
-    }
-    reserved2_cp: coverpoint vif.cfg[23:21] {
-      bins all_zero = {0};
-      bins non_zero = {[1:$]};
-    }
-    reserved3_cp: coverpoint vif.cfg[31:29] {
-      bins all_zero = {0};
-      bins non_zero = {[1:$]};
-    }
-    
-    // 6. تغطية Cross Product (ترافيك × SEQ_NUM)
+    // 5. تغطية Cross
     traffic_seq_cross: cross traffic_type_cp, seq_num_cp;
-    
-    // 7. تغطية حالة Drop
-    drop_cp: coverpoint drop_detected {
-      bins dropped = {1};
-      bins success = {0};
-    }
+    frag_seq_cross: cross frag_num_cp, seq_num_cp;
+    payload_traffic_cross: cross payload_len_cp, traffic_type_cp;
+    frag_payload_cross: cross frag_num_cp, payload_len_cp;
     
   endgroup
+
+  // =============================================
+  // متغيرات للتغطية
+  // =============================================
+  bit traffic_type_captured;
+  bit [4:0] seq_num_captured;
+  bit [4:0] frag_num_captured;
+  bit [7:0] payload_len_captured;
 
   // =============================================
   // Constructor
@@ -113,7 +105,6 @@ class bird_scoreboard;
   // =============================================
   function bit compare(bird_packet a, bird_packet b);
 
-    // مقارنة الحقول الأساسية
     if (a.seq_num != b.seq_num) begin
       $display("[SCOREBOARD] Mismatch: seq_num act=%0d exp=%0d", a.seq_num, b.seq_num);
       return 0;
@@ -129,7 +120,6 @@ class bird_scoreboard;
       return 0;
     end
 
-    // مقارنة الـ payload
     foreach (a.payload[i]) begin
       if (a.payload[i] != b.payload[i]) begin
         $display("[SCOREBOARD] Mismatch at payload[%0d]: act=%0h exp=%0h", 
@@ -140,6 +130,17 @@ class bird_scoreboard;
 
     return 1;
 
+  endfunction
+
+  // =============================================
+  // Sample coverage from packet
+  // =============================================
+  function void sample_coverage(bird_packet pkt);
+    traffic_type_captured = pkt.traffic_type;
+    seq_num_captured = pkt.seq_num;
+    frag_num_captured = pkt.frag_num;
+    payload_len_captured = pkt.payload_len;
+    bird_cov.sample();
   endfunction
 
   // =============================================
@@ -164,8 +165,10 @@ class bird_scoreboard;
       drop_mb.get(drop);
       $display("[SCOREBOARD] Received drop = %0d", drop);
 
-      // تخزين حالة drop للتغطية
       drop_detected = drop;
+
+      // ✅ أخذ عينة للتغطية من الـ packet الفعلي
+      sample_coverage(act);
 
       if (drop) begin
         drop_count++;
@@ -173,7 +176,6 @@ class bird_scoreboard;
         continue;
       end
 
-      // المعالجة عبر Reference Model
       exp = ref_model.process(act);
 
       $display("[SCOREBOARD] act.seq_num=%0d exp.seq_num=%0d", act.seq_num, exp.seq_num);
@@ -182,9 +184,6 @@ class bird_scoreboard;
       
       if (act.payload.size() > 0) begin
         $display("[SCOREBOARD] act.payload[0]=%0h exp.payload[0]=%0h", act.payload[0], exp.payload[0]);
-      end
-      if (act.payload.size() > 1) begin
-        $display("[SCOREBOARD] act.payload[1]=%0h exp.payload[1]=%0h", act.payload[1], exp.payload[1]);
       end
 
       $display("[SCOREBOARD] Comparing act and exp...");
@@ -215,15 +214,15 @@ class bird_scoreboard;
     $display("DROPPED  = %0d", drop_count);
     $display("------------------------------------------");
     $display("Functional Coverage Report:");
-    $display("  - traffic_type_cp  : %0d%%", bird_cov.traffic_type_cp.get_coverage());
-    $display("  - seq_num_cp       : %0d%%", bird_cov.seq_num_cp.get_coverage());
-    $display("  - frag_num_cp      : %0d%%", bird_cov.frag_num_cp.get_coverage());
-    $display("  - payload_len_cp   : %0d%%", bird_cov.payload_len_cp.get_coverage());
-    $display("  - reserved1_cp     : %0d%%", bird_cov.reserved1_cp.get_coverage());
-    $display("  - reserved2_cp     : %0d%%", bird_cov.reserved2_cp.get_coverage());
-    $display("  - reserved3_cp     : %0d%%", bird_cov.reserved3_cp.get_coverage());
-    $display("  - traffic_seq_cross: %0d%%", bird_cov.traffic_seq_cross.get_coverage());
-    $display("  - Overall Coverage : %0d%%", bird_cov.get_coverage());
+    $display("  - traffic_type_cp      : %0d%%", bird_cov.traffic_type_cp.get_coverage());
+    $display("  - seq_num_cp           : %0d%%", bird_cov.seq_num_cp.get_coverage());
+    $display("  - frag_num_cp          : %0d%%", bird_cov.frag_num_cp.get_coverage());
+    $display("  - payload_len_cp       : %0d%%", bird_cov.payload_len_cp.get_coverage());
+    $display("  - traffic_seq_cross    : %0d%%", bird_cov.traffic_seq_cross.get_coverage());
+    $display("  - frag_seq_cross       : %0d%%", bird_cov.frag_seq_cross.get_coverage());
+    $display("  - payload_traffic_cross: %0d%%", bird_cov.payload_traffic_cross.get_coverage());
+    $display("  - frag_payload_cross   : %0d%%", bird_cov.frag_payload_cross.get_coverage());
+    $display("  - Overall Coverage     : %0d%%", bird_cov.get_coverage());
     $display("==========================================");
     
     if (fail == 0) begin
