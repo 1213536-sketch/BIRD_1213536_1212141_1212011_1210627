@@ -1,4 +1,28 @@
+# ENCS5337 DV Project - BIRD Verification
+
 ## ✅ Simulation Results
-![Final Simulation Output](images/image.JPG)# ENCS5337_DV_Project
+
+PASS = 47
+
+FAIL = 0
+
+ALL TESTS PASSED
+
+![Final Simulation Output](images/image.JPG)
+
 ## 📊 Code Coverage Report
+
 ![Code Coverage Report](images/Code_Coverage_New.JPG)
+
+## 📁 Project Contents
+
+* DUT (bird.sv)
+* Testbench
+* Driver
+* Monitors
+* Scoreboard
+* Reference Model
+* Functional Coverage
+* Code Coverage Report
+* Test Plan
+
