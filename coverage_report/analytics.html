@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<title>BIRD Project — Coverage Analytics Report</title>
+<style>
+  :root{
+    --bg:#0f1320; --panel:#161b2c; --panel2:#1d2336; --line:#2a3150;
+    --txt:#e7eaf6; --muted:#9aa3c4; --accent:#5b8cff; --good:#33d69f;
+    --warn:#ffb454; --bad:#ff5d7a; --font:'Segoe UI',Tahoma,Arial,sans-serif;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--txt);font-family:var(--font);line-height:1.6}
+  header{padding:28px 5%;background:linear-gradient(135deg,#1a2140,#101426);border-bottom:1px solid var(--line)}
+  header h1{margin:0 0 6px;font-size:26px}
+  header p{margin:2px 0;color:var(--muted);font-size:14px}
+  nav{display:flex;gap:10px;margin-top:14px;flex-wrap:wrap}
+  nav a{color:var(--txt);background:var(--panel2);padding:7px 14px;border-radius:8px;text-decoration:none;font-size:13px;border:1px solid var(--line)}
+  nav a:hover{border-color:var(--accent)}
+  main{padding:30px 5% 60px}
+  section{margin-bottom:42px}
+  h2{font-size:19px;border-right:4px solid var(--accent);padding-right:10px;margin-bottom:16px}
+  .grid{display:grid;gap:18px}
+  .kpis{grid-template-columns:repeat(auto-fit,minmax(190px,1fr))}
+  .card{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:18px}
+  .kpi .label{color:var(--muted);font-size:13px;margin-bottom:8px}
+  .kpi .value{font-size:32px;font-weight:700}
+  .kpi .bar{height:6px;border-radius:4px;background:#2a3150;margin-top:10px;overflow:hidden}
+  .kpi .bar span{display:block;height:100%;border-radius:4px}
+  .good{color:var(--good)} .warn{color:var(--warn)} .bad{color:var(--bad)}
+  .bg-good{background:var(--good)} .bg-warn{background:var(--warn)} .bg-bad{background:var(--bad)}
+  .two-col{grid-template-columns:1.1fr 1fr}
+  .donut-wrap{display:flex;align-items:center;gap:22px}
+  .donut{width:150px;height:150px;border-radius:50%;flex:0 0 auto;
+         background:conic-gradient(var(--accent) calc(var(--p)*1%), #2a3150 0);
+         display:flex;align-items:center;justify-content:center}
+  .donut::before{content:"";width:104px;height:104px;border-radius:50%;background:var(--panel)}
+  .donut-center{position:absolute;text-align:center}
+  .legend div{display:flex;align-items:center;gap:8px;margin:6px 0;font-size:13.5px;color:var(--muted)}
+  .dot{width:10px;height:10px;border-radius:50%;display:inline-block}
+  table{width:100%;border-collapse:collapse;font-size:13.5px}
+  th,td{padding:8px 10px;border-bottom:1px solid var(--line);text-align:right}
+  th{color:var(--muted);font-weight:600;background:var(--panel2)}
+  tr:hover td{background:#1b2236}
+  .hbar-row{display:flex;align-items:center;gap:10px;margin:9px 0}
+  .hbar-label{width:170px;font-size:13px;color:var(--muted);flex:0 0 170px}
+  .hbar-track{flex:1;background:#232a44;border-radius:6px;height:14px;overflow:hidden}
+  .hbar-fill{height:100%;border-radius:6px}
+  .hbar-pct{width:55px;text-align:left;font-size:13px}
+  .tag{display:inline-block;padding:2px 9px;border-radius:20px;font-size:11.5px;font-weight:600}
+  .pill-good{background:rgba(51,214,159,.15);color:var(--good)}
+  .pill-warn{background:rgba(255,180,84,.15);color:var(--warn)}
+  .pill-bad{background:rgba(255,93,122,.15);color:var(--bad)}
+  ul.findings li{margin-bottom:10px}
+  .tree{font-family:Consolas,monospace;font-size:13.5px;background:var(--panel2);border-radius:10px;padding:14px 18px;white-space:pre}
+  footer{text-align:center;color:var(--muted);font-size:12.5px;padding:20px;border-top:1px solid var(--line)}
+  .note{background:rgba(255,180,84,.08);border:1px dashed var(--warn);border-radius:10px;padding:14px 16px;color:#ffd9a0;font-size:13.5px}
+</style>
+</head>
+<body>
+
+<header>
+  <h1>📊 BIRD Verification — Coverage Analytics Report</h1>
+  <p>Module under test: <b>bird</b> &nbsp;|&nbsp; Testbench top: <b>top_tb</b> &nbsp;|&nbsp; Tool: Synopsys URG (VCS T-2022.06-SP2)</p>
+  <p>Run date: Wed Jun 17 2026 &nbsp;|&nbsp; Number of tests: 1 (simv/test) &nbsp;|&nbsp; User: st68</p>
+  <nav>
+    <a href="dashboard.html">Native Dashboard</a>
+    <a href="hierarchy.html">Hierarchy</a>
+    <a href="modlist.html">Modules</a>
+    <a href="groups.html">Functional Groups</a>
+    <a href="tests.html">Tests</a>
+  </nav>
+</header>
+
+<main>
+
+<section>
+  <h2>الملخص العام (Overall Summary)</h2>
+  <div class="grid kpis">
+    <div class="card kpi">
+      <div class="label">Overall Score</div>
+      <div class="value bad">36.35%</div>
+      <div class="bar"><span class="bg-bad" style="width:36.35%"></span></div>
+    </div>
+    <div class="card kpi">
+      <div class="label">Line Coverage</div>
+      <div class="value warn">45.88%</div>
+      <div class="bar"><span class="bg-warn" style="width:45.88%"></span></div>
+    </div>
+    <div class="card kpi">
+      <div class="label">Condition Coverage</div>
+      <div class="value bad">26.83%</div>
+      <div class="bar"><span class="bg-bad" style="width:26.83%"></span></div>
+    </div>
+    <div class="card kpi">
+      <div class="label">Functional Coverage</div>
+      <div class="value bad">21.20%</div>
+      <div class="bar"><span class="bg-bad" style="width:21.20%"></span></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>التغطية الكلية (Composite View)</h2>
+  <div class="grid two-col">
+    <div class="card">
+      <div class="donut-wrap">
+        <div class="donut" style="--p:36.35"></div>
+        <div class="legend">
+          <div><span class="dot" style="background:var(--accent)"></span> Covered ≈ 36.35%</div>
+          <div><span class="dot" style="background:#2a3150"></span> Uncovered ≈ 63.65%</div>
+          <p style="color:var(--muted);font-size:12.5px;margin-top:10px;max-width:230px">
+            النتيجة الكلية متأثرة بشكل أساسي بضعف تغطية الشروط (Condition) والتغطية الوظيفية (Functional Groups).
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div style="font-size:13px;color:var(--muted);margin-bottom:10px">المقارنة بين الموديولات (Score / Line / Cond)</div>
+      <div class="hbar-row"><div class="hbar-label">top_tb — Score</div><div class="hbar-track"><div class="hbar-fill bg-good" style="width:100%"></div></div><div class="hbar-pct good">100%</div></div>
+      <div class="hbar-row"><div class="hbar-label">bird (dut) — Score</div><div class="hbar-track"><div class="hbar-fill bg-bad" style="width:34.09%"></div></div><div class="hbar-pct bad">34.09%</div></div>
+      <div class="hbar-row"><div class="hbar-label">bird (dut) — Line</div><div class="hbar-track"><div class="hbar-fill bg-warn" style="width:41.34%"></div></div><div class="hbar-pct warn">41.34%</div></div>
+      <div class="hbar-row"><div class="hbar-label">bird (dut) — Cond</div><div class="hbar-track"><div class="hbar-fill bg-bad" style="width:26.83%"></div></div><div class="hbar-pct bad">26.83%</div></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>تغطية الموديولات (Module Definition Coverage)</h2>
+  <table>
+    <tr><th>Module</th><th>Score</th><th>Line</th><th>Cond</th><th>الحالة</th></tr>
+    <tr><td>top_tb</td><td>100.00</td><td>100.00</td><td>—</td><td><span class="tag pill-good">ممتاز</span></td></tr>
+    <tr><td>bird</td><td>34.09</td><td>41.34</td><td>26.83</td><td><span class="tag pill-bad">ضعيف</span></td></tr>
+  </table>
+</section>
+
+<section>
+  <h2>تفاصيل تغطية الأسطر داخل موديول bird (Block-Level Line Coverage)</h2>
+  <table>
+    <tr><th>النوع</th><th>السطر</th><th>الوصف</th><th>Total</th><th>Covered</th><th>%</th></tr>
+    <tr><td>ROUTINE</td><td>67</td><td>inc_drop_cnt()</td><td>1</td><td>0</td><td><span class="tag pill-bad">0.00</span></td></tr>
+    <tr><td>ROUTINE</td><td>75</td><td>cfg_invalid() — فحص صلاحية الإعدادات</td><td>19</td><td>9</td><td><span class="tag pill-warn">47.37</span></td></tr>
+    <tr><td>ROUTINE</td><td>103</td><td>crc16_ccitt_bytes() — حساب CRC16</td><td>8</td><td>0</td><td><span class="tag pill-bad">0.00</span></td></tr>
+    <tr><td>ROUTINE</td><td>119</td><td>pack_bytes_to_words() — تجميع البايتات</td><td>8</td><td>0</td><td><span class="tag pill-bad">0.00</span></td></tr>
+    <tr><td>ALWAYS</td><td>137</td><td>in_rdy (always_comb)</td><td>1</td><td>1</td><td><span class="tag pill-good">100.00</span></td></tr>
+    <tr><td>ALWAYS</td><td>148</td><td>Output drive / handshake</td><td>13</td><td>12</td><td><span class="tag pill-good">92.31</span></td></tr>
+    <tr><td>ROUTINE</td><td>179</td><td>clear_remote_state()</td><td>6</td><td>6</td><td><span class="tag pill-good">100.00</span></td></tr>
+    <tr><td>ROUTINE</td><td>190</td><td>drop_remote_packet_counted()</td><td>3</td><td>0</td><td><span class="tag pill-bad">0.00</span></td></tr>
+    <tr><td>ROUTINE</td><td>198</td><td>all_frags_ready()</td><td>6</td><td>0</td><td><span class="tag pill-bad">0.00</span></td></tr>
+    <tr><td>ROUTINE</td><td>211</td><td>build_and_queue_remote_output()</td><td>11</td><td>0</td><td><span class="tag pill-bad">0.00</span></td></tr>
+    <tr><td>ALWAYS</td><td>258</td><td>Remote packet assembly FSM</td><td>103</td><td>46</td><td><span class="tag pill-warn">44.66</span></td></tr>
+  </table>
+</section>
+
+<section>
+  <h2>التغطية الوظيفية (Functional Coverage Group: bird_scoreboard::bird_cov)</h2>
+  <p style="color:var(--muted);font-size:13.5px">Score: <b class="bad">21.20%</b> &nbsp;|&nbsp; Weight: 1 &nbsp;|&nbsp; Goal: 100% &nbsp;|&nbsp; Max bins printed: 64</p>
+
+  <div class="card" style="margin-bottom:16px">
+    <div style="font-size:13px;color:var(--muted);margin-bottom:10px">Coverpoints (Variables)</div>
+    <div class="hbar-row"><div class="hbar-label">traffic_type_cp</div><div class="hbar-track"><div class="hbar-fill bg-good" style="width:100%"></div></div><div class="hbar-pct good">100%</div></div>
+    <div class="hbar-row"><div class="hbar-label">seq_num_cp</div><div class="hbar-track"><div class="hbar-fill bg-warn" style="width:34.38%"></div></div><div class="hbar-pct warn">34.4%</div></div>
+    <div class="hbar-row"><div class="hbar-label">frag_num_cp</div><div class="hbar-track"><div class="hbar-fill bg-bad" style="width:12.5%"></div></div><div class="hbar-pct bad">12.5%</div></div>
+    <div class="hbar-row"><div class="hbar-label">payload_len_cp</div><div class="hbar-track"><div class="hbar-fill bg-bad" style="width:2.72%"></div></div><div class="hbar-pct bad">2.7%</div></div>
+  </div>
+
+  <div class="card">
+    <div style="font-size:13px;color:var(--muted);margin-bottom:10px">Cross Coverage</div>
+    <div class="hbar-row"><div class="hbar-label">traffic_seq_cross</div><div class="hbar-track"><div class="hbar-fill bg-bad" style="width:17.19%"></div></div><div class="hbar-pct bad">17.2%</div></div>
+    <div class="hbar-row"><div class="hbar-label">frag_seq_cross</div><div class="hbar-track"><div class="hbar-fill bg-bad" style="width:1.37%"></div></div><div class="hbar-pct bad">1.4%</div></div>
+    <div class="hbar-row"><div class="hbar-label">payload_traffic_cross</div><div class="hbar-track"><div class="hbar-fill bg-bad" style="width:1.36%"></div></div><div class="hbar-pct bad">1.4%</div></div>
+    <div class="hbar-row"><div class="hbar-label">frag_payload_cross</div><div class="hbar-track"><div class="hbar-fill bg-bad" style="width:0.12%"></div></div><div class="hbar-pct bad">0.1%</div></div>
+  </div>
+</section>
+
+<section>
+  <h2>الهرمية (Design Hierarchy)</h2>
+  <div class="tree">top_tb               Score 36.35  Line 45.88  Cond 26.83
+└─ dut (bird)        Score 34.09  Line 41.34  Cond 26.83</div>
+</section>
+
+<section>
+  <h2>ملاحظة هامة: تغطية الـ Assertions</h2>
+  <div class="note">
+    ⚠️ رابط "asserts" في التقرير الأصلي موجود لكنه لا يفتح أي صفحة، لأنه لم تُفعَّل/تُسجَّل أي SVA assertions في هذا الـ run
+    (لا يوجد ملف asserts.html من أداة urg). لإظهار تغطية Assertions يجب:
+    <br>1) إضافة <code>assert property(...)</code> داخل الكود أو في ملف Bind/Interface.
+    <br>2) تفعيل تجميع تغطية الـ assertions أثناء البناء: <code>vcs -cm assert ...</code> أو إضافتها لـ <code>-cm</code> flags الموجودة.
+    <br>3) إعادة تشغيل urg بعد التشغيل حتى يولّد <code>asserts.html</code> فعليًا.
+  </div>
+</section>
+
+<section>
+  <h2>التحليل والتوصيات (Analysis &amp; Recommendations)</h2>
+  <ul class="findings">
+    <li><b class="bad">CRC16 (crc16_ccitt_bytes)</b> و <b class="bad">Byte-packing (pack_bytes_to_words)</b>: تغطية 0% بالكامل — لا يوجد أي test يستدعي هذه الدوال فعليًا. أولوية قصوى لإضافة سيناريوهات تستخدم remote packets كاملة.</li>
+    <li><b class="bad">Remote packet path</b> (drop_remote_packet_counted, all_frags_ready, build_and_queue_remote_output): تغطية 0% — يعني مسار استقبال الـ remote fragments غير مُختبر عمليًا رغم وجود FSM التجميع (السطر 258) بتغطية 44.66% فقط.</li>
+    <li><b class="warn">frag_num_cp</b> و <b class="bad">payload_len_cp</b>: تغطية ضعيفة جدًا (12.5% و 2.7%) — القيم العشوائية المُولَّدة لا تغطي المجال الكامل (1..31 لـ frag، 1..255 لـ payload). يُنصح باستخدام constraint randomization موجَّه (directed random) أو corner-case tests.</li>
+    <li><b class="bad">Cross coverage</b> كله أقل من 18% وبعضه أقل من 1% (frag_payload_cross) — هذا متوقع طالما الـ coverpoints الأساسية غير مغطاة، وسيرتفع تلقائيًا بعد تحسين seq_num/frag_num/payload_len.</li>
+    <li><b class="good">المسار المحلي (local packet)</b> ممتاز: traffic_type_cp = 100%, والـ handshake logic (السطر 148) = 92.31%.</li>
+    <li>عدد الـ tests المستخدمة في هذا التقرير = <b>1 فقط</b> (simv/test) — تشغيل عدة seeds/tests وعمل merge للـ coverage سيرفع النتيجة الكلية بشكل ملموس بدون تعديل أي كود.</li>
+  </ul>
+</section>
+
+</main>
+<footer>BIRD Coverage Analytics — generated from URG raw data (dashboard.txt / modinfo.txt / groups.html) — لا يستبدل التقرير الأصلي، بل يلخّصه ويحلّله.</footer>
+</body>
+</html>
