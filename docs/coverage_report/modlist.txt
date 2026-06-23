@@ -1,0 +1,13 @@
+Design Module List
+
+Total Module Definition Coverage Summary 
+SCORE  LINE   COND   
+ 36.35  45.88  26.83 
+
+
+Total modules in report: 2
+-------------------------------------------------------------------------------
+SCORE  LINE   COND   NAME   
+ 34.09  41.34  26.83 bird   
+100.00 100.00 --     top_tb 
+

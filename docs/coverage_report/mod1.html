@@ -1,0 +1,1009 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="Author" content="<username>"> <meta name="GENERATOR" content="urg/version [en] (platform name) [urg]">
+<title>Unified Coverage Report :: Module :: bird</title>
+<link type="text/css" rel="stylesheet" href="css/.urg.css">
+<link type="text/css" rel="stylesheet" href="css/.layout.css">
+<link type="text/css" rel="stylesheet" href="css/.breadcrumb.css">
+<script type="text/javascript" src="js/.jquery.js"></script>
+<script type="text/javascript" src="js/.jquery-ui.js"></script>
+<script type="text/javascript" src="js/.sortable.js"></script>
+<script type="text/javascript" src="js/.layout.js"></script>
+<script type="text/javascript" src="js/.breadcrumb.js"></script>
+<script type="text/javascript">
+var layout, westLayout, centerLayout;
+$(document).ready(function () {
+  if ($("#north-bread-crumb")) {
+    $("#north-bread-crumb").jBreadCrumb({easing:'swing'})
+  }
+  layout = $("body").layout({ 
+    resizable: true,
+    spacing_open: 4,
+    spacing_closed: 4,
+    north: {
+      size: 76
+    },
+    south: {
+      size: 45,
+      initClosed: true
+    },
+    west: {
+      size: 500,
+      resizable: true,
+      initClosed: false
+    }
+  });
+  centerLayout = $('div.ui-layout-center').layout({
+    north__paneSelector: ".ui-layout-center-inner-north",
+    center__paneSelector: ".ui-layout-center-inner-center", 
+    north__size: 50,
+    spacing_open: 4,
+    spacing_closed: 4
+  });
+});
+</script>
+</head>
+<body onLoad="initPage();"><div class="ui-layout-north">
+<div class="logo"></div>
+<center class="pagetitle">Module Definition</center>
+<div align="center"><a href="dashboard.html" ><b>dashboard</b></a> | <a href="hierarchy.html" ><b>hierarchy</b></a> | <a href="modlist.html" ><b>modlist</b></a> | <a href="groups.html" ><b>groups</b></a> | <a href="tests.html" ><b>tests</b></a> | asserts</div>
+
+</div>
+<div class="ui-layout-west">
+<div name='tag_bird'>
+<div class=modhdr>
+<br clear=all>
+<span class=titlename>Module : <a href="#"  onclick="showContent('tag_bird')">bird</a></span>
+<br clear=all>
+<table align=left>
+<tr class="sortablehead">
+<td>SCORE</td><td>LINE</td><td>COND</td><td>TOGGLE</td></tr><tr>
+<td class="s5 cl rt"> 58.81</td>
+<td class="s7 cl rt"><a href="mod1.html#Line" > 72.63</a></td>
+<td class="s5 cl rt"><a href="mod1.html#Cond" > 56.10</a></td>
+<td class="s4 cl rt"><a href="mod1.html#Toggle" > 47.71</a></td>
+</tr></table><br clear=all>
+<span class=repname>Source File(s) : </span>
+<br clear=all>
+<a href="javascript:void(0);"  onclick="openSrcFile('/home/st46/ENCS5337_DV_Project/bird.sv')">/home/st46/ENCS5337_DV_Project/bird.sv</a><br clear=all>
+<br clear=all>
+<span class=repname>Module self-instances :</span>
+<br clear=all>
+<table align=left>
+<tr class="sortablehead">
+<td class="alfsrt">NAME</td><td>SCORE</td><td>LINE</td><td>COND</td><td>TOGGLE</td></tr><tr>
+<td class="wht cl wordwrap"><a href="mod1.html#inst_tag_1"  onclick="showContent('inst_tag_1')">top_tb.dut</a></td>
+<td class="s5 cl rt"> 58.81</td>
+<td class="s7 cl rt"><a href="mod1.html#Line" > 72.63</a></td>
+<td class="s5 cl rt"><a href="mod1.html#Cond" > 56.10</a></td>
+<td class="s4 cl rt"><a href="mod1.html#Toggle" > 47.71</a></td>
+</tr></table></div>
+</div>
+<br clear=all>
+<div name='tag_bird'>
+<hr>
+<a name="inst_tag_1"></a>
+<div class=modhdr>
+<br clear=all>
+<span class=titlename>Module Instance : <a href="hierarchy.html#tag_urg_inst_1" >top_tb.dut</a></span>
+<br clear=all>
+<br clear=all>
+<span class=repname>Instance :</span>
+<br clear=all>
+<table align=left>
+<tr class="sortablehead">
+<td>SCORE</td><td>LINE</td><td>COND</td><td>TOGGLE</td></tr><tr>
+<td class="s5 cl rt"> 58.81</td>
+<td class="s7 cl rt"><a href="mod1.html#Line" > 72.63</a></td>
+<td class="s5 cl rt"><a href="mod1.html#Cond" > 56.10</a></td>
+<td class="s4 cl rt"><a href="mod1.html#Toggle" > 47.71</a></td>
+</tr></table><br clear=all>
+<br clear=all>
+<span class=repname>Instance's subtree :</span>
+<br clear=all>
+<table align=left>
+<tr class="sortablehead">
+<td>SCORE</td><td>LINE</td><td>COND</td><td>TOGGLE</td></tr><tr>
+<td class="s5 cl rt"> 58.81</td>
+<td class="s7 cl rt"> 72.63</td>
+<td class="s5 cl rt"> 56.10</td>
+<td class="s4 cl rt"> 47.71</td>
+</tr></table><br clear=all>
+<br clear=all>
+<span class=repname>Parent : </span>
+<br clear=all>
+<table align=left>
+<tr class="sortablehead">
+<td>SCORE</td><td>LINE</td><td>COND</td><td>TOGGLE</td><td class="alfsrt">NAME</td></tr><tr>
+<td class="s5 cl rt"> 58.14</td>
+<td class="s9 cl rt"> 99.61</td>
+<td class="wht cl rt"></td>
+<td class="s1 cl rt"> 16.67</td>
+<td><a href="mod4.html#inst_tag_4" >top_tb</a></td>
+</tr></table><br clear=all>
+<br clear=all>
+<span class=repname>Subtrees :</span>
+<br clear=all>
+<table align=left>
+<tr class="sortablehead">
+<td class="alfsrt">NAME</td><td>SCORE</td><td>LINE</td><td>COND</td><td>TOGGLE</td></tr><tr>
+<td colspan=5>no children</td>
+</tr></table><br clear=all>
+</div>
+</div>
+<hr>
+Since this is the module's only instance, the coverage report is the same as for the module.</div>
+<div class="ui-layout-center">
+<div class="ui-layout-center-inner-center">
+<div name='tag_bird'>
+<a name="Line"></a>
+Line Coverage for Module : <a href="mod1.html" >bird</a><br clear=all>
+<table class="noborder">
+<col width="122">
+<col span="4" width="82">
+<tr><th></th><th>Line No.</th><th>Total</th><th>Covered</th><th>Percent</th></tr>
+<tr class="s7"><td class="lf">TOTAL</td><td></td><td>179</td><td>130</td><td>72.63</td></tr>
+<tr class="s10"><td class="lf">ROUTINE</td><td>67</td><td>1</td><td>1</td><td>100.00</td></tr>
+<tr class="s7"><td class="lf">ROUTINE</td><td>75</td><td>19</td><td>15</td><td>78.95</td></tr>
+<tr class="s0"><td class="lf">ROUTINE</td><td>103</td><td>8</td><td>0</td><td>0.00</td></tr>
+<tr class="s0"><td class="lf">ROUTINE</td><td>119</td><td>8</td><td>0</td><td>0.00</td></tr>
+<tr class="s10"><td class="lf">ALWAYS</td><td>137</td><td>1</td><td>1</td><td>100.00</td></tr>
+<tr class="s9"><td class="lf">ALWAYS</td><td>148</td><td>13</td><td>12</td><td>92.31</td></tr>
+<tr class="s10"><td class="lf">ROUTINE</td><td>179</td><td>6</td><td>6</td><td>100.00</td></tr>
+<tr class="s10"><td class="lf">ROUTINE</td><td>190</td><td>3</td><td>3</td><td>100.00</td></tr>
+<tr class="s10"><td class="lf">ROUTINE</td><td>198</td><td>6</td><td>6</td><td>100.00</td></tr>
+<tr class="s0"><td class="lf">ROUTINE</td><td>211</td><td>11</td><td>0</td><td>0.00</td></tr>
+<tr class="s8"><td class="lf">ALWAYS</td><td>258</td><td>103</td><td>86</td><td>83.50</td></tr>
+</table>
+<pre class="code"><br clear=all>
+66                        task automatic inc_drop_cnt();
+67         1/1              drop_cnt &lt;= drop_cnt + 16'd1;
+68                        endtask
+69                      
+70                        // ----------------------------
+71                        // cfg validity (per latest rules)
+72                        // ----------------------------
+73                        function automatic bit cfg_invalid(input logic [31:0] c);
+74                          bit inv;
+75         1/1              inv = 0;
+76                      
+77                          // Reserved bits must be 0
+78         2/2              if (c[7:1]   != 7'd0) inv = 1;
+                        MISSING_ELSE
+79         <font color = "red">1/2     ==>      if (c[23:21] != 3'd0) inv = 1;</font>
+                        MISSING_ELSE
+80         <font color = "red">1/2     ==>      if (c[31:29] != 3'd0) inv = 1;</font>
+                        MISSING_ELSE
+81                      
+82                          // PAYLOAD_LEN must be 1..255 (0 invalid)
+83         2/2              if (c[15:8] == 8'd0) inv = 1;
+                        MISSING_ELSE
+84                      
+85         1/1              if (c[0] == 1'b0) begin
+86                            // LOCAL: must be SEQ_NUM==1 and FRAG_NUM==1
+87         <font color = "red">1/2     ==>        if (c[28:24] != 5'd1) inv = 1;</font>
+                        MISSING_ELSE
+88         <font color = "red">1/2     ==>        if (c[20:16] != 5'd1) inv = 1;</font>
+                        MISSING_ELSE
+89                          end else begin
+90                            // REMOTE: SEQ_NUM and FRAG_NUM must be non-zero
+91         2/2                if (c[28:24] == 5'd0) inv = 1;
+                        MISSING_ELSE
+92         2/2                if (c[20:16] == 5'd0) inv = 1;
+                        MISSING_ELSE
+93                          end
+94                      
+95         1/1              return inv;
+96                        endfunction
+97                      
+98                        // ----------------------------
+99                        // CRC16-CCITT (poly 0x1021, init 0xFFFF) over byte queue
+100                       // ----------------------------
+101                       function automatic logic [15:0] crc16_ccitt_bytes(input u8_t bytes[$]);
+102                         logic [15:0] crc;
+103        <font color = "red">0/1     ==>      crc = 16'hFFFF;</font>
+104        <font color = "red">0/1     ==>      foreach (bytes[i]) begin</font>
+105        <font color = "red">0/1     ==>        crc ^= {bytes[i], 8'h00};</font>
+106        <font color = "red">0/1     ==>        for (int b = 0; b &lt; 8; b++) begin</font>
+107        <font color = "red">0/2     ==>          if (crc[15]) crc = (crc &lt;&lt; 1) ^ 16'h1021;</font>
+108        <font color = "red">0/1     ==>          else         crc = (crc &lt;&lt; 1);</font>
+109                           end
+110                         end
+111        <font color = "red">0/1     ==>      return crc;</font>
+112                       endfunction
+113                     
+114                       // ----------------------------
+115                       // Pack bytes into 32-bit words (little-endian within word)
+116                       // ----------------------------
+117                       function automatic void pack_bytes_to_words(input u8_t bytes[$], inout logic [31:0] wq[$]);
+118                         int i;
+119        <font color = "red">0/1     ==>      i = 0;</font>
+120        <font color = "red">0/1     ==>      while (i &lt; bytes.size()) begin</font>
+121                           logic [31:0] w;
+122        <font color = "red">0/1     ==>        w = 32'h0;</font>
+123        <font color = "red">0/1     ==>        for (int k = 0; k &lt; 4; k++) begin</font>
+124        <font color = "red">0/1     ==>          if (i &lt; bytes.size()) begin</font>
+125        <font color = "red">0/1     ==>            w[8*k +: 8] = bytes[i];</font>
+126        <font color = "red">0/1     ==>            i++;</font>
+127                             end
+                   <font color = "red">==>  MISSING_ELSE</font>
+128                           end
+129        <font color = "red">0/1     ==>        wq.push_back(w);</font>
+130                         end
+131                        endfunction
+132                     
+133                       // ----------------------------
+134                       // Input ready (behavioral model is always ready)
+135                       // ----------------------------
+136                       always_comb begin
+137        1/1              in_rdy = 1'b1;
+138                       end
+139                     
+140                       // ----------------------------
+141                       // Output queues (hold stable under backpressure by not popping)
+142                       // ----------------------------
+143                       u8_t         local_q[$];
+144                       logic [31:0] remote_wq[$];
+145                     
+146                       // Drive outputs + pop on handshake
+147                       always_ff @(posedge clk or negedge rst_n) begin
+148        1/1              if (!rst_n) begin
+149        1/1                local_vld  &lt;= 1'b0;
+150        1/1                data_local &lt;= 8'h00;
+151                     
+152        1/1                remote_vld  &lt;= 1'b0;
+153        1/1                data_remote &lt;= 32'h0;
+154                         end else begin
+155        1/1                local_vld  = (local_q.size() != 0);
+156        1/1                data_local = (local_q.size() != 0) ? local_q[0] : 8'h00;
+157        1/1                if (local_vld &amp;&amp; local_rdy) begin
+158        1/1                  void'(local_q.pop_front());
+159                           end
+                        MISSING_ELSE
+160                     
+161        1/1                remote_vld  &lt;= (remote_wq.size() != 0);
+162        1/1                data_remote &lt;= (remote_wq.size() != 0) ? remote_wq[0] : 32'h0;
+163        1/1                if (remote_vld &amp;&amp; remote_rdy) begin
+164        <font color = "red">0/1     ==>          void'(remote_wq.pop_front());</font>
+165                           end
+                        MISSING_ELSE
+166                         end
+167                       end
+168                     
+169                       // ============================================================
+170                       // Remote accumulation state (one packet at a time)
+171                       // ============================================================
+172                       bit          remote_active;
+173                       int unsigned active_seq;                 // 1..31 (packet identifier)
+174                       int unsigned active_max_frag;            // inferred N: max FRAG_NUM seen so far (1..31)
+175                       bit          frag_seen   [1:31];
+176                       u8_t         frag_payload[1:31][$];
+177                     
+178                       task automatic clear_remote_state();
+179        1/1              remote_active    = 0;
+180        1/1              active_seq       = 0;
+181        1/1              active_max_frag  = 0;
+182        1/1              for (int f = 1; f &lt;= 31; f++) begin
+183        1/1                frag_seen[f] = 0;
+184        1/1                frag_payload[f].delete();
+185                         end
+186                       endtask
+187                     
+188                       task automatic drop_remote_packet_counted();
+189                         // Drop currently-accumulated remote packet (if any) and count it as one dropped packet.
+190        1/1              if (remote_active) begin
+191        1/1                inc_drop_cnt();
+192                         end
+                   <font color = "red">==>  MISSING_ELSE</font>
+193        1/1              clear_remote_state();
+194                       endtask
+195                     
+196                       function automatic bit all_frags_ready(input int unsigned n);
+197                         bit ok;
+198        1/1              ok = 1;
+199        1/1              for (int f = 1; f &lt;= 31; f++) begin
+200        1/1                if (f &lt;= n) begin
+201        2/2                  if (!frag_seen[f]) ok = 0;
+                        MISSING_ELSE
+202                           end
+                        MISSING_ELSE
+203                         end
+204        1/1              return ok;
+205                       endfunction
+206                     
+207                       task automatic build_and_queue_remote_output();
+208                         u8_t merged[$];
+209                         logic [15:0] crc;
+210                     
+211        <font color = "red">0/1     ==>      merged.delete();</font>
+212                     
+213                         // Merge in order 1..N; if missing any =&gt; drop packet
+214        <font color = "red">0/1     ==>      for (int f = 1; f &lt;= active_max_frag; f++) begin</font>
+215        <font color = "red">0/1     ==>        if (!frag_seen[f]) begin</font>
+216        <font color = "red">0/1     ==>          drop_remote_packet_counted();</font>
+217        <font color = "red">0/1     ==>          return;</font>
+218                           end
+                   <font color = "red">==>  MISSING_ELSE</font>
+219        <font color = "red">0/2     ==>        foreach (frag_payload[f][i]) merged.push_back(frag_payload[f][i]);</font>
+220                         end
+221                     
+222                         // Regenerate CRC over merged payload (cfg is not part of stream)
+223        <font color = "red">0/1     ==>      crc = crc16_ccitt_bytes(merged);</font>
+224                     
+225                         // Queue merged payload packed into 32-bit words, then CRC word
+226        <font color = "red">0/1     ==>      pack_bytes_to_words(merged, remote_wq);</font>
+227        <font color = "red">0/1     ==>      remote_wq.push_back({16'h0000, crc});</font>
+228                     
+229                         // Clear current remote packet state after queuing output (NOT a drop)
+230        <font color = "red">0/1     ==>      clear_remote_state();</font>
+231                       endtask
+232                     
+233                         // ============================================================
+234                         // RX fragment FSM
+235                         // ============================================================
+236                         typedef enum logic [1:0] {RX_IDLE, RX_PAYLOAD, RX_CRC} rx_state_e;
+237                         rx_state_e rx_st;
+238                     
+239                         // Latched at start-of-fragment (first payload byte)
+240                         bit          rx_is_remote;
+241                         bit          rx_drop;
+242                     
+243                         int unsigned rx_seq;       // SEQ_NUM (packet id) [28:24]
+244                         int unsigned rx_len;       // PAYLOAD_LEN [15:8]
+245                         int unsigned rx_frag;      // FRAG_NUM [20:16]
+246                     
+247                         // Counters for the remainder of the fragment AFTER consuming the first payload byte
+248                         int unsigned payload_left;  // remaining payload bytes after first byte
+249                         int unsigned crc_left;      // remaining CRC bytes (2)
+250                     
+251                         // Temporary capture for current remote fragment payload
+252                         u8_t cur_frag_payload[$];
+253                     
+254                         // ============================================================
+255                         // Main sequential behavior
+256                         // ============================================================
+257                         always_ff @(posedge clk or negedge rst_n) begin
+258        1/1                  if (!rst_n) begin
+259        1/1                      $display(&quot;ssssssssssssssssss state moved to idle&quot;);
+260        1/1                      rx_st &lt;= RX_IDLE;
+261                     
+262        1/1                      local_q.delete();
+263        1/1                      remote_wq.delete();
+264        1/1                      cur_frag_payload.delete();
+265                     
+266        1/1                      drop_cnt &lt;= 16'd0;
+267                     
+268        1/1                      clear_remote_state();
+269                     
+270                             end else begin
+271        1/1                  if (in_vld &amp;&amp; in_rdy) begin
+272        1/1                      unique case (rx_st)
+273                     
+274                                     // ----------------------------------------------------
+275                                     // RX_IDLE: first payload byte of a fragment arrives here
+276                                     // cfg sampled in SAME cycle as first payload byte.
+277                                     // ----------------------------------------------------
+278                                     RX_IDLE: begin
+279        1/1                              rx_drop      = cfg_invalid(cfg);
+280        1/1                              rx_is_remote = cfg[0];
+281        1/1                              rx_len       = cfg[15:8];
+282        1/1                              rx_frag      = cfg[20:16];
+283        1/1                              rx_seq       = cfg[28:24];
+284                     
+285        1/1                              $display(&quot;==================== Delete cur_frag_payload =========== idle state now&quot;);
+286        1/1                              cur_frag_payload.delete();
+287                     
+288                                         // Consuming FIRST payload byte now; remaining payload bytes = PAYLOAD_LEN - 1
+289        1/1                              payload_left = (cfg[15:8] &gt; 0) ? (cfg[15:8] - 1) : 0;
+290        1/1                              crc_left     = 2;
+291                     
+292                                         // If cfg invalid: count one dropped packet; consume bytes but do not forward/store
+293        1/1                              if (rx_drop) begin
+294        1/1                                  inc_drop_cnt();
+295        1/1                                  $display(&quot;rx_drop ..........................&quot;);
+296                     
+297                                             // If this is a remote fragment for the active packet, drop that active packet too
+298        1/1                                  if (cfg[0] == 1'b1 &amp;&amp; remote_active &amp;&amp; (cfg[28:24] == active_seq)) begin
+299        <font color = "red">0/1     ==>                              drop_remote_packet_counted();</font>
+300                                             end  
+                        MISSING_ELSE
+301                                         end else begin
+302                                             // Valid cfg: handle local vs remote
+303        1/1                                  if (!rx_is_remote) begin
+304                                                 // LOCAL valid (SEQ_NUM==1 and FRAG_NUM==1): forward first payload byte
+305        1/1                                      $display(&quot;push new local pkt first byte %0h&quot;,data_in );
+306        1/1                                      local_q.push_back(data_in);
+307                                             end else begin
+308                                                 // REMOTE valid
+309        1/1                                      if (!remote_active) begin
+310                                                     // Start a new remote packet only when FRAG_NUM==1
+311                                                     // if (rx_frag == 1) begi
+312        1/1                                        if (rx_seq &lt;= rx_frag) begin
+313        1/1                                              remote_active   = 1;
+314        1/1                                              active_seq      = rx_seq;
+315        1/1                                              active_max_frag = 0;
+316        1/1                                              for (int f = 1; f &lt;= 31; f++) begin
+317        1/1                                                  frag_seen[f] = 0;
+318        1/1                                                  frag_payload[f].delete();
+319                                                         end
+320        1/1                                              $display(&quot;====================0 Adding data %0h&quot;,data_in);
+321        1/1                                              cur_frag_payload.push_back(data_in);
+322                                                     end else begin
+323                                                         // Remote fragment without active packet start =&gt; drop packet
+324        1/1                                              inc_drop_cnt();
+325                                                     end
+326                                                 end else begin
+327                                                     // Active packet exists
+328        1/1                                          $display(&quot;rx seq %0d, active seq %0d&quot;, rx_seq, active_seq);
+329                                                     //if (rx_seq != active_seq) begin
+330        1/1                                          if (rx_seq &gt; rx_frag) begin
+331                                                         // Mismatched SEQ while accumulating =&gt; drop current packet
+332        1/1                                              drop_remote_packet_counted();
+333                     
+334                                                         // Start new only if incoming fragment is FRAG_NUM==1
+335                                                         //if (rx_frag == 1) begin
+336        1/1                                              if (rx_seq == 1) begin
+337        <font color = "red">0/1     ==>                                          remote_active   = 1;</font>
+338        <font color = "red">0/1     ==>                                          active_seq      = rx_seq;</font>
+339        <font color = "red">0/1     ==>                                          active_max_frag = 0;</font>
+340        <font color = "red">0/1     ==>                                          for (int f = 1; f &lt;= 31; f++) begin</font>
+341        <font color = "red">0/1     ==>                                              frag_seen[f] = 0;</font>
+342        <font color = "red">0/1     ==>                                              frag_payload[f].delete();</font>
+343                                                             end
+344        <font color = "red">0/1     ==>                                          $display(&quot;====================1 Adding data %0h&quot;,data_in);</font>
+345        <font color = "red">0/1     ==>                                          cur_frag_payload.push_back(data_in);</font>
+346                                                         end else begin
+347                                                             // Otherwise drop incoming packet too
+348        1/1                                                  inc_drop_cnt();
+349                                                         end
+350                                                     end else begin
+351                                                         // Same SEQ as active: accept payload
+352        1/1                                              $display(&quot;====================2 Adding data %0h&quot;,data_in);
+353        1/1                                              cur_frag_payload.push_back(data_in);
+354                                                     end
+355                                                 end
+356                                             end
+357                                         end
+358                     
+359                                         // Next state
+360        1/1                              if (((cfg[15:8] &gt; 0) ? (cfg[15:8] - 1) : 0) == 0) begin
+361        <font color = "red">0/1     ==>                          $display(&quot;ssssssssssssssssss state moved to crc&quot;);</font>
+362        <font color = "red">0/1     ==>                          rx_st &lt;= RX_CRC;</font>
+363                                         end else begin
+364        1/1                                  $display(&quot;ssssssssssssssssss state moved to payload&quot;);
+365        1/1                                  rx_st &lt;= RX_PAYLOAD;
+366                                         end
+367                                     
+368                                     end
+369                     
+370                                     // ----------------------------------------------------
+371                                     // RX_PAYLOAD: remaining payload bytes
+372                                     // ----------------------------------------------------
+373                                     RX_PAYLOAD: begin
+374        1/1                              rx_drop      = cfg_invalid(cfg);
+375        1/1                            if ( (!rx_is_remote &amp;&amp; remote_active) ||  (rx_is_remote &amp;&amp; !remote_active) ) begin
+376        1/1                                   rx_drop =1;
+377        1/1                              $display(&quot;Dropppppppppppppppppppppppppppp&quot;);
+378                                       end
+                        MISSING_ELSE
+379        1/1                              if (!rx_drop) begin
+380        1/1                                  if (!rx_is_remote) begin
+381                                                 // Local: forward payload bytes
+382        1/1                                      $display(&quot;push payload byte %0h&quot;,data_in );
+383        1/1                                      local_q.push_back(data_in);
+384                                             end else begin
+385                                                 // Remote: only keep collecting if active context matches rx_seq
+386        1/1                                      if (remote_active &amp;&amp; (rx_seq &lt;= rx_frag)) begin
+387        1/1                                          $display(&quot;%t ====================3 Adding data %0h&quot;,$time,data_in);
+388        1/1                                          cur_frag_payload.push_back(data_in);
+389                                                 end
+                   <font color = "red">==>  MISSING_ELSE</font>
+390                                             end
+391                                         end
+                        MISSING_ELSE
+392                     
+393        2/2                              if (payload_left &gt; 0) payload_left &lt;= payload_left - 1;
+                        MISSING_ELSE
+394                     
+395                                         // After consuming the last remaining payload byte, move to CRC
+396        1/1                              if (payload_left == 3) begin
+397                                             //$display(&quot;ssssssssssssssssss state moved to crc&quot;);
+398        1/1                                  rx_st &lt;= RX_CRC;
+399                                         end
+                        MISSING_ELSE
+400                                         
+401                                     end
+402                     
+403                                     // ----------------------------------------------------
+404                                     // RX_CRC: consume exactly 2 CRC bytes (not checked)
+405                                     // Local: forward CRC bytes unchanged on the local stream.
+406                                     // ----------------------------------------------------
+407                                     RX_CRC: begin
+408        1/1                              $display(&quot;%t .........................crc_left %0d  entered state moved to crc %0h&quot;,$time, crc_left, data_in);
+409        2/2                              if (crc_left &gt; 0) crc_left &lt;= crc_left - 1;
+                   <font color = "red">==>  MISSING_ELSE</font>
+410                     
+411                                         // Forward CRC bytes to local output only (if not dropped)
+412        1/1                              if (!rx_drop &amp;&amp; !rx_is_remote) begin
+413        1/1                                  $display(&quot;push crc byte %0h&quot;,data_in );
+414        1/1                                  local_q.push_back(data_in);
+415                                         end
+                        MISSING_ELSE
+416                     
+417                                         // End-of-fragment on the second CRC byte
+418        1/1                              if (crc_left == 1) begin
+419        1/1                                  if (!rx_drop &amp;&amp; rx_is_remote) begin
+420        1/1                                      $display(&quot;no drop and is remote&quot;);
+421                                                 // Commit remote fragment payload if active and SEQ matches
+422        1/1                                      if (!(remote_active &amp;&amp; (rx_seq &lt;= rx_frag))) begin
+423                                                     // Remote fragment without valid active context =&gt; drop packet
+424        <font color = "red">0/1     ==>                                  $display(&quot;inc_drop_cnt rx_seq %0d active_seq %0d&quot;, rx_seq, active_seq);</font>
+425        <font color = "red">0/1     ==>                                  inc_drop_cnt();</font>
+426                                                 end else begin
+427                                                     // rx_frag is guaranteed non-zero by cfg_invalid() for remote
+428                                                     //if (rx_frag &lt; 1 || rx_frag &gt; 31) begin
+429        1/1                                          if (rx_seq &lt; 1 || rx_seq &gt; rx_frag) begin
+430        <font color = "red">0/1     ==>                                      drop_remote_packet_counted();</font>
+431                                                     end else begin
+432        1/1                                              $display(&quot;payload ready ........&quot;);
+433                                                         //frag_seen[rx_frag] = 1;
+434                                                         //frag_payload[rx_frag].delete();
+435        1/1                                              frag_seen[rx_seq] = 1;
+436        1/1                                              frag_payload[rx_seq].delete();
+437                                                         //foreach (cur_frag_payload[i]) frag_payload[rx_frag].push_back(cur_frag_payload[i]);
+438                                                         
+439        1/1                                              foreach (cur_frag_payload[i]) begin
+440        1/1                                                  $display (&quot;push back to frag_payload %0h&quot;,cur_frag_payload[i] );
+441        1/1                                                  frag_payload[rx_seq].push_back(cur_frag_payload[i]);
+442                                                         end
+443                     
+444                                                         // Infer N as max FRAG_NUM seen so far
+445        1/1                                              $display(&quot;check if frag done&quot;);
+446        2/2                                              if (rx_frag &gt; active_max_frag) active_max_frag = rx_frag;
+                        MISSING_ELSE
+447        <font color = "red">1/2     ==>                                      if (rx_seq &gt; active_max_frag) active_max_frag = rx_seq;</font>
+                        MISSING_ELSE
+448                     
+449                                                         // If we now have all fragments 1..N, build output
+450        1/1                                              if (all_frags_ready(active_max_frag)) begin
+451        <font color = "red">0/1     ==>                                          build_and_queue_remote_output();</font>
+452                                                         end
+                        MISSING_ELSE
+453                                                     end
+454                                                 end
+455                                             end
+                        MISSING_ELSE
+456                     
+457                                             // Ready for next fragment
+458        1/1                                  $display(&quot;ssssssssssssssssss state moved to idle&quot;);
+459        1/1                                  rx_st &lt;= RX_IDLE;
+460                                         end
+                        MISSING_ELSE
+461                                     end
+462                     
+463        <font color = "red">0/1     ==>                  default: rx_st &lt;= RX_IDLE;</font>
+464                     
+465                                 endcase
+466                             end
+                        MISSING_ELSE
+</pre>
+<hr>
+<a name="Cond"></a>
+Cond Coverage for Module : <a href="mod1.html" >bird</a><br clear=all>
+<table class="noborder">
+<col width="122">
+<col span="3" width="82">
+<tr><th></th><th>Total</th><th>Covered</th><th>Percent</th></tr>
+<tr class="s5"><td class="lf">Conditions</td><td>41</td><td>23</td><td>56.10</td></tr>
+<tr class="s5"><td class="lf">Logical</td><td>41</td><td>23</td><td>56.10</td></tr>
+<tr class="wht"><td class="lf">Non-Logical</td><td>0</td><td>0</td><td></td></tr>
+<tr class="wht"><td class="lf">Event</td><td>0</td><td>0</td><td></td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       157
+ EXPRESSION (local_vld &amp;&amp; local_rdy)
+             ----1----    ----2----
+</pre>
+<table class="noborder">
+<col span="2" width="40">
+<tr><th>-1-</th><th>-2-</th><th>Status</th></tr>
+<tr class="uGreen"><td>0</td><td>1</td><td class="lf">Covered</td></tr>
+<tr class="uRed"><td>1</td><td>0</td><td class="lf">Not Covered</td></tr>
+<tr class="uGreen"><td>1</td><td>1</td><td class="lf">Covered</td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       163
+ EXPRESSION (remote_vld &amp;&amp; remote_rdy)
+             -----1----    -----2----
+</pre>
+<table class="noborder">
+<col span="2" width="40">
+<tr><th>-1-</th><th>-2-</th><th>Status</th></tr>
+<tr class="uGreen"><td>0</td><td>1</td><td class="lf">Covered</td></tr>
+<tr class="uRed"><td>1</td><td>0</td><td class="lf">Not Covered</td></tr>
+<tr class="uRed"><td>1</td><td>1</td><td class="lf">Not Covered</td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       271
+ EXPRESSION (in_vld &amp;&amp; in_rdy)
+             ---1--    ---2--
+</pre>
+<table class="noborder">
+<col span="2" width="40">
+<tr><th>-1-</th><th>-2-</th><th>Status</th></tr>
+<tr class="uGreen"><td>0</td><td>1</td><td class="lf">Covered</td></tr>
+<tr class="uRed"><td>1</td><td>0</td><td class="lf">Not Covered</td></tr>
+<tr class="uGreen"><td>1</td><td>1</td><td class="lf">Covered</td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       289
+ EXPRESSION ((cfg[15:8] &gt; 8'b0) ? ((cfg[15:8] - 1)) : 0)
+             ---------1--------
+</pre>
+<table class="noborder">
+<col width="40">
+<tr><th>-1-</th><th>Status</th></tr>
+<tr class="uRed"><td>0</td><td class="lf">Not Covered</td></tr>
+<tr class="uGreen"><td>1</td><td class="lf">Covered</td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       298
+ EXPRESSION ((cfg[0] == 1'b1) &amp;&amp; remote_active &amp;&amp; (cfg[28:24] == active_seq))
+             --------1-------    ------2------    -------------3------------
+</pre>
+<table class="noborder">
+<col span="3" width="40">
+<tr><th>-1-</th><th>-2-</th><th>-3-</th><th>Status</th></tr>
+<tr class="uRed"><td>0</td><td>1</td><td>1</td><td class="lf">Not Covered</td></tr>
+<tr class="uGreen"><td>1</td><td>0</td><td>1</td><td class="lf">Covered</td></tr>
+<tr class="uRed"><td>1</td><td>1</td><td>0</td><td class="lf">Not Covered</td></tr>
+<tr class="uRed"><td>1</td><td>1</td><td>1</td><td class="lf">Not Covered</td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       375
+ EXPRESSION ((((!rx_is_remote)) &amp;&amp; remote_active) || (rx_is_remote &amp;&amp; ((!remote_active))))
+             ------------------1-----------------    ------------------2-----------------
+</pre>
+<table class="noborder">
+<col span="2" width="40">
+<tr><th>-1-</th><th>-2-</th><th>Status</th></tr>
+<tr class="uGreen"><td>0</td><td>0</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>0</td><td>1</td><td class="lf">Covered</td></tr>
+<tr class="uRed"><td>1</td><td>0</td><td class="lf">Not Covered</td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       375
+ SUB-EXPRESSION (((!rx_is_remote)) &amp;&amp; remote_active)
+                 --------1--------    ------2------
+</pre>
+<table class="noborder">
+<col span="2" width="40">
+<tr><th>-1-</th><th>-2-</th><th>Status</th></tr>
+<tr class="uGreen"><td>0</td><td>1</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>1</td><td>0</td><td class="lf">Covered</td></tr>
+<tr class="uRed"><td>1</td><td>1</td><td class="lf">Not Covered</td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       375
+ SUB-EXPRESSION (rx_is_remote &amp;&amp; ((!remote_active)))
+                 ------1-----    ---------2--------
+</pre>
+<table class="noborder">
+<col span="2" width="40">
+<tr><th>-1-</th><th>-2-</th><th>Status</th></tr>
+<tr class="uGreen"><td>0</td><td>1</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>1</td><td>0</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>1</td><td>1</td><td class="lf">Covered</td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       386
+ EXPRESSION (remote_active &amp;&amp; (rx_seq &lt;= rx_frag))
+             ------1------    ---------2---------
+</pre>
+<table class="noborder">
+<col span="2" width="40">
+<tr><th>-1-</th><th>-2-</th><th>Status</th></tr>
+<tr class="uRed"><td>0</td><td>1</td><td class="lf">Not Covered</td></tr>
+<tr class="uRed"><td>1</td><td>0</td><td class="lf">Not Covered</td></tr>
+<tr class="uGreen"><td>1</td><td>1</td><td class="lf">Covered</td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       412
+ EXPRESSION (((!rx_drop)) &amp;&amp; ((!rx_is_remote)))
+             ------1-----    --------2--------
+</pre>
+<table class="noborder">
+<col span="2" width="40">
+<tr><th>-1-</th><th>-2-</th><th>Status</th></tr>
+<tr class="uRed"><td>0</td><td>1</td><td class="lf">Not Covered</td></tr>
+<tr class="uGreen"><td>1</td><td>0</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>1</td><td>1</td><td class="lf">Covered</td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       419
+ EXPRESSION (((!rx_drop)) &amp;&amp; rx_is_remote)
+             ------1-----    ------2-----
+</pre>
+<table class="noborder">
+<col span="2" width="40">
+<tr><th>-1-</th><th>-2-</th><th>Status</th></tr>
+<tr class="uGreen"><td>0</td><td>1</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>1</td><td>0</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>1</td><td>1</td><td class="lf">Covered</td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       422
+ EXPRESSION ( ! (remote_active &amp;&amp; (rx_seq &lt;= rx_frag)) )
+                -------------------1------------------
+</pre>
+<table class="noborder">
+<col width="40">
+<tr><th>-1-</th><th>Status</th></tr>
+<tr class="uRed"><td>0</td><td class="lf">Not Covered</td></tr>
+<tr class="uGreen"><td>1</td><td class="lf">Covered</td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       422
+ SUB-EXPRESSION (remote_active &amp;&amp; (rx_seq &lt;= rx_frag))
+                 ------1------    ---------2---------
+</pre>
+<table class="noborder">
+<col span="2" width="40">
+<tr><th>-1-</th><th>-2-</th><th>Status</th></tr>
+<tr class="uRed"><td>0</td><td>1</td><td class="lf">Not Covered</td></tr>
+<tr class="uRed"><td>1</td><td>0</td><td class="lf">Not Covered</td></tr>
+<tr class="uGreen"><td>1</td><td>1</td><td class="lf">Covered</td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       429
+ EXPRESSION ((rx_seq &lt; 1) || (rx_seq &gt; rx_frag))
+             ------1-----    ---------2--------
+</pre>
+<table class="noborder">
+<col span="2" width="40">
+<tr><th>-1-</th><th>-2-</th><th>Status</th></tr>
+<tr class="uGreen"><td>0</td><td>0</td><td class="lf">Covered</td></tr>
+<tr class="uRed"><td>0</td><td>1</td><td class="lf">Not Covered</td></tr>
+<tr class="uRed"><td>1</td><td>0</td><td class="lf">Not Covered</td></tr>
+</table>
+<hr>
+<a name="Toggle"></a>
+Toggle Coverage for Module : <a href="mod1.html" >bird</a><br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=120></th><th nowrap width=80>Total</th><th nowrap width=80>Covered</th><th nowrap width=80>Percent</th></tr><tr class="s7">
+<td>Totals</td>
+<td class="rt">17</td>
+<td class="rt">12</td>
+<td class="rt">70.59 </td>
+</tr><tr class="s4">
+<td>Total Bits</td>
+<td class="rt">218</td>
+<td class="rt">104</td>
+<td class="rt">47.71 </td>
+</tr><tr class="s4">
+<td nowrap>Total Bits 0->1</td>
+<td class="rt">109</td>
+<td class="rt">52</td>
+<td class="rt">47.71 </td>
+</tr><tr class="s4">
+<td nowrap>Total Bits 1->0</td>
+<td class="rt">109</td>
+<td class="rt">52</td>
+<td class="rt">47.71 </td>
+</tr></table><br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=120></th><th nowrap width=80></th><th nowrap width=80></th><th nowrap width=80></th></tr><tr class="s6">
+<td>Ports</td>
+<td class="rt">13</td>
+<td class="rt">8</td>
+<td class="rt">61.54 </td>
+</tr><tr class="s4">
+<td>Port Bits</td>
+<td class="rt">208</td>
+<td class="rt">94</td>
+<td class="rt">45.19 </td>
+</tr><tr class="s4">
+<td nowrap>Port Bits 0->1</td>
+<td class="rt">104</td>
+<td class="rt">47</td>
+<td class="rt">45.19 </td>
+</tr><tr class="s4">
+<td nowrap>Port Bits 1->0</td>
+<td class="rt">104</td>
+<td class="rt">47</td>
+<td class="rt">45.19 </td>
+</tr></table><br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=120></th><th nowrap width=80></th><th nowrap width=80></th><th nowrap width=80></th></tr><tr class="s10">
+<td>Signals</td>
+<td class="rt">4</td>
+<td class="rt">4</td>
+<td class="rt">100.00</td>
+</tr><tr class="s10">
+<td>Signal Bits</td>
+<td class="rt">10</td>
+<td class="rt">10</td>
+<td class="rt">100.00</td>
+</tr><tr class="s10">
+<td nowrap>Signal Bits 0->1</td>
+<td class="rt">5</td>
+<td class="rt">5</td>
+<td class="rt">100.00</td>
+</tr><tr class="s10">
+<td nowrap>Signal Bits 1->0</td>
+<td class="rt">5</td>
+<td class="rt">5</td>
+<td class="rt">100.00</td>
+</tr></table><br clear=all>
+<table align=left class="sortable noborder">
+<caption><b>Port Details</b></caption>
+<tr class="sortablehead">
+<td class="alfsrt">Name</td><td class="alfsrt">Toggle</td><td class="alfsrt">Toggle 1->0</td><td class="alfsrt">Toggle 0->1</td><td class="alfsrt">Direction</td></tr><tr>
+<td>clk</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>INPUT</td>
+</tr><tr>
+<td>rst_n</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>INPUT</td>
+</tr><tr>
+<td>in_vld</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>INPUT</td>
+</tr><tr>
+<td>in_rdy</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td>OUTPUT</td>
+</tr><tr>
+<td>data_in[7:0]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>INPUT</td>
+</tr><tr>
+<td>cfg[17:0]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>INPUT</td>
+</tr><tr>
+<td>cfg[23:18]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td>INPUT</td>
+</tr><tr>
+<td>cfg[28:24]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>INPUT</td>
+</tr><tr>
+<td>cfg[31:29]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td>INPUT</td>
+</tr><tr>
+<td>drop_cnt[1:0]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>OUTPUT</td>
+</tr><tr>
+<td>drop_cnt[15:2]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td>OUTPUT</td>
+</tr><tr>
+<td>local_vld</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>OUTPUT</td>
+</tr><tr>
+<td>local_rdy</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>INPUT</td>
+</tr><tr>
+<td>data_local[7:0]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>OUTPUT</td>
+</tr><tr>
+<td>remote_vld</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td>OUTPUT</td>
+</tr><tr>
+<td>remote_rdy</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>INPUT</td>
+</tr><tr>
+<td>data_remote[31:0]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td>OUTPUT</td>
+</tr></table><br clear=all>
+<table align=left class="sortable noborder">
+<caption><b>Signal Details</b></caption>
+<tr class="sortablehead">
+<td class="alfsrt">Name</td><td class="alfsrt">Toggle</td><td class="alfsrt">Toggle 1->0</td><td class="alfsrt">Toggle 0->1</td></tr><tr>
+<td>remote_active</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>rx_st[1:0]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>rx_is_remote</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>rx_drop</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr></table><br clear=all>
+</div>
+</div>
+<div class="ui-layout-center-inner-north">
+<div id="center-bread-crumb" class="breadCrumb module urg-margin-bottom">
+  <ul name="inst_tag_1">
+    <li>
+      <a href="#Line">Line</a>    </li>
+    <li>
+      <a href="#Cond">Cond</a>    </li>
+    <li>
+      <a href="#Toggle">Toggle</a>    </li>
+  </ul>
+  <ul name="tag_bird">
+    <li>
+      <a href="#Line">Line</a>    </li>
+    <li>
+      <a href="#Cond">Cond</a>    </li>
+    <li>
+      <a href="#Toggle">Toggle</a>    </li>
+  </ul>
+</div>
+</div>
+</div>
+<div class="ui-layout-south">
+<table align=center><tr><td class="s0 cl">0%</td>
+<td class="s1 cl">10%</td>
+<td class="s2 cl">20%</td>
+<td class="s3 cl">30%</td>
+<td class="s4 cl">40%</td>
+<td class="s5 cl">50%</td>
+<td class="s6 cl">60%</td>
+<td class="s7 cl">70%</td>
+<td class="s8 cl">80%</td>
+<td class="s9 cl">90%</td>
+<td class="s10 cl">100%</td></tr></table></div>
+</body>
+</html>

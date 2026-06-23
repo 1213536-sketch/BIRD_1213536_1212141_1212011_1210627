@@ -1,0 +1,33 @@
+<session version="1.1" release="T-2022.06-SP2" timestp="2026-06-18 19:49:32 GMT">
+  <info>
+    <attr name="datetime" value="Thu Jun 18 22:49:43 2026
+"/>
+    <attr name="command" value="urg -dir simv.vdb -report coverage_report"/>
+    <attr name="top_instance" value="top_tb"/>
+  </info>
+  <hvp>
+    <datadef>
+      <metdef name="Line" type="ratio" aggregator="average" builtin="1" />
+      <metdef name="Cond" type="ratio" aggregator="average" builtin="1" />
+      <metdef name="Toggle" type="ratio" aggregator="average" builtin="1" />
+      <metdef name="Group" type="percent" aggregator="average" builtin="1" />
+    </datadef>
+  </hvp>
+  <old_coverage>
+  <scope type="top" name="top">
+    <metric name="Line" value="383/433" />
+    <metric name="Cond" value="23/41" />
+    <metric name="Toggle" value="200/430" />
+    <metric name="Group" value="21.2046%" />
+  </scope>
+  <scope type="instance" name="top">
+  </scope>
+  <scope type="group" name="top">
+    <scope type="group" name="$unit::bird_scoreboard::bird_cov">
+      <metric name="Group" value="21.2046%" />
+    </scope>
+  </scope>
+  <scope type="assert" name="Statistics">
+  </scope>
+  </old_coverage>
+</session>

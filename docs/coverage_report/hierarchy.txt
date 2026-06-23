@@ -1,0 +1,11 @@
+Design Hierarchy
+
+
+----------------
+SCORE  LINE   COND          
+ 36.35  45.88  26.83 top_tb 
+  
+  ----------------
+  SCORE  LINE   COND       
+   34.09  41.34  26.83 dut 
+
